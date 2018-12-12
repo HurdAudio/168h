@@ -8304,6 +8304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 416,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/dachshund-1975.jpg',
+          title: 'Dachshund',
+          artist: 'Kiyoshi Saito',
+          year: '1975',
+          rule: {
+            "monday": [ 24, 1, 19, 26 ],
+            "tuesday": [ 1, 7, 25, 3 ],
+            "wednesday": [ 30, 5, 24, 2 ],
+            "thursday": [ 29, 5, 23, 1 ],
+            "friday": [ 28, 4, 22, 30 ],
+            "saturday": [ 17, 3, 21, 30 ],
+            "sunday": [ 16, 23, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 417,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/sap-sucker-lace-2000.jpg',
+          title: 'Sap Sucker Lace',
+          artist: 'Robert Zakanitch',
+          year: '2000',
+          rule: {
+            "monday": [ 16, 23, 20, 28 ],
+            "tuesday": [ 24, 1, 19, 26 ],
+            "wednesday": [ 1, 7, 25, 3 ],
+            "thursday": [ 30, 5, 24, 2 ],
+            "friday": [ 29, 5, 23, 1 ],
+            "saturday": [ 28, 4, 22, 30 ],
+            "sunday": [ 17, 3, 21, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 418,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/nathans-diamond-1987.jpg',
+          title: 'Nathans Diamond',
+          artist: 'Dan Christensen',
+          year: '1987',
+          rule: {
+            "monday": [ 17, 3, 21, 30 ],
+            "tuesday": [ 16, 23, 20, 28 ],
+            "wednesday": [ 24, 1, 19, 26 ],
+            "thursday": [ 1, 7, 25, 3 ],
+            "friday": [ 30, 5, 24, 2 ],
+            "saturday": [ 29, 5, 23, 1 ],
+            "sunday": [ 28, 4, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 419,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/lawndale-1988.jpg',
+          title: 'Lawndale',
+          artist: 'Peter Alexander',
+          year: '1988',
+          rule: {
+            "monday": [ 28, 4, 22, 30 ],
+            "tuesday": [ 17, 3, 21, 30 ],
+            "wednesday": [ 16, 23, 20, 28 ],
+            "thursday": [ 24, 1, 19, 26 ],
+            "friday": [ 1, 7, 25, 3 ],
+            "saturday": [ 30, 5, 24, 2 ],
+            "sunday": [ 29, 5, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 420,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/plaster-bag-ii-1973.jpg',
+          title: 'Plaster Bag II',
+          artist: 'Marjorie Strider',
+          year: '1973',
+          rule: {
+            "monday": [ 30, 6, 24, 2 ],
+            "tuesday": [ 29, 5, 23, 1 ],
+            "wednesday": [ 18, 4, 22, 1 ],
+            "thursday": [ 17, 24, 21, 29 ],
+            "friday": [ 25, 2, 20, 27 ],
+            "saturday": [ 2, 8, 26, 4 ],
+            "sunday": [ 1, 6, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
