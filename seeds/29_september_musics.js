@@ -4432,6 +4432,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3444672602/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/live-5',
+          a_string: 'Live by Happy The Man',
+          rule: {
+            "monday": [ 10, 30, 8, 2 ],
+            "tuesday": [ 9, 29, 7, 1 ],
+            "wednesday": [ 8, 28, 6, 29 ],
+            "thursday": [ 8, 27, 5, 29 ],
+            "saturday": [ 6, 26, 4, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2227823078/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ustodaymusic.bandcamp.com/album/computant',
+          a_string: 'Computant by Us, Today',
+          rule: {
+            "monday": [ 6, 26, 4, 28 ],
+            "tuesday": [ 10, 30, 8, 2 ],
+            "wednesday": [ 9, 29, 7, 1 ],
+            "thursday": [ 8, 28, 6, 29 ],
+            "saturday": [ 8, 27, 5, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2765248987/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://finneganswake.bandcamp.com/album/silances',
+          a_string: 'Silances by Henry Krutzen',
+          rule: {
+            "monday": [ 8, 27, 5, 29 ],
+            "tuesday": [ 6, 26, 4, 28 ],
+            "wednesday": [ 10, 30, 8, 2 ],
+            "thursday": [ 9, 29, 7, 1 ],
+            "saturday": [ 8, 28, 6, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
