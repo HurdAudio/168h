@@ -5080,6 +5080,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 283,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2885152458/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mollynilsson.bandcamp.com/album/twenty-twenty',
+          a_string: 'Twenty Twenty by Molly Nilsson',
+          rule: {
+            "monday": [ 11, 17, 23, 31 ],
+            "tuesday": [ 15, 21, 27, 4 ],
+            "wednesday": [ 14, 20, 26, 3 ],
+            "thursday": [ 13, 19, 25, 3 ],
+            "saturday": [ 11, 18, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 284,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=463199215/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://happyrhodes.bandcamp.com/album/ectotrophia',
+          a_string: 'Ectotrophia by Happy Rhodes',
+          rule: {
+            "monday": [ 11, 18, 24, 1 ],
+            "tuesday": [ 11, 17, 23, 31 ],
+            "wednesday": [ 15, 21, 27, 4 ],
+            "thursday": [ 14, 20, 26, 3 ],
+            "saturday": [ 13, 19, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 285,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3334491876/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lalabandlala.bandcamp.com/album/the-lamb',
+          a_string: 'The Lamb by Lala Lala',
+          rule: {
+            "monday": [ 13, 19, 25, 3 ],
+            "tuesday": [ 11, 18, 24, 1 ],
+            "wednesday": [ 11, 17, 23, 31 ],
+            "thursday": [ 15, 21, 27, 4 ],
+            "saturday": [ 14, 20, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
