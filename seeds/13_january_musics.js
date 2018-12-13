@@ -5296,6 +5296,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 295,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=396492404/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erstwhilerecords.bandcamp.com/album/l-me-est-sans-retenue-i',
+          a_string: 'l’âme est sans retenue I by Jürg Frey',
+          rule: {
+            "monday": [ 17, 24, 25, 26 ],
+            "tuesday": [ 21, 28, 29, 30 ],
+            "wednesday": [ 20, 26, 27, 29 ],
+            "thursday": [ 19, 26, 27, 28 ],
+            "saturday": [ 18, 24, 25, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 296,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3058210/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erstwhilerecords.bandcamp.com/album/13-thirteen',
+          a_string: '13 Thirteen by Keith Rowe/Michael Pisaro',
+          rule: {
+            "monday": [ 18, 24, 25, 26 ],
+            "tuesday": [ 17, 24, 25, 26 ],
+            "wednesday": [ 21, 28, 29, 30 ],
+            "thursday": [ 20, 26, 27, 29 ],
+            "saturday": [ 19, 26, 27, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 297,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=840883265/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erstwhilerecords.bandcamp.com/album/the-whistler',
+          a_string: 'The Whistler by Graham Lambkin/Taku Unami',
+          rule: {
+            "monday": [ 19, 26, 27, 28 ],
+            "tuesday": [ 18, 24, 25, 26 ],
+            "wednesday": [ 17, 24, 25, 26 ],
+            "thursday": [ 21, 28, 29, 30 ],
+            "saturday": [ 20, 26, 27, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
