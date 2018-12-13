@@ -4648,6 +4648,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 259,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=906393946/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://khruangbin.bandcamp.com/album/con-todo-el-mundo-n-s-america-edition',
+          a_string: 'Con Todo El Mundo (N &amp; S America Edition) by Khruangbin',
+          rule: {
+            "monday": [ 4, 6, 10, 18 ],
+            "tuesday": [ 8, 10, 14, 22 ],
+            "wednesday": [ 7, 9, 13, 21 ],
+            "thursday": [ 6, 8, 12, 20 ],
+            "saturday": [ 5, 6, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 260,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=879531568/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zealandardor.bandcamp.com/album/stranger-fruit',
+          a_string: 'Stranger Fruit by Zeal and Ardor',
+          rule: {
+            "monday": [ 5, 6, 11, 19 ],
+            "tuesday": [ 4, 6, 10, 18 ],
+            "wednesday": [ 8, 10, 14, 22 ],
+            "thursday": [ 7, 9, 13, 21 ],
+            "saturday": [ 6, 8, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 261,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=830335486/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pinchpoints.bandcamp.com/album/mechanical-injury',
+          a_string: 'MECHANICAL INJURY by PINCH POINTS',
+          rule: {
+            "monday": [ 6, 8, 12, 20 ],
+            "tuesday": [ 5, 6, 11, 19 ],
+            "wednesday": [ 4, 6, 10, 18 ],
+            "thursday": [ 8, 10, 14, 22 ],
+            "saturday": [ 7, 9, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
