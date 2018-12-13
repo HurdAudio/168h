@@ -4864,6 +4864,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 271,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1456667997/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bocian.bandcamp.com/album/kszta-t',
+          a_string: 'Kształt by Wojciech Bąkowski',
+          rule: {
+            "monday": [ 11, 18, 24, 6 ],
+            "tuesday": [ 10, 16, 23, 5 ],
+            "wednesday": [ 9, 15, 22, 4 ],
+            "thursday": [ 8, 14, 21, 3 ],
+            "saturday": [ 7, 13, 20, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 272,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=403232903/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bocian.bandcamp.com/album/atol-drone',
+          a_string: 'Atol Drone ± by Wolfram',
+          rule: {
+            "monday": [ 7, 13, 20, 2 ],
+            "tuesday": [ 11, 18, 24, 6 ],
+            "wednesday": [ 10, 16, 23, 5 ],
+            "thursday": [ 9, 15, 22, 4 ],
+            "saturday": [ 8, 14, 21, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 273,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3921857678/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bocian.bandcamp.com/album/youre-next',
+          a_string: 'You&#39;re Next by Paal Nilssen-Love / Massimo Pupillo / Lasse Marhaug',
+          rule: {
+            "monday": [ 8, 14, 21, 3 ],
+            "tuesday": [ 7, 13, 20, 2 ],
+            "wednesday": [ 11, 18, 24, 6 ],
+            "thursday": [ 10, 16, 23, 5 ],
+            "saturday": [ 9, 15, 22, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
