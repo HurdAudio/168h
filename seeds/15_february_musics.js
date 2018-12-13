@@ -5188,6 +5188,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 289,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3515419127/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kamaalwilliams.bandcamp.com/album/the-return',
+          a_string: 'The Return by Kamaal Williams',
+          rule: {
+            "monday": [ 28, 22, 24, 26 ],
+            "tuesday": [ 1, 24, 26, 3 ],
+            "wednesday": [ 2, 25, 27, 4 ],
+            "thursday": [ 14, 18, 20, 24 ],
+            "saturday": [ 17, 20, 22, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 290,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=199727413/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://themickjenkins.bandcamp.com/album/pieces-of-a-man',
+          a_string: 'Pieces of a Man by Mick Jenkins',
+          rule: {
+            "monday": [ 17, 20, 22, 24 ],
+            "tuesday": [ 28, 22, 24, 26 ],
+            "wednesday": [ 1, 24, 26, 3 ],
+            "thursday": [ 2, 25, 27, 4 ],
+            "saturday": [ 14, 18, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 291,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=186416695/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://starchildandthenewromantic.bandcamp.com/album/language',
+          a_string: 'Language by Starchild &amp; The New Romantic',
+          rule: {
+            "monday": [ 14, 18, 20, 24 ],
+            "tuesday": [ 17, 20, 22, 24 ],
+            "wednesday": [ 28, 22, 24, 26 ],
+            "thursday": [ 1, 24, 26, 3 ],
+            "saturday": [ 2, 25, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
