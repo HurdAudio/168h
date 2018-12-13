@@ -9704,6 +9704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 486,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/faith-1.jpg',
+          title: 'Jazz Stories: Mama Can Sing and Papa Can Blow #1 & Somebody Stole My Broken Heart',
+          artist: 'Faith Ringgold',
+          year: '2004',
+          rule: {
+            "monday": [ 21, 2, 27, 17 ],
+            "tuesday": [ 11, 19, 27, 6 ],
+            "wednesday": [ 12, 21, 29, 8 ],
+            "thursday": [ 18, 23, 29, 10 ],
+            "friday": [ 17, 25, 4, 12 ],
+            "saturday": [ 19, 29, 6, 12 ],
+            "sunday": [ 21, 29, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 487,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/54646a6a-e97b-4e33-a9bc-f19d300522e6_570.jpg',
+          title: 'Untitled',
+          artist: 'Haywood Rivers',
+          year: '?',
+          rule: {
+            "monday": [ 21, 29, 8, 18 ],
+            "tuesday": [ 21, 2, 27, 17 ],
+            "wednesday": [ 11, 19, 27, 6 ],
+            "thursday": [ 12, 21, 29, 8 ],
+            "friday": [ 18, 23, 29, 10 ],
+            "saturday": [ 17, 25, 4, 12 ],
+            "sunday": [ 19, 29, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 488,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/3negroes_AIM_HD.jpg',
+          title: '3 Negros Aim',
+          artist: 'Bayeté Ross Smith',
+          year: '?',
+          rule: {
+            "monday": [ 19, 29, 6, 12 ],
+            "tuesday": [ 21, 29, 8, 18 ],
+            "wednesday": [ 21, 2, 27, 17 ],
+            "thursday": [ 11, 19, 27, 6 ],
+            "friday": [ 12, 21, 29, 8 ],
+            "saturday": [ 18, 23, 29, 10 ],
+            "sunday": [ 17, 25, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 489,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/dldsauer.jpeg',
+          title: 'Deluge and',
+          artist: 'Alison Saar',
+          year: '2016',
+          rule: {
+            "monday": [ 17, 25, 4, 12 ],
+            "tuesday": [ 19, 29, 6, 12 ],
+            "wednesday": [ 21, 29, 8, 18 ],
+            "thursday": [ 21, 2, 27, 17 ],
+            "friday": [ 11, 19, 27, 6 ],
+            "saturday": [ 12, 21, 29, 8 ],
+            "sunday": [ 18, 23, 29, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 490,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/jem1.jpg',
+          title: 'The Liberation of Aunt Jemima',
+          artist: 'Betye Saar',
+          year: '1972',
+          rule: {
+            "monday": [ 19, 24, 1, 11 ],
+            "tuesday": [ 18, 26, 5, 13 ],
+            "wednesday": [ 20, 1, 7, 13 ],
+            "thursday": [ 22, 1, 9, 19 ],
+            "friday": [ 22, 3, 28, 18 ],
+            "saturday": [ 12, 20, 28, 7 ],
+            "sunday": [ 13, 22, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
