@@ -4756,6 +4756,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 265,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3812261206/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://karlrecords.bandcamp.com/album/disappearing-in-a-mirror',
+          a_string: 'Disappearing In A Mirror by GIULIO ALDINUCCI',
+          rule: {
+            "monday": [ 6, 9, 15, 27 ],
+            "tuesday": [ 6, 9, 15, 26 ],
+            "wednesday": [ 4, 12, 14, 29 ],
+            "thursday": [ 8, 12, 18, 29 ],
+            "saturday": [ 7, 10, 15, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 266,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=403598925/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hallowground.bandcamp.com/album/siavash-amini-foras',
+          a_string: 'SIAVASH AMINI - FORAS by Siavash Amini',
+          rule: {
+            "monday": [ 8, 11, 16, 28 ],
+            "tuesday": [ 7, 10, 16, 28 ],
+            "wednesday": [ 7, 10, 16, 27 ],
+            "thursday": [ 5, 13, 15, 30 ],
+            "saturday": [ 9, 13, 19, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 267,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3553511796/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ebauche.bandcamp.com/album/mutable',
+          a_string: 'Mutable by Ebauche',
+          rule: {
+            "monday": [ 9, 13, 19, 30 ],
+            "tuesday": [ 8, 11, 16, 28 ],
+            "wednesday": [ 7, 10, 16, 28 ],
+            "thursday": [ 7, 10, 16, 27 ],
+            "saturday": [ 5, 13, 15, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
