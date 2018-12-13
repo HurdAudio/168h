@@ -9104,6 +9104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 456,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/over-the-dnipro-river-1954.jpg',
+          title: 'Over the Dnipro River',
+          artist: 'Tetyana Yablonska',
+          year: '1954',
+          rule: {
+            "monday": [ 2, 13, 22, 1 ],
+            "tuesday": [ 31, 10, 18, 20 ],
+            "wednesday": [ 28, 8, 18, 7 ],
+            "thursday": [ 27, 7, 17, 26 ],
+            "friday": [ 25, 4, 14, 22 ],
+            "saturday": [ 23, 1, 13, 22 ],
+            "sunday": [ 2, 14, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 457,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/in-the-summer-1954.jpg',
+          title: 'In the Summer',
+          artist: 'Tetyana Yablonska',
+          year: '1954',
+          rule: {
+            "monday": [ 2, 14, 24, 1 ],
+            "tuesday": [ 2, 13, 22, 1 ],
+            "wednesday": [ 31, 10, 18, 20 ],
+            "thursday": [ 28, 8, 18, 7 ],
+            "friday": [ 27, 7, 17, 26 ],
+            "saturday": [ 25, 4, 14, 22 ],
+            "sunday": [ 23, 1, 13, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 458,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/a-model-on-the-artist-s-studio-1954.jpg',
+          title: 'A Model on the Artist\'s Studio',
+          artist: 'Tetyana Yablonska',
+          year: '1954',
+          rule: {
+            "monday": [ 23, 1, 13, 22 ],
+            "tuesday": [ 2, 14, 24, 1 ],
+            "wednesday": [ 2, 13, 22, 1 ],
+            "thursday": [ 31, 10, 18, 20 ],
+            "friday": [ 28, 8, 18, 7 ],
+            "saturday": [ 27, 7, 17, 26 ],
+            "sunday": [ 25, 4, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 459,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/morning-1954.jpg',
+          title: 'Morning',
+          artist: 'Tetyana Yablonska',
+          year: '1954',
+          rule: {
+            "monday": [ 25, 4, 14, 22 ],
+            "tuesday": [ 23, 1, 13, 22 ],
+            "wednesday": [ 2, 14, 24, 1 ],
+            "thursday": [ 2, 13, 22, 1 ],
+            "friday": [ 31, 10, 18, 20 ],
+            "saturday": [ 28, 8, 18, 7 ],
+            "sunday": [ 27, 7, 17, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 460,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/twins-1958.jpg',
+          title: 'Twins',
+          artist: 'Tetyana Yablonska',
+          year: '1958',
+          rule: {
+            "monday": [ 27, 7, 17, 26 ],
+            "tuesday": [ 25, 4, 14, 22 ],
+            "wednesday": [ 23, 1, 13, 22 ],
+            "thursday": [ 2, 14, 24, 1 ],
+            "friday": [ 2, 13, 22, 1 ],
+            "saturday": [ 31, 10, 18, 20 ],
+            "sunday": [ 28, 8, 18, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
