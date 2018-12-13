@@ -9504,6 +9504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 476,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/negocieri-1935.jpg',
+          title: 'Negocieri',
+          artist: 'Lucia Demetriade Balacescu',
+          year: '1935',
+          rule: {
+            "monday": [ 4, 14, 22, 1 ],
+            "tuesday": [ 3, 14, 21, 31 ],
+            "wednesday": [ 2, 12, 20, 30 ],
+            "thursday": [ 1, 11, 20, 29 ],
+            "friday": [ 7, 16, 26, 3 ],
+            "saturday": [ 6, 16, 24, 3 ],
+            "sunday": [ 3, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 477,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/autumn-fields-knowlton-1941.jpg',
+          title: 'Autumn Fields, Knowlton',
+          artist: 'Prudence Heward',
+          year: '1941',
+          rule: {
+            "monday": [ 3, 15, 23, 2 ],
+            "tuesday": [ 4, 14, 22, 1 ],
+            "wednesday": [ 3, 14, 21, 31 ],
+            "thursday": [ 2, 12, 20, 30 ],
+            "friday": [ 1, 11, 20, 29 ],
+            "saturday": [ 7, 16, 26, 3 ],
+            "sunday": [ 6, 16, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 478,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/spatial-composition-nr-6-1931.jpg',
+          title: 'Spatial Composition Nr. 6',
+          artist: 'Katarzyna Kobro',
+          year: '1931',
+          rule: {
+            "monday": [ 6, 16, 24, 3 ],
+            "tuesday": [ 3, 15, 23, 2 ],
+            "wednesday": [ 4, 14, 22, 1 ],
+            "thursday": [ 3, 14, 21, 31 ],
+            "friday": [ 2, 12, 20, 30 ],
+            "saturday": [ 1, 11, 20, 29 ],
+            "sunday": [ 7, 16, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 479,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/small-portrait-1950.jpg',
+          title: 'Small Portrait',
+          artist: 'Kay Sage',
+          year: '1950',
+          rule: {
+            "monday": [ 7, 16, 26, 3 ],
+            "tuesday": [ 6, 16, 24, 3 ],
+            "wednesday": [ 3, 15, 23, 2 ],
+            "thursday": [ 4, 14, 22, 1 ],
+            "friday": [ 3, 14, 21, 31 ],
+            "saturday": [ 2, 12, 20, 30 ],
+            "sunday": [ 1, 11, 20, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 480,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/sky-covenant-1973.jpg',
+          title: 'Sky Covenant',
+          artist: 'Louise Nevelson',
+          year: '1973',
+          rule: {
+            "monday": [ 1, 11, 20, 29 ],
+            "tuesday": [ 7, 16, 26, 3 ],
+            "wednesday": [ 6, 16, 24, 3 ],
+            "thursday": [ 3, 15, 23, 2 ],
+            "friday": [ 4, 14, 22, 1 ],
+            "saturday": [ 3, 14, 21, 31 ],
+            "sunday": [ 2, 12, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
