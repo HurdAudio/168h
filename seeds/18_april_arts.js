@@ -9304,6 +9304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 466,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/sketch-PHL_886dcb17-b6e9-476c-be46-575007f9f444_grande.jpg',
+          title: 'Philadelphia Phillies',
+          artist: 'S. Preston',
+          year: '?',
+          rule: {
+            "monday": [ 1, 7, 13, 19 ],
+            "tuesday": [ 2, 7, 13, 19 ],
+            "wednesday": [ 1, 6, 12, 18 ],
+            "thursday": [ 6, 12, 17, 24 ],
+            "friday": [ 20, 10, 16, 22 ],
+            "saturday": [ 5, 8, 16, 22 ],
+            "sunday": [ 4, 8, 23, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 467,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/620_artist_c-8.jpg',
+          title: 'Phillies Baseball',
+          artist: 'unknown artist',
+          year: '?',
+          rule: {
+            "monday": [ 4, 8, 23, 21 ],
+            "tuesday": [ 1, 7, 13, 19 ],
+            "wednesday": [ 2, 7, 13, 19 ],
+            "thursday": [ 1, 6, 12, 18 ],
+            "friday": [ 6, 12, 17, 24 ],
+            "saturday": [ 20, 10, 16, 22 ],
+            "sunday": [ 5, 8, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 468,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/ArtDecatur1928 4x6 300-228x228.jpg',
+          title: 'Art Decatur',
+          artist: '?',
+          year: '1927',
+          rule: {
+            "monday": [ 5, 8, 16, 22 ],
+            "tuesday": [ 4, 8, 23, 21 ],
+            "wednesday": [ 1, 7, 13, 19 ],
+            "thursday": [ 2, 7, 13, 19 ],
+            "friday": [ 1, 6, 12, 18 ],
+            "saturday": [ 6, 12, 17, 24 ],
+            "sunday": [ 20, 10, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 469,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/carlos-ruiz-sports-propaganda-handmade-le-screen-print-philadelphia-phillies-3.jpg',
+          title: 'Carlos Ruiz Sports Propaganda Handmade LE Serigraph',
+          artist: 'Chris Speakman',
+          year: '?',
+          rule: {
+            "monday": [ 21, 11, 17, 23 ],
+            "tuesday": [ 6, 9, 17, 23 ],
+            "wednesday": [ 5, 9, 24, 22 ],
+            "thursday": [ 2, 8, 14, 20 ],
+            "friday": [ 3, 8, 14, 20 ],
+            "saturday": [ 2, 7, 13, 19 ],
+            "sunday": [ 7, 13, 18, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 470,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/93527-9780235Fr.jpg',
+          title: 'Art Mahaffey',
+          artist: '?',
+          year: '1962',
+          rule: {
+            "monday": [ 7, 13, 18, 25 ],
+            "tuesday": [ 21, 11, 17, 23 ],
+            "wednesday": [ 6, 9, 17, 23 ],
+            "thursday": [ 5, 9, 24, 22 ],
+            "friday": [ 2, 8, 14, 20 ],
+            "saturday": [ 3, 8, 14, 20 ],
+            "sunday": [ 2, 7, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
