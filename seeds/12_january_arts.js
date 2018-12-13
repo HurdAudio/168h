@@ -9904,6 +9904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 496,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/two-squares-1967.jpg',
+          title: 'Two Squares',
+          artist: 'Almir Mavignier',
+          year: '1967',
+          rule: {
+            "monday": [ 19, 21, 22, 24 ],
+            "tuesday": [ 21, 23, 27, 30 ],
+            "wednesday": [ 23, 25, 26, 27 ],
+            "thursday": [ 8, 9, 20, 12 ],
+            "friday": [ 11, 13, 5, 25 ],
+            "saturday": [ 16, 14, 6, 9 ],
+            "sunday": [ 16, 17, 8, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 497,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/portrait-1993.jpg',
+          title: 'Portrait',
+          artist: 'Imi Knoebel',
+          year: '1993',
+          rule: {
+            "monday": [ 17, 18, 9, 13 ],
+            "tuesday": [ 20, 22, 23, 25 ],
+            "wednesday": [ 22, 24, 28, 31 ],
+            "thursday": [ 24, 26, 27, 28 ],
+            "friday": [ 9, 10, 21, 13 ],
+            "saturday": [ 12, 14, 6, 26 ],
+            "sunday": [ 17, 15, 7, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 498,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/ecriture-no-070405-2007.jpg',
+          title: 'Ecriture No. 070405',
+          artist: 'Park Seo-Bo',
+          year: '2007',
+          rule: {
+            "monday": [ 17, 15, 7, 10 ],
+            "tuesday": [ 17, 18, 9, 13 ],
+            "wednesday": [ 20, 22, 23, 25 ],
+            "thursday": [ 22, 24, 28, 31 ],
+            "friday": [ 24, 26, 27, 28 ],
+            "saturday": [ 9, 10, 21, 13 ],
+            "sunday": [ 12, 14, 6, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 499,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/fluid-red-1968.jpg',
+          title: 'Fluid Red',
+          artist: 'Kazuo Shiraga',
+          year: '1968',
+          rule: {
+            "monday": [ 12, 14, 6, 26 ],
+            "tuesday": [ 17, 15, 7, 10 ],
+            "wednesday": [ 17, 18, 9, 13 ],
+            "thursday": [ 20, 22, 23, 25 ],
+            "friday": [ 22, 24, 28, 31 ],
+            "saturday": [ 24, 26, 27, 28 ],
+            "sunday": [ 9, 10, 21, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 500,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/diet.jpg',
+          title: 'Diet',
+          artist: 'Mark Lancaster',
+          year: '?',
+          rule: {
+            "monday": [ 9, 10, 21, 13 ],
+            "tuesday": [ 12, 14, 6, 26 ],
+            "wednesday": [ 17, 15, 7, 10 ],
+            "thursday": [ 17, 18, 9, 13 ],
+            "friday": [ 20, 22, 23, 25 ],
+            "saturday": [ 22, 24, 28, 31 ],
+            "sunday": [ 24, 26, 27, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
