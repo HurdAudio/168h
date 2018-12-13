@@ -8704,6 +8704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 436,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-game-of-solitaire-1904.jpg',
+          title: 'The Game of Solitaire',
+          artist: 'Jacques Villon',
+          year: '1904',
+          rule: {
+            "monday": [ 3, 14, 25, 4 ],
+            "tuesday": [ 2, 11, 24, 4 ],
+            "wednesday": [ 31, 11, 23, 3 ],
+            "thursday": [ 31, 11, 22, 23 ],
+            "friday": [ 30, 10, 20, 22 ],
+            "saturday": [ 29, 9, 20, 21 ],
+            "sunday": [ 28, 8, 19, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 437,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/nude-on-a-divan-1912.jpg',
+          title: 'Nude on a Divan',
+          artist: 'Albert Marquet',
+          year: '1912',
+          rule: {
+            "monday": [ 28, 8, 19, 30 ],
+            "tuesday": [ 3, 14, 25, 4 ],
+            "wednesday": [ 2, 11, 24, 4 ],
+            "thursday": [ 31, 11, 23, 3 ],
+            "friday": [ 31, 11, 22, 23 ],
+            "saturday": [ 30, 10, 20, 22 ],
+            "sunday": [ 29, 9, 20, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 438,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/cleopatra-s-barge-1939.jpg',
+          title: 'Cleopatra\'s Barge',
+          artist: 'Andre Bauchant',
+          year: '1939',
+          rule: {
+            "monday": [ 29, 9, 20, 21 ],
+            "tuesday": [ 28, 8, 19, 30 ],
+            "wednesday": [ 3, 14, 25, 4 ],
+            "thursday": [ 2, 11, 24, 4 ],
+            "friday": [ 31, 11, 23, 3 ],
+            "saturday": [ 31, 11, 22, 23 ],
+            "sunday": [ 30, 10, 20, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 439,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-dancers-also-known-as-eternal-summer-wiesbaden.jpg',
+          title: 'The Dancers (also known as Eternal Summer, Wiesbaden)',
+          artist: 'Maurice Denis',
+          year: 'c. 1905',
+          rule: {
+            "monday": [ 30, 10, 20, 22 ],
+            "tuesday": [ 29, 9, 20, 21 ],
+            "wednesday": [ 28, 8, 19, 30 ],
+            "thursday": [ 3, 14, 25, 4 ],
+            "friday": [ 2, 11, 24, 4 ],
+            "saturday": [ 31, 11, 23, 3 ],
+            "sunday": [ 31, 11, 22, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 440,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/violet-cliffs-1900.jpg',
+          title: 'Violet Cliffs',
+          artist: 'Louis Valtat',
+          year: '1900',
+          rule: {
+            "monday": [ 31, 11, 22, 23 ],
+            "tuesday": [ 30, 10, 20, 22 ],
+            "wednesday": [ 29, 9, 20, 21 ],
+            "thursday": [ 28, 8, 19, 30 ],
+            "friday": [ 3, 14, 25, 4 ],
+            "saturday": [ 2, 11, 24, 4 ],
+            "sunday": [ 31, 11, 23, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
