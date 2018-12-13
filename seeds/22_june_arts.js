@@ -8904,6 +8904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 446,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Show-offLacey-011.jpg',
+          title: 'Showoff Lacey',
+          artist: 'Nadette Clare-Talbot Bettridge',
+          year: '2016',
+          rule: {
+            "monday": [ 28, 8, 18, 26 ],
+            "tuesday": [ 27, 7, 17, 25 ],
+            "wednesday": [ 3, 13, 23, 30 ],
+            "thursday": [ 2, 12, 23, 30 ],
+            "friday": [ 1, 11, 21, 29 ],
+            "saturday": [ 30, 10, 20, 28 ],
+            "sunday": [ 9, 19, 29, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 447,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/LaceInFlight-012.jpg',
+          title: 'Lace In Flight',
+          artist: 'Nadette Clare-Talbot Bettridge',
+          year: '2016',
+          rule: {
+            "monday": [ 9, 19, 29, 27 ],
+            "tuesday": [ 28, 8, 18, 26 ],
+            "wednesday": [ 27, 7, 17, 25 ],
+            "thursday": [ 3, 13, 23, 30 ],
+            "friday": [ 2, 12, 23, 30 ],
+            "saturday": [ 1, 11, 21, 29 ],
+            "sunday": [ 30, 10, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 448,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/SwimLaceySwim-015.jpg',
+          title: 'Swim Lacey Swim',
+          artist: 'Nadette Clare-Talbot Bettridge',
+          year: '2016',
+          rule: {
+            "monday": [ 1, 11, 21, 29 ],
+            "tuesday": [ 10, 20, 30, 28 ],
+            "wednesday": [ 29, 9, 19, 27 ],
+            "thursday": [ 28, 8, 18, 26 ],
+            "friday": [ 4, 14, 24, 1 ],
+            "saturday": [ 3, 13, 24, 1 ],
+            "sunday": [ 2, 12, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 449,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/LaceYourFace-016.jpg',
+          title: 'Lace Your Face',
+          artist: 'Nadette Clare-Talbot Bettridge',
+          year: '2016',
+          rule: {
+            "monday": [ 2, 12, 22, 30 ],
+            "tuesday": [ 1, 11, 21, 29 ],
+            "wednesday": [ 10, 20, 30, 28 ],
+            "thursday": [ 29, 9, 19, 27 ],
+            "friday": [ 28, 8, 18, 26 ],
+            "saturday": [ 4, 14, 24, 1 ],
+            "sunday": [ 3, 13, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 450,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/sita-21.jpg',
+          title: 'Religious Diversity',
+          artist: 'Sita Azzopardi',
+          year: '2018',
+          rule: {
+            "monday": [ 3, 13, 24, 1 ],
+            "tuesday": [ 2, 12, 22, 30 ],
+            "wednesday": [ 1, 11, 21, 29 ],
+            "thursday": [ 10, 20, 30, 28 ],
+            "friday": [ 29, 9, 19, 27 ],
+            "saturday": [ 28, 8, 18, 26 ],
+            "sunday": [ 4, 14, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
