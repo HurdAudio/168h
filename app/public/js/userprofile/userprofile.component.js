@@ -1479,20 +1479,31 @@
       }
 
       function userEditTaskShareCommentCompleted(commentId) {
+        let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+        let now = new Date();
         let editor = document.getElementById('thisIsTheTaskShareCommentEditor' + commentId);
         let commentSpot = document.getElementById('thisIsTheTaskShareComment' + commentId);
         let subObj = {
-          comment: editor.value
+          comment: editor.value,
+          updated_at: now
         };
         if (subObj.comment !== '') {
           $http.patch(`/task_share_comments/${commentId}`, subObj)
           .then(commentData=>{
             let comment = commentData.data;
+            let update = new Date(now);
+            let minutesString = '';
+            if (update.getMinutes() < 10) {
+              minutesString += '0' + update.getMinutes().toString;
+            } else {
+              minutesString += update.getMinutes().toString();
+            }
             commentSpot.setAttribute("style", "visibility: visible;");
             document.getElementById('taskCommentComment' + commentId).innerHTML = comment.comment;
             editor.setAttribute("style", "display: none;");
             document.getElementById('thisIsTaskCommentEditDoneDiv' + commentId).setAttribute("style", "display: none;");
             document.getElementById('editDeleteTaskShareCommentDiv' + commentId).setAttribute("style", "display: initial;");
+
           });
         } else {
           editor.setAttribute("style", "display: none;");
@@ -2517,14 +2528,16 @@
             }
             setTimeout(()=>{
 
-              for (let j = 0; j < vm.activeOccasionShares[index].comments.length; j++) {
+              if (vm.activeOccasionShares[index].comments !== undefined) {
+                for (let j = 0; j < vm.activeOccasionShares[index].comments.length; j++) {
 
-                if (parseInt(vm.activeOccasionShares[index].comments[j].user_id) === parseInt(currentUserId)) {
-                  document.getElementById('editDeleteOccasionShareCommentDiv' + vm.activeOccasionShares[index].comments[j].id).setAttribute("style", "display: initial;");
-                  // document.getElementById('thisIsTheOccasionShareCommentEditor' + vm.activeOccasionShares[index].comments[j].id).setAttribute("style", "visibility: hidden;");
+                  if (parseInt(vm.activeOccasionShares[index].comments[j].user_id) === parseInt(currentUserId)) {
+                    document.getElementById('editDeleteOccasionShareCommentDiv' + vm.activeOccasionShares[index].comments[j].id).setAttribute("style", "display: initial;");
+                    // document.getElementById('thisIsTheOccasionShareCommentEditor' + vm.activeOccasionShares[index].comments[j].id).setAttribute("style", "visibility: hidden;");
+                  }
+                  document.getElementById('thisIsTheOccasionShareCommentEditor' + vm.activeOccasionShares[index].comments[j].id).setAttribute("style", "display: none;");
+
                 }
-                document.getElementById('thisIsTheOccasionShareCommentEditor' + vm.activeOccasionShares[index].comments[j].id).setAttribute("style", "display: none;");
-
               }
 
             }, (shareComments.length * 100));
@@ -16837,14 +16850,25 @@
           });
           if (taskComments.length > 0) {
             vm.activeTaskShares[index].comments = [];
+            let createDate;
+            let updateDate;
+            let updateString = '';
             for (let i = 0; i < taskComments.length; i++) {
               cDate = new Date(taskComments[i].created_at);
+              createDate = new Date(taskComments[i].created_at);
+              updateDate = new Date(taskComments[i].updated_at);
+              if ((updateDate.getTime() - createDate.getTime()) > 10000) {
+                updateString = cleanDateHoliday(taskComments[i].created_at) + ' at ' +  cDate.toLocaleTimeString('en-GB') + ' - Updated at - ' + cleanDateHoliday(taskComments[i].updated_at) + ' at ' + updateDate.toLocaleTimeString('en-GB');
+              } else {
+                updateString = cleanDateHoliday(taskComments[i].created_at) + ' at ' +  cDate.toLocaleTimeString('en-GB');
+              }
               vm.activeTaskShares[index].comments[i] = {
                 id: taskComments[i].id,
                 comment: taskComments[i].comment,
                 cleanDate: cleanDateHoliday(taskComments[i].created_at) + ' at ' +  cDate.toLocaleTimeString('en-GB'),
                 updated_at: taskComments[i].updated_at,
-                created_at: taskComments[i].created_at
+                created_at: taskComments[i].created_at,
+                updateClean: updateString
               };
               retrieveTaskCommenterProfileInfo(taskComments[i].user_id, index, i);
             }
@@ -16902,10 +16926,22 @@
               getTaskShareTaskDetails(userTaskShares[i].task_id, i);
               vm.activeTaskShares[i].id = userTaskShares[i].id;
               vm.activeTaskShares[i].task_id = userTaskShares[i].task_id;
+              vm.activeTaskShares[i].updated_at = userTaskShares[i].updated_at;
+              vm.activeTaskShares[i].created_at = userTaskShares[i].created_at;
               retrieveTaskShareComments(userTaskShares[i], i);
               console.log(vm.activeTaskShares);
             }
             setTimeout(()=>{
+              let thinDate;
+              let currentThin = new Date();
+              for (let thinner = 0; thinner < vm.activeTaskShares.length; thinner++) {
+                thinDate = new Date(vm.activeTaskShares[thinner].updated_at);
+                thinDate.setDate(thinDate.getDate() + 30);
+                if ((currentThin.getTime() > thinDate.getTime())) {
+                  vm.activeTaskShares.splice(thinner, 1);
+                  --thinner;
+                }
+              }
               for (let j = 0; j < userTaskShares.length; j++) {
                 if (userTaskShares[j].share_associate_id !== currentUserId) {
                   document.getElementById('taskSharer' + vm.activeTaskShares[j].id).setAttribute("style", "display: initial;");

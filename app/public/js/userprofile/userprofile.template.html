@@ -5843,9 +5843,10 @@
                 <main ng-repeat="comment in task.comments | orderBy : $ctrl.sortBy">
                   <img src="{{comment.commenterImg}}"><br><br><br>
                   <br><br><br><p>From: {{comment.commenterName}} <br>
-                  on {{comment.cleanDate}}</p><br><br>
+                  on {{comment.updateClean}}</p><br><br>
                   <div id="thisIsTheTaskShareComment{{comment.id}}">
                     <h3 id="taskCommentComment{{comment.id}}">{{comment.comment}}</h3>
+                    
                   </div><br>
 
                   <textarea id="thisIsTheTaskShareCommentEditor{{comment.id}}" class="pure-input-1" rows="5"></textarea>
