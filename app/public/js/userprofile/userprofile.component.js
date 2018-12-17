@@ -293,6 +293,54 @@
       vm.userObservanceShareCommentDeleteConfirmClick = userObservanceShareCommentDeleteConfirmClick;
       vm.shareObservance = shareObservance;
       vm.cancelObservanceInvite = cancelObservanceInvite;
+      vm.userEditArtModuleComment = userEditArtModuleComment;
+      vm.userEditArtModuleCommentCompleted = userEditArtModuleCommentCompleted;
+
+      function userEditArtModuleCommentCompleted(commentId, artModId) {
+        let thisIsArtModuleCommentComment = document.getElementById('thisIsArtModuleCommentComment' + commentId);
+        let thisIsTheArtModuleCommentEditor = document.getElementById('thisIsTheArtModuleCommentEditor' + commentId);
+        let thisIsArtModuleCommentEditDoneDiv = document.getElementById('thisIsArtModuleCommentEditDoneDiv' + commentId);
+        let editDeleteArtModuleUserComments = document.getElementById('editDeleteArtModuleUserComments' + commentId);
+
+        let subObj = {
+          comment: thisIsTheArtModuleCommentEditor.value
+        };
+        $http.patch(`/art_module_comments/${commentId}`, subObj)
+        .then(commentData => {
+          let comment = commentData.data;
+          thisIsArtModuleCommentComment.innerHTML = subObj.comment;
+          thisIsArtModuleCommentComment.setAttribute("style", "visibility: visible;");
+          thisIsTheArtModuleCommentEditor.setAttribute("style", "visibility: hidden;");
+          thisIsArtModuleCommentEditDoneDiv.setAttribute("style", "display: none;");
+          editDeleteArtModuleUserComments.setAttribute("style", "display: initial;");
+          for (let i = 0; i < vm.artModulePreview.length; i++) {
+            if (parseInt(vm.artModulePreview[i].id) === parseInt(artModId)) {
+              for (let j = 0; j < vm.artModulePreview[i].comments.length; j++) {
+                if (parseInt(vm.artModulePreview[i].comments[j].id) === parseInt(commentId)) {
+                  vm.artModulePreview[i].comments[j].comment = subObj.comment;
+                }
+              }
+            }
+          }
+        });
+      }
+
+      function userEditArtModuleComment(commentId, artModId) {
+        let thisIsArtModuleCommentComment = document.getElementById('thisIsArtModuleCommentComment' + commentId);
+        let thisIsTheArtModuleCommentEditor = document.getElementById('thisIsTheArtModuleCommentEditor' + commentId);
+        let thisIsArtModuleCommentEditDoneDiv = document.getElementById('thisIsArtModuleCommentEditDoneDiv' + commentId);
+        let editDeleteArtModuleUserComments = document.getElementById('editDeleteArtModuleUserComments' + commentId);
+
+        $http.get(`/art_module_comments/${commentId}`)
+        .then(commentData => {
+          let comment = commentData.data;
+          thisIsArtModuleCommentComment.setAttribute("style", "visibility: hidden;");
+          thisIsTheArtModuleCommentEditor.setAttribute("style", "visibility: visible;");
+          thisIsTheArtModuleCommentEditor.value = comment.comment;
+          thisIsArtModuleCommentEditDoneDiv.setAttribute("style", "display: initial;");
+          editDeleteArtModuleUserComments.setAttribute("style", "display: none;");
+        });
+      }
 
       function cancelObservanceInvite() {
         let shareObservancePane = document.getElementById('shareObservancePane');
@@ -4534,11 +4582,23 @@
             vm.artModulePreview[index].comments = [];
             for (let i = 0; i < moduleComments.length; i++) {
               vm.artModulePreview[index].comments[i] = {
-                comment: moduleComments[i].comment
+                id: moduleComments[i].id,
+                comment: moduleComments[i].comment,
+                user_id: moduleComments[i].user_id,
+                art_module_author_id: moduleComments[i].art_module_author_id
               }
               artModuleCommenterIdentity(moduleComments[i].user_id, index, i);
               vm.artModulePreview[index].comments[i].cleanDate = cleanDateHoliday(moduleComments[i].created_at) + ' - ' + timeDate(moduleComments[i].created_at);
             }
+            setTimeout(() => {
+              for (let j = 0; j < vm.artModulePreview[index].comments.length; j++) {
+                document.getElementById('thisIsTheArtModuleCommentEditor' + vm.artModulePreview[index].comments[j].id).setAttribute("style", "visibility: hidden;");
+                document.getElementById('thisIsArtModuleCommentEditDoneDiv' + vm.artModulePreview[index].comments[j].id).setAttribute("style", "display: none;");
+                if ((parseInt(vm.artModulePreview[index].comments[j].user_id) === parseInt(currentUserId)) || (parseInt(vm.artModulePreview[index].comments[j].art_module_author_id) === parseInt(currentUserId))) {
+                  document.getElementById('editDeleteArtModuleUserComments' + vm.artModulePreview[index].comments[j].id).setAttribute("style", "display: initial;");
+                }
+              }
+            }, (vm.artModulePreview[index].comments.length * 150));
           }
         });
       }

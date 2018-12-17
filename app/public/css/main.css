@@ -8644,6 +8644,20 @@ footer img {
   margin: 12vmin 4vmin 1vmin 4vmin;
 }
 
+#artModuleCommentSpace {
+  margin-bottom: 12vmin;
+}
+
+#artModuleCommentSpace textarea {
+  margin-left: 3vmin;
+  width: 89%;
+}
+
+#artModuleCommentSpace a {
+  float: left;
+  margin: 1vmin 2vmin 0 2vmin;
+}
+
 
 /* .day {
   background-image: url(../img/january_tiles/frozen-2626981_1920.jpg);
