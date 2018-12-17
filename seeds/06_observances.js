@@ -10562,6 +10562,39 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 678,
+          user_id: 1,
+          name: 'Tom Djll (trumpet/modular electronics/composition) born 1957',
+          color: '#864643',
+          picture: './img/musicians/profile_Djll-Day0Noise2015006276684.jpg',
+          day_of: new Date ('1957-06-07T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=1643949366/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=648627486/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3491204064/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3629352928/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3309387395/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=4034392301/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1817680774/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3649828271/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2273746566/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=823848954/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3231020950/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=154027505/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/track=3798628821/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=895643885/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3218064713/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://djll.bandcamp.com/album/mutootator', 'http://djll.bandcamp.com/album/skin-tightener', 'http://djll.bandcamp.com/album/cassette19', 'http://djll.bandcamp.com/album/kinda-green', 'http://djll.bandcamp.com/album/hackmidi', 'http://djll.bandcamp.com/album/electro-ecstatic', 'http://djll.bandcamp.com/album/subtle-lunchbox-5', 'http://djll.bandcamp.com/album/pre-emptive-quagmire', 'http://djll.bandcamp.com/album/noise-lesion', 'http://djll.bandcamp.com/album/snow-blower', 'http://djll.bandcamp.com/album/theendnoitisnt', 'http://djll.bandcamp.com/album/from-outhouse-to-icehouse', 'http://djll.bandcamp.com/track/rancid-angels', 'http://othermindsrecords.bandcamp.com/album/serge-works', 'http://auralfilms.bandcamp.com/album/fog-music-36' ],
+            "a_strings": [ 'MUTOOTATOR by Tom Djll', 'skin tightener by William Winant - Camille Emaille - Tom Djll', 'cassette19 by Tom Djll', 'Kinda Green by Kinda Green - Tim Perkis + Tom Djll', 'HackMIDI by Tom Djll', 'Electro-Ecstatic by Tom Djll', 'Subtle Lunchbox by Tom Djll', 'pre-emptive quagmire by Tom Djll', 'noise lesion by Tom Djll', 'snow blower by Tom Djll', 'theendnoitisnt by Tom Djll', 'From Outhouse to Icehouse by Tom Djll/Ross Rabin', 'Rancid Angels by Tom Djll', 'Serge Works by Tom Djll', 'Fog Music 36 by Tom Djll' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 679,
+          user_id: 1,
+          name: 'Chevalier de Saint-Georges (champion fencer/classical composer/virtuoso violinist/conductor) born 1745',
+          color: '#C48B48',
+          picture: './img/musicians/Joseph-Boulogne-Chevalier-de-SaintGeorges-saintgeorge.jpg',
+          day_of: new Date ('1745-12-25T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
