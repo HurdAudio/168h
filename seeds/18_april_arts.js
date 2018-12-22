@@ -7829,7 +7829,7 @@ exports.seed = function(knex, Promise) {
           id: 392,
           user_id: 1,
           theme: 'Baseball',
-          img_path: './img/april/baseball-pixel-art-pixel-art-baseball-bat-ball-pixel-8bit.jpg',
+          img_path: './img/april/baseball-pixel-art-pixel-art-baseball-bat-ball-pixel-8bit.png',
           title: 'Baseball Pixel Art',
           artist: 'Brik',
           year: 'xxi cent.',

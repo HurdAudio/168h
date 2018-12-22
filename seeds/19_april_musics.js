@@ -2116,9 +2116,9 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Free Jazz',
           source: 'bandcamp',
-          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3498965030/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          href_string: 'http://intlanthem.bandcamp.com/album/bottle-tree',
-          a_string: 'Bottle Tree by Bottle Tree',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4067121280/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thoughtgang.bandcamp.com/album/thought-gang',
+          a_string: 'Thought Gang by Thought Gang',
           rule: {
             "monday": [ 16, 24, 6, 11 ],
             "tuesday": [ 20, 28, 10, 15 ],
