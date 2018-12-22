@@ -622,9 +622,9 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Free Jazz',
           source: 'bandcamp',
-          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1307492242/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          href_string: 'http://intlanthem.bandcamp.com/album/the-new-breed',
-          a_string: 'The New Breed by Jeff Parker',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4262378721/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eremiterecords.bandcamp.com/album/slight-freedom',
+          a_string: 'Slight Freedom by Jeff Parker',
           rule: {
             "monday": [ 8, 16, 28, 3 ],
             "tuesday": [ 7, 15, 27, 2 ],
