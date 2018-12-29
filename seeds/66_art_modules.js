@@ -2764,6 +2764,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/empty-spaces-abandoned-places-johnny-joo-urbexus.jpg',
+          title: 'Silverdome',
+          artist: 'Johnny Joo',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 232,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/empty-spaces-abandoned-places-johnny-joo-urbexus-2.jpg',
+          title: 'The Main Event',
+          artist: 'Johnny Joo',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 233,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/empty-spaces-abandoned-places-johnny-joo-urbexus-3.jpg',
+          title: 'Old Riverside Hospital',
+          artist: 'Johnny Joo',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 234,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/empty-spaces-abandoned-places-johnny-joo-urbexus-4.jpg',
+          title: 'Vintage streetcars',
+          artist: 'Johnny Joo',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 235,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/empty-spaces-abandoned-places-johnny-joo-urbexus-5.jpg',
+          title: 'A well preserved morgue inside a former NY psychiatric ward',
+          artist: 'Johnny Joo',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
