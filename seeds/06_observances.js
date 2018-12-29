@@ -6563,7 +6563,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 416,
           user_id: 1,
-          name: 'Ricky Henderson (leftfielder), born 1958',
+          name: 'Rickey Henderson (left fielder), born 1958',
           color: '#7AA426',
           picture: './img/baseball/rickyhenderson.jpg',
           day_of: new Date ('1958-12-25T13:44:00.000Z'),
