@@ -4810,6 +4810,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 268,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3477181664/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://timhecker.bandcamp.com/album/konoyo',
+          a_string: 'Konoyo by Tim Hecker',
+          rule: {
+            "monday": [ 5, 13, 15, 30 ],
+            "tuesday": [ 9, 13, 19, 30 ],
+            "wednesday": [ 8, 11, 16, 28 ],
+            "thursday": [ 7, 10, 16, 28 ],
+            "saturday": [ 7, 10, 16, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 269,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3850167267/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://geographicnorth.bandcamp.com/album/midnight-colours',
+          a_string: 'Midnight Colours by Rafael Anton Irisarri',
+          rule: {
+            "monday": [ 7, 10, 16, 27 ],
+            "tuesday": [ 5, 13, 15, 30 ],
+            "wednesday": [ 9, 13, 19, 30 ],
+            "thursday": [ 8, 11, 16, 28 ],
+            "saturday": [ 7, 10, 16, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 270,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2356068528/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://harnes-kretzer.bandcamp.com/album/black-noise',
+          a_string: 'Black Noise by Harnes Kretzer',
+          rule: {
+            "monday": [ 7, 10, 16, 28 ],
+            "tuesday": [ 7, 10, 16, 27 ],
+            "wednesday": [ 5, 13, 15, 30 ],
+            "thursday": [ 9, 13, 19, 30 ],
+            "saturday": [ 8, 11, 16, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
