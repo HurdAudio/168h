@@ -8404,6 +8404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 421,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/nelson-mandela-1-2001.jpg',
+          title: 'Nelson Mandela 1',
+          artist: 'Peter Max',
+          year: '2001',
+          rule: {
+            "monday": [ 1, 6, 25, 3 ],
+            "tuesday": [ 30, 6, 24, 2 ],
+            "wednesday": [ 29, 5, 23, 1 ],
+            "thursday": [ 18, 4, 22, 1 ],
+            "friday": [ 17, 24, 21, 29 ],
+            "saturday": [ 25, 2, 20, 27 ],
+            "sunday": [ 2, 8, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 422,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/fontes-1992.jpg',
+          title: 'Fontes',
+          artist: 'Cildo Meireles',
+          year: '1992',
+          rule: {
+            "monday": [ 2, 8, 26, 4 ],
+            "tuesday": [ 1, 6, 25, 3 ],
+            "wednesday": [ 30, 6, 24, 2 ],
+            "thursday": [ 29, 5, 23, 1 ],
+            "friday": [ 18, 4, 22, 1 ],
+            "saturday": [ 17, 24, 21, 29 ],
+            "sunday": [ 25, 2, 20, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 423,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/counterpoint-with-flowers-1982.jpg',
+          title: 'Counterpoint with Flowers',
+          artist: 'Fusun Onur',
+          year: '1982',
+          rule: {
+            "monday": [ 25, 2, 20, 27 ],
+            "tuesday": [ 2, 8, 26, 4 ],
+            "wednesday": [ 1, 6, 25, 3 ],
+            "thursday": [ 30, 6, 24, 2 ],
+            "friday": [ 29, 5, 23, 1 ],
+            "saturday": [ 18, 4, 22, 1 ],
+            "sunday": [ 17, 24, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 424,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/without-borders-2011.jpg',
+          title: 'Without Borders',
+          artist: 'Peter Max',
+          year: '2011',
+          rule: {
+            "monday": [ 17, 24, 21, 29 ],
+            "tuesday": [ 25, 2, 20, 27 ],
+            "wednesday": [ 2, 8, 26, 4 ],
+            "thursday": [ 1, 6, 25, 3 ],
+            "friday": [ 30, 6, 24, 2 ],
+            "saturday": [ 29, 5, 23, 1 ],
+            "sunday": [ 18, 4, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 425,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-elimination-of-radiation-through-bombardment-1986.jpg',
+          title: 'The Elimination of Radiation through Bombardment',
+          artist: 'Ozdemir Atlan',
+          year: '1986',
+          rule: {
+            "monday": [ 18, 4, 22, 1 ],
+            "tuesday": [ 17, 24, 21, 29 ],
+            "wednesday": [ 25, 2, 20, 27 ],
+            "thursday": [ 2, 8, 26, 4 ],
+            "friday": [ 1, 6, 25, 3 ],
+            "saturday": [ 30, 6, 24, 2 ],
+            "sunday": [ 29, 5, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
