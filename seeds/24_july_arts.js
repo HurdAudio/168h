@@ -8804,6 +8804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 441,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/still-life-1908.jpg',
+          title: 'Still Life',
+          artist: 'Adolph de Meyer',
+          year: '1908',
+          rule: {
+            "monday": [ 1, 12, 24, 4 ],
+            "tuesday": [ 1, 12, 23, 24 ],
+            "wednesday": [ 31, 11, 21, 23 ],
+            "thursday": [ 30, 10, 21, 22 ],
+            "friday": [ 29, 9, 20, 31 ],
+            "saturday": [ 4, 15, 26, 5 ],
+            "sunday": [ 3, 12, 25, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 442,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/poster-advertising-france-champagne-1891.jpg',
+          title: 'Poster advertising France Champagne',
+          artist: 'Pierre Bonnard',
+          year: '1891',
+          rule: {
+            "monday": [ 3, 12, 25, 5 ],
+            "tuesday": [ 1, 12, 24, 4 ],
+            "wednesday": [ 1, 12, 23, 24 ],
+            "thursday": [ 31, 11, 21, 23 ],
+            "friday": [ 30, 10, 21, 22 ],
+            "saturday": [ 29, 9, 20, 31 ],
+            "sunday": [ 4, 15, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 443,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/jardin-de-paris-may-belfort-plakat-1883.jpg',
+          title: 'Jardin de Paris, May Belfort, Plakat',
+          artist: 'Henri de Toulouse-Lautrec',
+          year: '1883',
+          rule: {
+            "monday": [ 4, 15, 26, 5 ],
+            "tuesday": [ 3, 12, 25, 5 ],
+            "wednesday": [ 1, 12, 24, 4 ],
+            "thursday": [ 1, 12, 23, 24 ],
+            "friday": [ 31, 11, 21, 23 ],
+            "saturday": [ 30, 10, 21, 22 ],
+            "sunday": [ 29, 9, 20, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 444,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/moon-on-the-lake-1907.jpg',
+          title: 'Moon on the Lake',
+          artist: 'Leon Dabo',
+          year: '1907',
+          rule: {
+            "monday": [ 29, 9, 20, 31 ],
+            "tuesday": [ 4, 15, 26, 5 ],
+            "wednesday": [ 3, 12, 25, 5 ],
+            "thursday": [ 1, 12, 24, 4 ],
+            "friday": [ 1, 12, 23, 24 ],
+            "saturday": [ 31, 11, 21, 23 ],
+            "sunday": [ 30, 10, 21, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 445,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/la-baigneuse-drap-e-1937.jpg',
+          title: 'La Baigneuse drapée',
+          artist: 'Aristide Maillol',
+          year: '1937',
+          rule: {
+            "monday": [ 30, 10, 21, 22 ],
+            "tuesday": [ 29, 9, 20, 31 ],
+            "wednesday": [ 4, 15, 26, 5 ],
+            "thursday": [ 3, 12, 25, 5 ],
+            "friday": [ 1, 12, 24, 4 ],
+            "saturday": [ 1, 12, 23, 24 ],
+            "sunday": [ 31, 11, 21, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
