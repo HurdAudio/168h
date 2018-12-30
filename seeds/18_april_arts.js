@@ -9404,6 +9404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 471,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/artsfon.com-82949.jpg',
+          title: 'Texas Rangers Wallpaper',
+          artist: 'ArtsFon',
+          year: '2016',
+          rule: {
+            "monday": [ 2, 7, 13, 19 ],
+            "tuesday": [ 7, 13, 18, 25 ],
+            "wednesday": [ 21, 11, 17, 23 ],
+            "thursday": [ 6, 9, 17, 23 ],
+            "friday": [ 5, 9, 24, 22 ],
+            "saturday": [ 2, 8, 14, 20 ],
+            "sunday": [ 3, 8, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 472,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Texas-Rangers_lg.jpg',
+          title: 'Texas Rangers',
+          artist: 'Jerrod Gardenhire',
+          year: '2018',
+          rule: {
+            "monday": [ 3, 8, 14, 20 ],
+            "tuesday": [ 2, 7, 13, 19 ],
+            "wednesday": [ 7, 13, 18, 25 ],
+            "thursday": [ 21, 11, 17, 23 ],
+            "friday": [ 6, 9, 17, 23 ],
+            "saturday": [ 5, 9, 24, 22 ],
+            "sunday": [ 2, 8, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 473,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/1482855-7.jpg',
+          title: 'Bill Fahey Texas Rangers',
+          artist: 'John Kilduff',
+          year: '?',
+          rule: {
+            "monday": [ 2, 8, 14, 20 ],
+            "tuesday": [ 3, 8, 14, 20 ],
+            "wednesday": [ 2, 7, 13, 19 ],
+            "thursday": [ 7, 13, 18, 25 ],
+            "friday": [ 21, 11, 17, 23 ],
+            "saturday": [ 6, 9, 17, 23 ],
+            "sunday": [ 5, 9, 24, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 474,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/e472e0a6ab5f4a677796682ede7ee926.jpg',
+          title: 'Texas Rangers Baseball',
+          artist: 'Delphi Glass',
+          year: '?',
+          rule: {
+            "monday": [ 5, 9, 24, 22 ],
+            "tuesday": [ 2, 8, 14, 20 ],
+            "wednesday": [ 3, 8, 14, 20 ],
+            "thursday": [ 2, 7, 13, 19 ],
+            "friday": [ 7, 13, 18, 25 ],
+            "saturday": [ 21, 11, 17, 23 ],
+            "sunday": [ 6, 9, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 475,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/texas-rangers-baseball-multiview.jpg',
+          title: 'Texas Rangers Hand Painted Baseballs',
+          artist: 'Charles Fazzino',
+          year: '?',
+          rule: {
+            "monday": [ 6, 9, 17, 23 ],
+            "tuesday": [ 5, 9, 24, 22 ],
+            "wednesday": [ 2, 8, 14, 20 ],
+            "thursday": [ 3, 8, 14, 20 ],
+            "friday": [ 2, 7, 13, 19 ],
+            "saturday": [ 7, 13, 18, 25 ],
+            "sunday": [ 21, 11, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
