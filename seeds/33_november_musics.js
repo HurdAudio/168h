@@ -4270,6 +4270,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2800288937/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://alifarkatoure.bandcamp.com/album/the-river',
+          a_string: 'The River by Ali Farka Touré',
+          rule: {
+            "monday": [ 6, 17, 28, 2 ],
+            "tuesday": [ 5, 16, 27, 1 ],
+            "wednesday": [ 4, 15, 26, 30 ],
+            "thursday": [ 3, 14, 25, 27 ],
+            "saturday": [ 2, 13, 24, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=664082924/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://alifarkatoure.bandcamp.com/album/ali-farka-toure',
+          a_string: 'Ali Farka Toure by Ali Farka Touré',
+          rule: {
+            "monday": [ 2, 13, 24, 6 ],
+            "tuesday": [ 6, 17, 28, 2 ],
+            "wednesday": [ 5, 16, 27, 1 ],
+            "thursday": [ 4, 15, 26, 30 ],
+            "saturday": [ 3, 14, 25, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2250187814/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mbongwanastar.bandcamp.com/album/from-kinshasa',
+          a_string: 'From Kinshasa by Mbongwana Star',
+          rule: {
+            "monday": [ 3, 14, 25, 27 ],
+            "tuesday": [ 2, 13, 24, 6 ],
+            "wednesday": [ 6, 17, 28, 2 ],
+            "thursday": [ 5, 16, 27, 1 ],
+            "saturday": [ 4, 15, 26, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
