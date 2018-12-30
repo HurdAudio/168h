@@ -4594,6 +4594,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 256,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=7981587/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ex-nihilorecords.bandcamp.com/album/anilina',
+          a_string: 'Anilina by Alfredo Costa Monteiro, Tomás Gris &amp; David Area',
+          rule: {
+            "monday": [ 17, 25, 7, 6 ],
+            "tuesday": [ 16, 24, 6, 5 ],
+            "wednesday": [ 15, 23, 5, 4 ],
+            "thursday": [ 14, 22, 4, 3 ],
+            "saturday": [ 18, 26, 8, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 257,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3409077892/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://steveolsonmusic.bandcamp.com/album/sunday-dust',
+          a_string: 'Sunday Dust by The X Trio',
+          rule: {
+            "monday": [ 18, 26, 8, 7 ],
+            "tuesday": [ 17, 25, 7, 6 ],
+            "wednesday": [ 16, 24, 6, 5 ],
+            "thursday": [ 15, 23, 5, 4 ],
+            "saturday": [ 14, 22, 4, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 258,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=310190898/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://store.badluckband.net/album/two',
+          a_string: 'Two by Bad Luck',
+          rule: {
+            "monday": [ 14, 22, 4, 3 ],
+            "tuesday": [ 18, 26, 8, 7 ],
+            "wednesday": [ 17, 25, 7, 6 ],
+            "thursday": [ 16, 24, 6, 5 ],
+            "saturday": [ 15, 23, 5, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
