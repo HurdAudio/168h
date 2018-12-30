@@ -5350,6 +5350,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 298,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2677315354/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erstwhilerecords.bandcamp.com/album/the-room-extended',
+          a_string: 'The Room Extended by Keith Rowe',
+          rule: {
+            "monday": [ 20, 26, 27, 29 ],
+            "tuesday": [ 19, 26, 27, 28 ],
+            "wednesday": [ 18, 24, 25, 26 ],
+            "thursday": [ 17, 24, 25, 26 ],
+            "saturday": [ 21, 28, 29, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 299,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=663336388/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erstwhilerecords.bandcamp.com/album/the-earth-and-the-sky',
+          a_string: 'the earth and the sky by Michael Pisaro/Reinier van Houdt',
+          rule: {
+            "monday": [ 21, 28, 29, 30 ],
+            "tuesday": [ 20, 26, 27, 29 ],
+            "wednesday": [ 19, 26, 27, 28 ],
+            "thursday": [ 18, 24, 25, 26 ],
+            "saturday": [ 17, 24, 25, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 300,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=188527466/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erstwhilerecords.bandcamp.com/album/community',
+          a_string: 'Community by Graham Lambkin',
+          rule: {
+            "monday": [ 17, 24, 25, 26 ],
+            "tuesday": [ 21, 28, 29, 30 ],
+            "wednesday": [ 20, 26, 27, 29 ],
+            "thursday": [ 19, 26, 27, 28 ],
+            "saturday": [ 18, 24, 25, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
