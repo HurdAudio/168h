@@ -4486,6 +4486,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3168124690/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shop.hammockmusic.com/album/universalis',
+          a_string: 'Universalis by Hammock',
+          rule: {
+            "monday": [ 8, 28, 6, 29 ],
+            "tuesday": [ 8, 27, 5, 29 ],
+            "wednesday": [ 6, 26, 4, 28 ],
+            "thursday": [ 10, 30, 8, 2 ],
+            "saturday": [ 9, 29, 7, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 251,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3053041602/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shop.hammockmusic.com/album/mysterium',
+          a_string: 'Mysterium by Hammock',
+          rule: {
+            "monday": [ 9, 29, 7, 1 ],
+            "tuesday": [ 8, 28, 6, 29 ],
+            "wednesday": [ 8, 27, 5, 29 ],
+            "thursday": [ 6, 26, 4, 28 ],
+            "saturday": [ 10, 30, 8, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 252,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=229769068/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shop.hammockmusic.com/album/oblivion-hymns',
+          a_string: 'Oblivion Hymns by Hammock',
+          rule: {
+            "monday": [ 11, 1, 9, 3 ],
+            "tuesday": [ 10, 30, 8, 2 ],
+            "wednesday": [ 9, 29, 7, 30 ],
+            "thursday": [ 9, 28, 6, 30 ],
+            "saturday": [ 7, 27, 5, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
