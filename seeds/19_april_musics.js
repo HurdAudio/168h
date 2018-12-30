@@ -5026,6 +5026,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 280,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3327527731/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://peggylee1.bandcamp.com/album/echo-painting',
+          a_string: 'ECHO PAINTING by Peggy Lee',
+          rule: {
+            "monday": [ 12, 20, 2, 7 ],
+            "tuesday": [ 11, 19, 30, 6 ],
+            "wednesday": [ 10, 18, 30, 5 ],
+            "thursday": [ 14, 22, 4, 9 ],
+            "saturday": [ 13, 21, 3, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 281,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1829815369/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://marikevandijk.bandcamp.com/album/the-stereography-project-feat-jeff-taylor-and-katell-keineg',
+          a_string: 'The Stereography Project feat. Jeff Taylor and Katell Keineg by Marike van Dijk',
+          rule: {
+            "monday": [ 13, 21, 3, 8 ],
+            "tuesday": [ 12, 20, 2, 7 ],
+            "wednesday": [ 11, 19, 30, 6 ],
+            "thursday": [ 10, 18, 30, 5 ],
+            "saturday": [ 14, 22, 4, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 282,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=328293526/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bobbyprevite.bandcamp.com/album/rhapsody',
+          a_string: 'Rhapsody by Bobby Previte',
+          rule: {
+            "monday": [ 14, 22, 4, 9 ],
+            "tuesday": [ 13, 21, 3, 8 ],
+            "wednesday": [ 12, 20, 2, 7 ],
+            "thursday": [ 11, 19, 30, 6 ],
+            "saturday": [ 10, 18, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
