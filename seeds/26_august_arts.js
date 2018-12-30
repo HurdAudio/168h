@@ -8604,6 +8604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 431,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/urban-landscape-1922-1.jpg',
+          title: 'Urban Landscape',
+          artist: 'Mario Sironi',
+          year: '1922',
+          rule: {
+            "monday": [ 29, 1, 10, 26 ],
+            "tuesday": [ 28, 31, 9, 25 ],
+            "wednesday": [ 3, 7, 15, 31 ],
+            "thursday": [ 2, 5, 14, 30 ],
+            "friday": [ 1, 5, 13, 29 ],
+            "saturday": [ 31, 4, 12, 28 ],
+            "sunday": [ 30, 1, 11, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 432,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/not_detected_235968.jpg',
+          title: 'The Carmagnole (Dance Around the Guillotine)',
+          artist: 'Kathe Kollwitz',
+          year: '1901',
+          rule: {
+            "monday": [ 30, 1, 11, 27 ],
+            "tuesday": [ 29, 1, 10, 26 ],
+            "wednesday": [ 28, 31, 9, 25 ],
+            "thursday": [ 3, 7, 15, 31 ],
+            "friday": [ 2, 5, 14, 30 ],
+            "saturday": [ 1, 5, 13, 29 ],
+            "sunday": [ 31, 4, 12, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 433,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/woman-with-a-rabbit-1918.jpg',
+          title: 'Woman with a Rabbit',
+          artist: 'Eugeniusz Zak',
+          year: '1918',
+          rule: {
+            "monday": [ 31, 4, 12, 28 ],
+            "tuesday": [ 30, 1, 11, 27 ],
+            "wednesday": [ 29, 1, 10, 26 ],
+            "thursday": [ 28, 31, 9, 25 ],
+            "friday": [ 3, 7, 15, 31 ],
+            "saturday": [ 2, 5, 14, 30 ],
+            "sunday": [ 1, 5, 13, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 434,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/costume-design-for-theatre-moscow-1916.jpg',
+          title: 'Costume design for theatre Moscow',
+          artist: 'Aleksandra Ekster',
+          year: '1916',
+          rule: {
+            "monday": [ 2, 6, 14, 30 ],
+            "tuesday": [ 1, 5, 13, 29 ],
+            "wednesday": [ 31, 2, 12, 28 ],
+            "thursday": [ 30, 2, 11, 27 ],
+            "friday": [ 29, 1, 10, 26 ],
+            "saturday": [ 4, 8, 16, 1 ],
+            "sunday": [ 3, 6, 15, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 435,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/cat-catching-a-mouse.jpg',
+          title: 'Cat Catching a Mouse',
+          artist: 'Ohara Koson',
+          year: 'c.1930',
+          rule: {
+            "monday": [ 3, 6, 15, 31 ],
+            "tuesday": [ 2, 6, 14, 30 ],
+            "wednesday": [ 1, 5, 13, 29 ],
+            "thursday": [ 31, 2, 12, 28 ],
+            "friday": [ 30, 2, 11, 27 ],
+            "saturday": [ 29, 1, 10, 26 ],
+            "sunday": [ 4, 8, 16, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
