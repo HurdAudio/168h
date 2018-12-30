@@ -998,6 +998,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F9F7FB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'Light',
+          type: 'holiday',
+          src_string: '../img/june_tiles/jon-tyson-598283-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#050400',
+          color_medium: '#611C04',
+          color_light: '#F9D6B8',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
