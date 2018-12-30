@@ -5242,6 +5242,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 292,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3559861368/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mikelikesrap.bandcamp.com/album/war-in-my-pen',
+          a_string: 'War in my Pen by MIKE',
+          rule: {
+            "monday": [ 2, 25, 27, 4 ],
+            "tuesday": [ 14, 18, 20, 24 ],
+            "wednesday": [ 17, 20, 22, 24 ],
+            "thursday": [ 28, 22, 24, 26 ],
+            "saturday": [ 1, 24, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 293,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2485657964/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://queenette.bandcamp.com/album/vacant-ep',
+          a_string: 'Vacant- EP by Amaka Queenette',
+          rule: {
+            "monday": [ 1, 24, 26, 3 ],
+            "tuesday": [ 2, 25, 27, 4 ],
+            "wednesday": [ 14, 18, 20, 24 ],
+            "thursday": [ 17, 20, 22, 24 ],
+            "saturday": [ 28, 22, 24, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 294,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2448550951/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cecilymusic.bandcamp.com/album/songs-of-love-and-freedom',
+          a_string: 'Songs of Love and Freedom by Cecily',
+          rule: {
+            "monday": [ 29, 23, 25, 27 ],
+            "tuesday": [ 2, 25, 27, 4 ],
+            "wednesday": [ 3, 26, 28, 5 ],
+            "thursday": [ 15, 19, 21, 25 ],
+            "saturday": [ 18, 21, 23, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
