@@ -10004,6 +10004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 501,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/tadwalis-island-1982.jpg',
+          title: 'Tadwalis Island',
+          artist: 'Gillian Ayres',
+          year: '1982',
+          rule: {
+            "monday": [ 24, 26, 27, 28 ],
+            "tuesday": [ 9, 10, 21, 13 ],
+            "wednesday": [ 12, 14, 6, 26 ],
+            "thursday": [ 17, 15, 7, 10 ],
+            "friday": [ 17, 18, 9, 13 ],
+            "saturday": [ 20, 22, 23, 25 ],
+            "sunday": [ 22, 24, 28, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 502,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/weisse-struktur-spiegelung-1960.jpg',
+          title: 'Weisse Struktur (Spiegelung)',
+          artist: 'Gerhard von Graevenitz',
+          year: '1960',
+          rule: {
+            "monday": [ 22, 24, 28, 31 ],
+            "tuesday": [ 24, 26, 27, 28 ],
+            "wednesday": [ 9, 10, 21, 13 ],
+            "thursday": [ 12, 14, 6, 26 ],
+            "friday": [ 17, 15, 7, 10 ],
+            "saturday": [ 17, 18, 9, 13 ],
+            "sunday": [ 20, 22, 23, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 503,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/spazio-luce-1965.jpg',
+          title: 'Spazio Luce',
+          artist: 'Antonio Calderara',
+          year: '1965',
+          rule: {
+            "monday": [ 20, 22, 23, 25 ],
+            "tuesday": [ 22, 24, 28, 31 ],
+            "wednesday": [ 24, 26, 27, 28 ],
+            "thursday": [ 9, 10, 21, 13 ],
+            "friday": [ 12, 14, 6, 26 ],
+            "saturday": [ 17, 15, 7, 10 ],
+            "sunday": [ 17, 18, 9, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 504,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/diamond-lake-1969.jpg',
+          title: 'Diamond Lake',
+          artist: 'Ronnie Landfield',
+          year: '1969',
+          rule: {
+            "monday": [ 18, 19, 10, 14 ],
+            "tuesday": [ 21, 23, 24, 26 ],
+            "wednesday": [ 23, 25, 29, 1 ],
+            "thursday": [ 25, 27, 28, 29 ],
+            "friday": [ 10, 11, 22, 14 ],
+            "saturday": [ 13, 15, 7, 27 ],
+            "sunday": [ 18, 16, 8, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 505,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/intersuperficie-curva-gialla-1969.jpg',
+          title: 'Intersuperficie curva gialla',
+          artist: 'Paolo Scheggi',
+          year: '1969',
+          rule: {
+            "monday": [ 18, 16, 8, 11 ],
+            "tuesday": [ 18, 19, 10, 14 ],
+            "wednesday": [ 21, 23, 24, 26 ],
+            "thursday": [ 23, 25, 29, 1 ],
+            "friday": [ 25, 27, 28, 29 ],
+            "saturday": [ 10, 11, 22, 14 ],
+            "sunday": [ 13, 15, 7, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
