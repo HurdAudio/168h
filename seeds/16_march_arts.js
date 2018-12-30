@@ -9604,6 +9604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 481,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/old-french-fairy-tales-0008-1.jpg',
+          title: 'Rosalie saw before her eyes a tree of marvelous beauty',
+          artist: 'Virginia Frances Sterrett',
+          year: 'c.1919',
+          rule: {
+            "monday": [ 2, 12, 20, 30 ],
+            "tuesday": [ 1, 11, 20, 29 ],
+            "wednesday": [ 7, 16, 26, 3 ],
+            "thursday": [ 6, 16, 24, 3 ],
+            "friday": [ 3, 15, 23, 2 ],
+            "saturday": [ 4, 14, 22, 1 ],
+            "sunday": [ 3, 14, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 482,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/tomis.jpg',
+          title: 'Tomis',
+          artist: 'Micaela Eleutheriade',
+          year: '?',
+          rule: {
+            "monday": [ 3, 14, 21, 31 ],
+            "tuesday": [ 2, 12, 20, 30 ],
+            "wednesday": [ 1, 11, 20, 29 ],
+            "thursday": [ 7, 16, 26, 3 ],
+            "friday": [ 6, 16, 24, 3 ],
+            "saturday": [ 3, 15, 23, 2 ],
+            "sunday": [ 4, 14, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 483,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/still-life-beet-1959.jpg',
+          title: 'Still life "Beet"',
+          artist: 'Kateryna Bilokur',
+          year: '1959',
+          rule: {
+            "monday": [ 5, 15, 23, 2 ],
+            "tuesday": [ 4, 15, 22, 1 ],
+            "wednesday": [ 3, 13, 21, 31 ],
+            "thursday": [ 2, 12, 21, 30 ],
+            "friday": [ 8, 17, 27, 4 ],
+            "saturday": [ 7, 17, 25, 4 ],
+            "sunday": [ 4, 16, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 484,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/rf-presagio-1080x1599.jpg',
+          title: 'Presagio',
+          artist: 'Raquel Forner',
+          year: '1931',
+          rule: {
+            "monday": [ 4, 16, 24, 3 ],
+            "tuesday": [ 5, 15, 23, 2 ],
+            "wednesday": [ 4, 15, 22, 1 ],
+            "thursday": [ 3, 13, 21, 31 ],
+            "friday": [ 2, 12, 21, 30 ],
+            "saturday": [ 8, 17, 27, 4 ],
+            "sunday": [ 7, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 485,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/relache-1943.jpg',
+          title: 'Relache',
+          artist: 'Toyen',
+          year: '1943',
+          rule: {
+            "monday": [ 7, 17, 25, 4 ],
+            "tuesday": [ 4, 16, 24, 3 ],
+            "wednesday": [ 5, 15, 23, 2 ],
+            "thursday": [ 4, 15, 22, 1 ],
+            "friday": [ 3, 13, 21, 31 ],
+            "saturday": [ 2, 12, 21, 30 ],
+            "sunday": [ 8, 17, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
