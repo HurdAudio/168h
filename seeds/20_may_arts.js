@@ -9204,6 +9204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 461,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/girl-with-a-butterfly-net-1959.jpg',
+          title: 'Girl with a Butterfly Net',
+          artist: 'Tetyana Yablonska',
+          year: '1959',
+          rule: {
+            "monday": [ 28, 8, 18, 7 ],
+            "tuesday": [ 27, 7, 17, 26 ],
+            "wednesday": [ 25, 4, 14, 22 ],
+            "thursday": [ 23, 1, 13, 22 ],
+            "friday": [ 2, 14, 24, 1 ],
+            "saturday": [ 2, 13, 22, 1 ],
+            "sunday": [ 31, 10, 18, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 462,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/in-the-forest-glade-1959.jpg',
+          title: 'In the Forest Glade',
+          artist: 'Tetyana Yablonska',
+          year: '1959',
+          rule: {
+            "monday": [ 1, 11, 19, 21 ],
+            "tuesday": [ 29, 9, 19, 8 ],
+            "wednesday": [ 28, 8, 18, 27 ],
+            "thursday": [ 26, 5, 15, 23 ],
+            "friday": [ 24, 2, 14, 23 ],
+            "saturday": [ 3, 15, 25, 2 ],
+            "sunday": [ 3, 14, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 463,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/mother-1960.jpg',
+          title: 'Mother',
+          artist: 'Tetyana Yablonska',
+          year: '1960',
+          rule: {
+            "monday": [ 3, 14, 23, 2 ],
+            "tuesday": [ 1, 11, 19, 21 ],
+            "wednesday": [ 29, 9, 19, 8 ],
+            "thursday": [ 28, 8, 18, 27 ],
+            "friday": [ 26, 5, 15, 23 ],
+            "saturday": [ 24, 2, 14, 23 ],
+            "sunday": [ 3, 15, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 464,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/with-the-father-1962.jpg',
+          title: 'With the Father',
+          artist: 'Tetyana Yablonska',
+          year: '1962',
+          rule: {
+            "monday": [ 3, 15, 25, 2 ],
+            "tuesday": [ 3, 14, 23, 2 ],
+            "wednesday": [ 1, 11, 19, 21 ],
+            "thursday": [ 29, 9, 19, 8 ],
+            "friday": [ 28, 8, 18, 27 ],
+            "saturday": [ 26, 5, 15, 23 ],
+            "sunday": [ 24, 2, 14, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 465,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/wedding-1st-version-1963.jpg',
+          title: 'Wedding (1st Version)',
+          artist: 'Tetyana Yablonska',
+          year: '1963',
+          rule: {
+            "monday": [ 24, 2, 14, 23 ],
+            "tuesday": [ 3, 15, 25, 2 ],
+            "wednesday": [ 3, 14, 23, 2 ],
+            "thursday": [ 1, 11, 19, 21 ],
+            "friday": [ 29, 9, 19, 8 ],
+            "saturday": [ 28, 8, 18, 27 ],
+            "sunday": [ 26, 5, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
