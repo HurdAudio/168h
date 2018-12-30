@@ -4702,6 +4702,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 262,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=454848065/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://flasherdc.bandcamp.com/album/constant-image',
+          a_string: 'Constant Image by Flasher',
+          rule: {
+            "monday": [ 7, 9, 13, 21 ],
+            "tuesday": [ 6, 8, 12, 20 ],
+            "wednesday": [ 5, 6, 11, 19 ],
+            "thursday": [ 4, 6, 10, 18 ],
+            "saturday": [ 8, 10, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 263,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2965354313/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lesdisquesbongojoe.bandcamp.com/album/la-contra-ola',
+          a_string: 'La Contra Ola by Various Artists',
+          rule: {
+            "monday": [ 8, 10, 14, 22 ],
+            "tuesday": [ 7, 9, 13, 21 ],
+            "wednesday": [ 6, 8, 12, 20 ],
+            "thursday": [ 5, 6, 11, 19 ],
+            "saturday": [ 4, 6, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 264,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=655528634/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://saysueme.bandcamp.com/album/say-sue-me-where-we-were-together',
+          a_string: 'Say Sue Me - Where We Were Together by Say Sue Me',
+          rule: {
+            "monday": [ 4, 6, 10, 18 ],
+            "tuesday": [ 8, 10, 14, 22 ],
+            "wednesday": [ 7, 9, 13, 21 ],
+            "thursday": [ 6, 8, 12, 20 ],
+            "saturday": [ 5, 6, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
