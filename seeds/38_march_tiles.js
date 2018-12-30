@@ -1040,6 +1040,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FBFBFB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'Glass',
+          type: 'saturday',
+          src_string: '../img/march_tiles/moss-355359-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '182%',
+          color_dark: '#000000',
+          color_medium: '#D2D138',
+          color_light: '#FADB67',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
