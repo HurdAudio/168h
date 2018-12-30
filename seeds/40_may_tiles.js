@@ -1012,6 +1012,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#ECF0FF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'week',
+          src_string: '../img/may_tiles/hello-i-m-nik-713866-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#172816',
+          color_medium: '#006804',
+          color_light: '#B5C08D',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
