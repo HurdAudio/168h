@@ -4162,6 +4162,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 232,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2793565097/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/la-super-onda-vol-2-peru-latin-funk-soul-jazz-70s',
+          a_string: 'La Super Onda - Vol. 2 (Peru Latin Funk - Soul Jazz 70&#39;s) by Various Artists - La Onda',
+          rule: {
+            "monday": [ 9, 15, 21, 27 ],
+            "tuesday": [ 8, 14, 20, 26 ],
+            "wednesday": [ 5, 13, 19, 25 ],
+            "thursday": [ 4, 12, 18, 24 ],
+            "saturday": [ 5, 11, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 233,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=508122555/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/la-super-onda-vol-1-peru-latin-psych-rock-tropical-70s',
+          a_string: 'La Super Onda - Vol. 1 (Peru Latin Psych - Rock Tropical 70&#39;s) by Various Artists - La Onda',
+          rule: {
+            "monday": [ 5, 11, 17, 23 ],
+            "tuesday": [ 9, 15, 21, 27 ],
+            "wednesday": [ 8, 14, 20, 26 ],
+            "thursday": [ 5, 13, 19, 25 ],
+            "saturday": [ 4, 12, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 234,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3231574387/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/el-pito-descarga-latin-jazz-salsa-70s-ep',
+          a_string: 'El Pito (Descarga Latin Jazz Salsa 70&#39;s EP) by Nilo Espinosa y su Orquesta',
+          rule: {
+            "monday": [ 4, 12, 18, 24 ],
+            "tuesday": [ 5, 11, 17, 23 ],
+            "wednesday": [ 9, 15, 21, 27 ],
+            "thursday": [ 8, 14, 20, 26 ],
+            "saturday": [ 5, 13, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
