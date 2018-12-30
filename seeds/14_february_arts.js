@@ -9804,6 +9804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 491,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/SAAM-1974.28.108_1.jpg',
+          title: 'By Request',
+          artist: 'Charles Sallee',
+          year: 'c.1937',
+          rule: {
+            "monday": [ 13, 22, 1, 9 ],
+            "tuesday": [ 19, 24, 1, 11 ],
+            "wednesday": [ 18, 26, 5, 13 ],
+            "thursday":[ 20, 1, 7, 13 ],
+            "friday":  [ 22, 1, 9, 19 ],
+            "saturday": [ 22, 3, 28, 18 ],
+            "sunday": [ 12, 20, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 492,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/.Saunders-Duck_Waterjpg',
+          title: 'Duck Out of Water',
+          artist: 'Raymond Saunders',
+          year: '1975',
+          rule: {
+            "monday": [ 12, 20, 28, 7 ],
+            "tuesday": [ 13, 22, 1, 9 ],
+            "wednesday": [ 19, 24, 1, 11 ],
+            "thursday": [ 18, 26, 5, 13 ],
+            "friday": [ 20, 1, 7, 13 ],
+            "saturday": [ 22, 1, 9, 19 ],
+            "sunday": [ 22, 3, 28, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 493,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/augusta-savage-gamin.jpg',
+          title: 'Gamin',
+          artist: 'Augusta Savage',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 22, 3, 28, 18 ],
+            "tuesday": [ 12, 20, 28, 7 ],
+            "wednesday": [ 13, 22, 1, 9 ],
+            "thursday": [ 19, 24, 1, 11 ],
+            "friday": [ 18, 26, 5, 13 ],
+            "saturday": [ 20, 1, 7, 13 ],
+            "sunday": [ 22, 1, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 494,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/2cm698.jpg',
+          title: 'untitled',
+          artist: 'John T. Scott',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 22, 1, 9, 19 ],
+            "tuesday": [ 22, 3, 28, 18 ],
+            "wednesday": [ 12, 20, 28, 7 ],
+            "thursday": [ 13, 22, 1, 9 ],
+            "friday": [ 19, 24, 1, 11 ],
+            "saturday": [ 18, 26, 5, 13 ],
+            "sunday": [ 20, 1, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 495,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Scott_VirginofGuadalupe_Neckpiece.jpg',
+          title: 'Virgin of Guadalupe Neckpiece',
+          artist: 'Joyce J. Scott',
+          year: '?',
+          rule: {
+            "monday": [ 20, 1, 7, 13 ],
+            "tuesday": [ 22, 1, 9, 19 ],
+            "wednesday": [ 22, 3, 28, 18 ],
+            "thursday": [ 12, 20, 28, 7 ],
+            "friday": [ 13, 22, 1, 9 ],
+            "saturday": [ 19, 24, 1, 11 ],
+            "sunday": [ 18, 26, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
