@@ -7804,6 +7804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 391,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/20-00,GypsyGirl.jpg',
+          title: 'Gypsy Girl',
+          artist: 'Adolphe Barreaux',
+          year: '1920',
+          rule: {
+            "monday": [ 25, 7, 15, 21 ],
+            "tuesday": [ 24, 6, 14, 20 ],
+            "wednesday": [ 23, 4, 3, 19 ],
+            "thursday": [ 22, 4, 23, 30 ],
+            "friday": [ 28, 10, 18, 24 ],
+            "saturday": [ 27, 8, 17, 23 ],
+            "sunday": [ 26, 8, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 392,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/50-05,ExcW.jpg',
+          title: 'Exciting Western',
+          artist: 'Harry Barton',
+          year: '1950',
+          rule: {
+            "monday": [ 27, 9, 17, 23 ],
+            "tuesday": [ 26, 8, 16, 22 ],
+            "wednesday": [ 25, 7, 15, 21 ],
+            "thursday": [ 24, 5, 4, 20 ],
+            "friday": [ 23, 5, 24, 31 ],
+            "saturday": [ 29, 11, 19, 25 ],
+            "sunday": [ 28, 9, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 393,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/44-00,Mystery2.jpg',
+          title: 'Mystery Comics',
+          artist: 'Ken Battefield',
+          year: '1944',
+          rule: {
+            "monday": [ 28, 9, 18, 24 ],
+            "tuesday": [ 27, 9, 17, 23 ],
+            "wednesday": [ 26, 8, 16, 22 ],
+            "thursday": [ 25, 7, 15, 21 ],
+            "friday": [ 24, 5, 4, 20 ],
+            "saturday": [ 23, 5, 24, 31 ],
+            "sunday": [ 29, 11, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 394,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/1933-03,Doc.jpg',
+          title: 'Doc Savage',
+          artist: 'Walter Baumhofer',
+          year: '1933',
+          rule: {
+            "monday": [ 29, 11, 19, 25 ],
+            "tuesday": [ 28, 9, 18, 24 ],
+            "wednesday": [ 27, 9, 17, 23 ],
+            "thursday": [ 26, 8, 16, 22 ],
+            "friday": [ 25, 7, 15, 21 ],
+            "saturday": [ 24, 5, 4, 20 ],
+            "sunday": [ 23, 5, 24, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 395,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/30-00,GrossetDunlap.jpg',
+          title: 'Grosset & Dunlap',
+          artist: 'Robb Beebe',
+          year: '1930',
+          rule: {
+            "monday": [ 23, 5, 24, 31 ],
+            "tuesday": [ 29, 11, 19, 25 ],
+            "wednesday": [ 28, 9, 18, 24 ],
+            "thursday": [ 27, 9, 17, 23 ],
+            "friday": [ 26, 8, 16, 22 ],
+            "saturday": [ 25, 7, 15, 21 ],
+            "sunday": [ 24, 5, 4, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
