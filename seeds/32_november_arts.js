@@ -8004,6 +8004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 401,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/painting-91019-1991.jpg',
+          title: 'Painting #91019',
+          artist: 'Rudolf de Crignis',
+          year: '1991',
+          rule: {
+            "monday": [ 5, 10, 16, 21 ],
+            "tuesday": [ 4, 6, 14, 20 ],
+            "wednesday": [ 3, 7, 14, 18 ],
+            "thursday": [ 2, 5, 12, 17 ],
+            "friday": [ 1, 5, 12, 17 ],
+            "saturday": [ 30, 5, 11, 16 ],
+            "sunday": [ 29, 4, 10, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 402,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/umber-blue-1991-1.jpg',
+          title: 'Umber Blue',
+          artist: 'Yun Hyong–keun',
+          year: '1991',
+          rule: {
+            "monday": [ 29, 4, 10, 17 ],
+            "tuesday": [ 5, 10, 16, 21 ],
+            "wednesday": [ 4, 6, 14, 20 ],
+            "thursday": [ 3, 7, 14, 18 ],
+            "friday": [ 2, 5, 12, 17 ],
+            "saturday": [ 1, 5, 12, 17 ],
+            "sunday": [ 30, 5, 11, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 403,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/tulips-1992.jpg',
+          title: 'Tulips',
+          artist: 'Pat Lipsky',
+          year: '1992',
+          rule: {
+            "monday": [ 30, 5, 11, 16 ],
+            "tuesday": [ 29, 4, 10, 17 ],
+            "wednesday": [ 5, 10, 16, 21 ],
+            "thursday": [ 4, 6, 14, 20 ],
+            "friday": [ 3, 7, 14, 18 ],
+            "saturday": [ 2, 5, 12, 17 ],
+            "sunday": [ 1, 5, 12, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 404,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/the-2000-sculpture-1992.jpg',
+          title: 'The 2000 Sculpture',
+          artist: 'Walter De Maria',
+          year: '1992',
+          rule: {
+            "monday": [ 1, 5, 12, 17 ],
+            "tuesday": [ 30, 5, 11, 16 ],
+            "wednesday": [ 29, 4, 10, 17 ],
+            "thursday": [ 5, 10, 16, 21 ],
+            "friday": [ 4, 6, 14, 20 ],
+            "saturday": [ 3, 7, 14, 18 ],
+            "sunday": [ 2, 5, 12, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 405,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/yunus-i-1992.jpg',
+          title: 'Yunus I',
+          artist: 'Katsuhito Nishikawa',
+          year: '1992',
+          rule: {
+            "monday": [ 2, 5, 12, 17 ],
+            "tuesday": [ 1, 5, 12, 17 ],
+            "wednesday": [ 30, 5, 11, 16 ],
+            "thursday": [ 29, 4, 10, 17 ],
+            "friday": [ 5, 10, 16, 21 ],
+            "saturday": [ 4, 6, 14, 20 ],
+            "sunday": [ 3, 7, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
