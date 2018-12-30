@@ -984,6 +984,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FAFBFE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'sunday',
+          src_string: '../img/july_tiles/michael-weidner-978689-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#101D25',
+          color_medium: '#903E29',
+          color_light: '#ECB950',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
