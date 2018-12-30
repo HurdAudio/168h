@@ -9004,6 +9004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 451,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/stefan_beutler_photography_13.jpg',
+          title: 'untitled',
+          artist: 'Stefan Beutler',
+          year: '2014',
+          rule: {
+            "monday": [ 4, 14, 24, 1 ],
+            "tuesday": [ 3, 13, 24, 1 ],
+            "wednesday": [ 2, 12, 22, 30 ],
+            "thursday": [ 1, 11, 21, 29 ],
+            "friday": [ 10, 20, 30, 28 ],
+            "saturday": [ 29, 9, 19, 27 ],
+            "sunday": [ 28, 8, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 452,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/stefan_beutler_photography_03.jpg',
+          title: 'untitled',
+          artist: 'Stefan Beutler',
+          year: '2014',
+          rule: {
+            "monday": [ 28, 8, 18, 26 ],
+            "tuesday": [ 4, 14, 24, 1 ],
+            "wednesday": [ 3, 13, 24, 1 ],
+            "thursday": [ 2, 12, 22, 30 ],
+            "friday": [ 1, 11, 21, 29 ],
+            "saturday": [ 10, 20, 30, 28 ],
+            "sunday": [ 29, 9, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 453,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/stefan_beutler_photography_15.jpg',
+          title: 'untitled',
+          artist: 'Stefan Beutler',
+          year: '2014',
+          rule: {
+            "monday": [ 29, 9, 19, 27 ],
+            "tuesday": [ 28, 8, 18, 26 ],
+            "wednesday": [ 4, 14, 24, 1 ],
+            "thursday": [ 3, 13, 24, 1 ],
+            "friday": [ 2, 12, 22, 30 ],
+            "saturday": [ 1, 11, 21, 29 ],
+            "sunday": [ 10, 20, 30, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 454,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/stefan_beutler_photography_16.jpg',
+          title: 'untitled',
+          artist: 'Stefan Beutler',
+          year: '2014',
+          rule: {
+            "monday": [ 10, 20, 30, 28 ],
+            "tuesday": [ 29, 9, 19, 27 ],
+            "wednesday": [ 28, 8, 18, 26 ],
+            "thursday": [ 4, 14, 24, 1 ],
+            "friday": [ 3, 13, 24, 1 ],
+            "saturday": [ 2, 12, 22, 30 ],
+            "sunday": [ 1, 11, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 455,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/stefan_beutler_photography_18.jpg',
+          title: 'untitled',
+          artist: 'Stefan Beutler',
+          year: '2014',
+          rule: {
+            "monday": [ 2, 12, 22, 30 ],
+            "tuesday": [ 11, 21, 1, 29 ],
+            "wednesday": [ 30, 10, 20, 28 ],
+            "thursday": [ 29, 9, 19, 27 ],
+            "friday": [ 5, 15, 25, 2 ],
+            "saturday": [ 4, 14, 25, 2 ],
+            "sunday": [ 3, 13, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
