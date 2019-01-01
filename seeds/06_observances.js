@@ -5120,7 +5120,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 324,
           user_id: 1,
-          name: 'The world ended on this day in 2000 as per the prophsey of Jerry Falwell.',
+          name: 'The world ended on this day in 2000 as per the prophesy of Jerry Falwell.',
           color: '#908C73',
           picture: './img/doomsday/fallwellisachump.jpg',
           day_of: new Date ('2000-01-01T13:44:00.000Z'),
