@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
     table.increments().primary();
     table.integer('user_id').notNullable().defaultTo(1).references('id').inTable('users').onDelete('CASCADE').index();
     table.string('theme').notNullable().defaultTo('baseball');
-    table.string('img_path').notNullable().defaultTo('');
+    table.text('img_path').notNullable().defaultTo('');
     table.string('title').notNullable().defaultTo('');
     table.string('artist').notNullable().defaultTo('');
     table.string('year').notNullable().defaultTo('');
