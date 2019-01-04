@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
     table.integer('user_id').notNullable().defaultTo(1).references('id').inTable('users').onDelete('CASCADE').index();
     table.string('theme').notNullable().defaultTo('monochromatic');
     table.string('type').notNullable().defaultTo('default');
-    table.string('src_string').notNullable().defaultTo('');
+    table.text('src_string').notNullable().defaultTo('');
     table.string('repeat_value').notNullable().defaultTo('no-repeat');
     table.string('size_value').notNullable().defaultTo('100%');
     table.string('color_dark').notNullable().defaultTo('#ffffff');
