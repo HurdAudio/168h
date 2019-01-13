@@ -10595,6 +10595,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 680,
+          user_id: 1,
+          name: 'Toussaint L\'Ouverture (Hatian revolutionary) born in 1743',
+          color: '#7BA0CD',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/Ge%CC%81ne%CC%81ral_Toussaint_Louverture.jpg',
+          day_of: new Date ('1743-05-20T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 681,
+          user_id: 1,
+          name: 'James Connolly (Irish socialist leader) born 1868',
+          color: '#2F2F2F',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/James_Connolly2.jpg',
+          day_of: new Date ('1868-06-05T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
