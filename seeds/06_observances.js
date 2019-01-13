@@ -2018,7 +2018,7 @@ exports.seed = function(knex, Promise) {
           name: 'Herbie Nichols (pianist/composer), born 1919',
           color: '#D2D2D2',
           picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/herbienichols.jpg',
-          day_of: new Date ('1919-01-13T13:44:00.000Z'),
+          day_of: new Date ('1919-01-03T13:44:00.000Z'),
           is_annual: true,
           art_override: false,
           music_override: false,
