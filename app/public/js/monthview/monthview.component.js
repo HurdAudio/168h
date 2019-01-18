@@ -701,9 +701,9 @@
         //console.log(viewYear);
 
         switch(viewMonth) {
-           // case('January'):
-           //   monthTilesString = 'january_tilesbyuser';
-           //   break;
+           case('January'):
+             monthTilesString = 'january_tilesbyuser';
+             break;
           case('February'):
             monthTilesString = 'february_tilesbyuser';
             break;
