@@ -297,6 +297,19 @@
       vm.userEditArtModuleCommentCompleted = userEditArtModuleCommentCompleted;
       vm.userEditArtShareComment = userEditArtShareComment;
       vm.userEditArtShareCommentCompleted = userEditArtShareCommentCompleted;
+      vm.deleteArtShare = deleteArtShare;
+
+      function deleteArtShare(artId) {
+        $http.delete(`/art_shares/${artId}`)
+        .then(deletedArtShareData => {
+          let deletedArtShare = deletedArtShareData.data[0];
+          for (let i = 0; i <vm.activeArtShares.length; i++) {
+            if (parseInt(vm.activeArtShares[i].id) === parseInt(artId)) {
+              vm.activeArtShares.splice(i, 1);
+            }
+          }
+        });
+      }
 
       function userEditArtShareCommentCompleted(commentId, artId) {
         let thisIsTheArtShareCommentEditor = document.getElementById('thisIsTheArtShareCommentEditor' + commentId);
@@ -1121,6 +1134,7 @@
             setTimeout(() => {
               for (let j = 0; j < vm.activeArtShares.length; j++) {
                 if ((parseInt(vm.activeArtShares[j].share_associate_id) === parseInt(currentUserId))) {
+                  document.getElementById('thisIsArtShareDeleteDiv' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
                   document.getElementById('artblockInviter' + vm.activeArtShares[j].id).setAttribute("style", "display: initial;");
                   document.getElementById('artblockInvitee' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
                   if (vm.activeArtShares[j].responded) {
@@ -1138,6 +1152,7 @@
                     document.getElementById('artShareDeclined' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
                   }
                 } else {
+                  document.getElementById('thisIsArtShareDeleteDiv' + vm.activeArtShares[j].id).setAttribute("style", "display: initial;");
                   document.getElementById('artblockInviter' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
                   document.getElementById('artblockInvitee' + vm.activeArtShares[j].id).setAttribute("style", "display: initial;");
                   document.getElementById('artAcceptDecline' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");

@@ -4395,7 +4395,7 @@
           <main ng-repeat="art in $ctrl.activeArtShares | orderBy : $ctrl.sortBy">
             <div id="thisIsArtShareDeleteDiv{{art.id}}" class="profileDeleteOption">
 
-              <!-- <a class="btn" href="#" ng-click="$ctrl.deleteObservanceShare(observe.id)">delete</a><br><br> -->
+              <a class="btn" href="#" ng-click="$ctrl.deleteArtShare(art.id)">delete</a><br><br>
             </div>
 
 
