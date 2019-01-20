@@ -10623,6 +10623,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 682,
+          user_id: 1,
+          name: 'The world may have ended on this day in 2019 - or it may not - according to Pastor Paul Begley as he hedges his bets in the wake of a Super Blood Wolf Moon.',
+          color: '#D9DBDA',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/doomsday/PaulBegley473.jpg',
+          day_of: new Date ('2019-01-22T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 683,
+          user_id: 1,
+          name: 'Mark Natanson (revolutionary/co-founder of the Circle of Tchaikovsky, Land and Liberty, and the Socialist-Revolutionary Party) born in 1851',
+          color: '#8E825C',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/Felix_Vallotton_Alfred-Athis_Natanson.jpg',
+          day_of: new Date ('1851-01-06T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
