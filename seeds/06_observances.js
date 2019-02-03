@@ -6215,7 +6215,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 394,
           user_id: 1,
-          name: 'The Perks of Being a Wallflower by Stephen Chbosky published in 1999 and frequenly challenged and banned in public school libraries.',
+          name: 'The Perks of Being a Wallflower by Stephen Chbosky published in 1999 and frequently challenged and banned in public school libraries.',
           color: '#61A3CF',
           picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/books/theperksofbeingawallflower.jpg',
           day_of: new Date ('1999-02-01T13:44:00.000Z'),
@@ -6250,7 +6250,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           name: 'Alexander von Schlippenbach (pianist), born 1938',
           color: '#FDF5CD',
-          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/alexandervonschlippenbach.jpg',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/alexandervonschlippenbach.JPG',
           day_of: new Date ('1938-04-07T13:44:00.000Z'),
           is_annual: true,
           art_override: false,
