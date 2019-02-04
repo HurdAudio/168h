@@ -1087,7 +1087,7 @@ exports.seed = function(knex, Promise) {
           id: 78,
           user_id: 1,
           theme: 'Silk/Velvet',
-          type: 'friday',
+          type: 'week',
           src_string: 'https://s3.amazonaws.com/hours168-hurdaudio/img/february_tiles/red-wine-1747661_1920.jpg',
           repeat_value: 'no-repeat',
           size_value: '115%',
