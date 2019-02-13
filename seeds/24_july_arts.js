@@ -9190,7 +9190,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'French',
           img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/july/recoloration-des-cheveux-par-l-eau-des-sir-nes-1900.jpg',
-          title: 'Recoloration des Cheveux par l'Eau des Sirènes',
+          title: 'Recoloration des Cheveux par l\'Eau des Sirènes',
           artist: 'Jules Cheret',
           year: '1900',
           rule: {
