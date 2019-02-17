@@ -4149,13 +4149,9 @@
 
                     <h3>Delete comment forever?</h3>
                     <a class="btn" href="#" ng-click="$ctrl.userArtModuleCommentDeleteCancel(comment.id)">no</a>
-                    <a class="btn" href="#" ng-click="$ctrl.userArtModuleCommentDeleteConfirmClick(comment.id, artmod.id)">yes</a>
+                    <a class="btn" href="#" ng-click="$ctrl.userArtModuleCommentDeleteConfirmClick(comment.id)">yes</a>
                   </div>
 
-                  <div id="editDeleteArtModuleCommentDiv{{comment.id}}" class="messageEditDelete">
-                    <a class="btn" href="#" ng-click="$ctrl.userEditArtModuleComment(comment.id)">edit</a>
-                    <a class="btn" href="#" ng-click="$ctrl.userDeleteArtModuleComment(comment.id)">delete</a>
-                  </div>
                 </main>
               </div>
 
