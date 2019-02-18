@@ -374,7 +374,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Greenery',
           type: 'holiday',
-          src_string: 'https://s3.amazonaws.com/hours168-hurdaudio/img/may_tiles/640px-Jasmine0001.jpg',
+          src_string: 'https://s3.amazonaws.com/hours168-hurdaudio/img/may_tiles/640px-Jasmine0001.JPG',
           repeat_value: 'no-repeat',
           size_value: '135%',
           color_dark: '#141D03',

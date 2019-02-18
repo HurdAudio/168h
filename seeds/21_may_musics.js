@@ -1396,7 +1396,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Avant Garde/New Music',
           source: 'bandcamp',
-          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2761995487/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1319986649/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://1631recordings.bandcamp.com/album/escapism',
           a_string: 'Escapism by Library Tapes',
           rule: {
@@ -1720,9 +1720,9 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Avant Garde/New Music',
           source: 'bandcamp',
-          src_string: 'https://bandcamp.com/EmbeddedPlayer/track=2568384470/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          href_string: 'http://modernarecords.bandcamp.com/track/homeless',
-          a_string: 'Homeless by Snorri Hallgrímsson',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=839906379/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://modernarecords.bandcamp.com/album/glass-island',
+          a_string: 'Glass Island by Richard Luke',
           rule: {
             "monday": [ 17, 23, 30, 12 ],
             "tuesday": [ 16, 22, 29, 11 ],
@@ -2152,8 +2152,8 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Avant Garde/New Music',
           source: 'bandcamp',
-          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3940801723/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          href_string: 'http://newfocusrecordings.bandcamp.com/album/garden-of-diverging-paths',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1750424019/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/garden-of-diverging-paths-2',
           a_string: 'Garden of Diverging Paths by Mivos String Quartet',
           rule: {
             "monday": [ 20, 26, 2, 15 ],
@@ -2495,8 +2495,8 @@ exports.seed = function(knex, Promise) {
           theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1844295587/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          href_string: 'http://injazerorecords.bandcamp.com/album/exit-ruminationExit Rumination by C. Diab',
-          a_string: '',
+          href_string: 'http://injazerorecords.bandcamp.com/album/exit-rumination',
+          a_string: 'Exit Rumination by C. Diab',
           rule: {
             "monday": [ 21, 27, 3, 16 ],
             "tuesday": [ 20, 26, 2, 15 ],
