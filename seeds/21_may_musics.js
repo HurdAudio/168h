@@ -1954,9 +1954,9 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Avant Garde/New Music',
           source: 'bandcamp',
-          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=489770131/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          href_string: 'http://rainingyu.bandcamp.com/album/the-lost-memory',
-          a_string: 'The Lost Memory by Raining Yu',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=333507559/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://yarnwire.bandcamp.com/album/images-of-duration',
+          a_string: 'Images of Duration by Yarn/Wire',
           rule: {
             "monday": [ 17, 23, 30, 12 ],
             "tuesday": [ 16, 22, 29, 11 ],
@@ -2818,7 +2818,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Avant Garde/New Music',
           source: 'bandcamp',
-          src_string: 'ttps://bandcamp.com/EmbeddedPlayer/album=452161510/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=452161510/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bedroomcommunity.bandcamp.com/album/dissonance',
           a_string: 'Dissonance by Valgeir Sigurðsson',
           rule: {
