@@ -10707,6 +10707,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 688,
+          user_id: 1,
+          name: 'Paul Goodman (novelist/playwright/poet/literary critic/psychoanalyst/anarchist) born in 1911.',
+          color: '#404040',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/Paul_Goodman.jpg',
+          day_of: new Date ('1911-09-09T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 689,
+          user_id: 1,
+          name: 'Dwight Macdonald (writer/editor/film critic/social critic/philosopher/anarchist) born in 1906.',
+          color: '#3C3C3C',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/Dwight-Macdonald-smoking--007.jpg',
+          day_of: new Date ('1906-03-24T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
