@@ -456,6 +456,40 @@
         })
       }
 
+      function obtainMusicShareCommenterDatas(comment, index, commentIndex) {
+        $http.get(`/users/${comment.user_id}`)
+        .then(commenterData => {
+          let commenter = commenterData.data;
+          vm.activeMusicShares[index].comments[commentIndex].user_avatar_url = commenter.user_avatar_url;
+          vm.activeMusicShares[index].comments[commentIndex].name = commenter.name;
+        });
+      }
+
+      function retrieveMusicShareComments(musicShare, index) {
+        let check;
+
+        $http.get('music_share_comments')
+        .then(allMusicShareCommentsData => {
+          let allMusicShareComments = allMusicShareCommentsData.data;
+          let musicShareComments = allMusicShareComments.filter(com => {
+            return(parseInt(com.music_share) === parseInt(musicShare.id));
+          });
+          if (musicShareComments.length > 0) {
+            vm.activeMusicShares[index].comments = [];
+            for (let i = 0; i < musicShareComments.length; i++) {
+              check = new Date(musicShareComments[i].updated_at);
+              vm.activeMusicShares[index].comments[i] = {
+                id: musicShareComments[i].id,
+                comment: musicShareComments[i].comment,
+                cleanDate: cleanDateHoliday(musicShareComments[i].created_at) + ' at ' + check.toLocaleTimeString('en-GB') + '.'
+              };
+              obtainMusicShareCommenterDatas(musicShareComments[i], index, i);
+
+            }
+          }
+        });
+      }
+
       function retrieveUserMusicShares() {
         let datea;
         let dateb;
@@ -488,6 +522,7 @@
               };
               obtainMusicSharerData(musicShares[i], i);
               obtainMusicShareMusic(musicShares[i], i);
+              retrieveMusicShareComments(musicShares[i], i);
             }
             setTimeout(() => {
               for (let j = 0; j < vm.activeMusicShares.length; j++) {
