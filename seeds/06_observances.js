@@ -511,7 +511,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          name: 'Elmer Gantry by Sinclair Lewis, published in 1927. Banned in Boston and other cities and denounced from pulpits accross the US.',
+          name: 'Elmer Gantry by Sinclair Lewis, published in 1927. Banned in Boston and other cities and denounced from pulpits across the US.',
           color: '#E6CE6D',
           picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/books/elmergantry.jpg',
           day_of: new Date ('1927-03-01T13:44:00.000Z'),
