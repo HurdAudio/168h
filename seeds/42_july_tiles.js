@@ -723,7 +723,7 @@ exports.seed = function(knex, Promise) {
           id: 52,
           user_id: 1,
           theme: 'Steam',
-          type: 'holdiay',
+          type: 'holiday',
           src_string: 'https://s3.amazonaws.com/hours168-hurdaudio/img/july_tiles/chuttersnap-553854-unsplash.jpg',
           repeat_value: 'no-repeat',
           size_value: '100%',

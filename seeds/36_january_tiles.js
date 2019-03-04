@@ -1115,7 +1115,7 @@ exports.seed = function(knex, Promise) {
           id: 80,
           user_id: 1,
           theme: 'Ice',
-          type: 'saturuday',
+          type: 'saturday',
           src_string: 'https://s3.amazonaws.com/hours168-hurdaudio/img/january_tiles/explore-the-ice-cave-tunnels-inside-langjoekull-glacier-on-this-exciting-tour.jpeg',
           repeat_value: 'no-repeat',
           size_value: '160%',
