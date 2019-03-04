@@ -2925,7 +2925,8 @@ footer img {
   background-repeat: repeat;
   background-size: 95%;
   height: 38.1em;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #userEditor {
