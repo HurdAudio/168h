@@ -230,6 +230,33 @@
   </div>
 </div>
 
+<div id="shareArtPane">
+  <a class="btn" ng-click="$ctrl.cancelArtShareInvite()" href="#">cancel</a>
+  <div id="artShareIdentifierFields">
+
+    <img id="artShareImage">
+
+    <h3 id="artShareArtist"></h3>
+    <h3 id="artShareTitleDate"></h3>
+
+
+  </div>
+  <h3>Select who you want to share this art with:</h3>
+  <div id="shareArtSearchBarDiv">
+    <input type="text" id="taskWhoToShareArtSearch" placeholder="search">
+  </div>
+  <div id="artFriendsSearchList">
+
+
+    <div>
+
+      <img src="https://pbs.twimg.com/profile_images/3511787126/e23647c60fe7cee53e4d2d37a50a255c_400x400.jpeg">
+      <p>Lucifer Sam</p>
+      <br><br><br>
+    </div>
+  </div>
+</div>
+
 <div id="acceptArtPane">
 
   <h1>Add Shared Art:</h1>
@@ -1053,7 +1080,8 @@
                     <div class="goalEdit">
                       <a href="" class="btn" ng-click="$ctrl.editArtCurrate('january_arts', art.id)">edit</a>
                       <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('january_arts', art.id)">delete</a>
-                    </div><br><br><br>
+                      <a href="" class="btn" ng-click="$ctrl.shareCurratedArt('january_arts', art.id)">share</a>
+                    </div><br><br><br><br><br><br>
                   </div>
                 </main>
               </div>
@@ -1128,7 +1156,8 @@
                     <div class="goalEdit">
                       <a href="" class="btn" ng-click="$ctrl.editArtCurrate('february_arts', art.id)">edit</a>
                       <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('february_arts', art.id)">delete</a>
-                    </div><br><br><br>
+                      <a href="" class="btn" ng-click="$ctrl.shareCurratedArt('february_arts', art.id)">share</a>
+                    </div><br><br><br><br><br><br>
                   </div>
                 </main>
               </div>
@@ -1205,7 +1234,8 @@
                     <div class="goalEdit">
                       <a href="" class="btn" ng-click="$ctrl.editArtCurrate('march_arts', art.id)">edit</a>
                       <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('march_arts', art.id)">delete</a>
-                    </div><br><br><br>
+                      <a href="" class="btn" ng-click="$ctrl.shareCurratedArt('march_arts', art.id)">share</a>
+                    </div><br><br><br><br><br><br>
                   </div>
                 </main>
               </div>
@@ -1281,7 +1311,8 @@
                     <div class="goalEdit">
                       <a href="" class="btn" ng-click="$ctrl.editArtCurrate('april_arts', art.id)">edit</a>
                       <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('april_arts', art.id)">delete</a>
-                    </div><br><br><br>
+                      <a href="" class="btn" ng-click="$ctrl.shareCurratedArt('april_arts', art.id)">share</a>
+                    </div><br><br><br><br><br><br>
                   </div>
                 </main>
               </div>
@@ -1358,7 +1389,8 @@
                     <div class="goalEdit">
                       <a href="" class="btn" ng-click="$ctrl.editArtCurrate('may_arts', art.id)">edit</a>
                       <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('may_arts', art.id)">delete</a>
-                    </div><br><br><br>
+                      <a href="" class="btn" ng-click="$ctrl.shareCurratedArt('may_arts', art.id)">share</a>
+                    </div><br><br><br><br><br><br>
                   </div>
                 </main>
               </div>
@@ -1435,7 +1467,8 @@
                     <div class="goalEdit">
                       <a href="" class="btn" ng-click="$ctrl.editArtCurrate('june_arts', art.id)">edit</a>
                       <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('june_arts', art.id)">delete</a>
-                    </div><br><br><br>
+                      <a href="" class="btn" ng-click="$ctrl.shareCurratedArt('june_arts', art.id)">share</a>
+                    </div><br><br><br><br><br><br>
                   </div>
                 </main>
               </div>
@@ -1513,7 +1546,8 @@
                     <div class="goalEdit">
                       <a href="" class="btn" ng-click="$ctrl.editArtCurrate('july_arts', art.id)">edit</a>
                       <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('july_arts', art.id)">delete</a>
-                    </div><br><br><br>
+                      <a href="" class="btn" ng-click="$ctrl.shareCurratedArt('july_arts', art.id)">share</a>
+                    </div><br><br><br><br><br><br>
                   </div>
                 </main>
               </div>
@@ -1591,7 +1625,8 @@
                     <div class="goalEdit">
                       <a href="" class="btn" ng-click="$ctrl.editArtCurrate('august_arts', art.id)">edit</a>
                       <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('august_arts', art.id)">delete</a>
-                    </div><br><br><br>
+                      <a href="" class="btn" ng-click="$ctrl.shareCurratedArt('august_arts', art.id)">share</a>
+                    </div><br><br><br><br><br><br>
                   </div>
                 </main>
               </div>
@@ -1669,7 +1704,8 @@
                     <div class="goalEdit">
                       <a href="" class="btn" ng-click="$ctrl.editArtCurrate('september_arts', art.id)">edit</a>
                       <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('september_arts', art.id)">delete</a>
-                    </div><br><br><br>
+                      <a href="" class="btn" ng-click="$ctrl.shareCurratedArt('september_arts', art.id)">share</a>
+                    </div><br><br><br><br><br><br>
                   </div>
                 </main>
               </div>
@@ -1747,7 +1783,8 @@
                     <div class="goalEdit">
                       <a href="" class="btn" ng-click="$ctrl.editArtCurrate('october_arts', art.id)">edit</a>
                       <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('october_arts', art.id)">delete</a>
-                    </div><br><br><br>
+                      <a href="" class="btn" ng-click="$ctrl.shareCurratedArt('october_arts', art.id)">share</a>
+                    </div><br><br><br><br><br><br>
                   </div>
                 </main>
               </div>
@@ -1824,7 +1861,8 @@
                     <div class="goalEdit">
                       <a href="" class="btn" ng-click="$ctrl.editArtCurrate('november_arts', art.id)">edit</a>
                       <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('november_arts', art.id)">delete</a>
-                    </div><br><br><br>
+                      <a href="" class="btn" ng-click="$ctrl.shareCurratedArt('november_arts', art.id)">share</a>
+                    </div><br><br><br><br><br><br>
                   </div>
                 </main>
               </div>
@@ -1902,7 +1940,8 @@
                     <div class="goalEdit">
                       <a href="" class="btn" ng-click="$ctrl.editArtCurrate('december_arts', art.id)">edit</a>
                       <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('december_arts', art.id)">delete</a>
-                    </div><br><br><br>
+                      <a href="" class="btn" ng-click="$ctrl.shareCurratedArt('december_arts', art.id)">share</a>
+                    </div><br><br><br><br><br><br>
                   </div>
                 </main>
               </div>
