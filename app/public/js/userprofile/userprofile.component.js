@@ -305,6 +305,48 @@
       vm.userArtModuleCommentDeleteConfirmClick = userArtModuleCommentDeleteConfirmClick;
       vm.declineMusicShare = declineMusicShare;
       vm.acceptMusicShare = acceptMusicShare;
+      vm.userDeleteArtShareComment = userDeleteArtShareComment;
+      vm.userArtShareCommentDeleteCancel = userArtShareCommentDeleteCancel;
+      vm.userArtShareCommentDeleteConfirmClick = userArtShareCommentDeleteConfirmClick;
+
+      function userArtShareCommentDeleteConfirmClick(artId, commentId) {
+        let editDeleteArtShareCommentDiv = document.getElementById('editDeleteArtShareCommentDiv' + commentId);
+        let deleteArtShareCommentConfirm = document.getElementById('deleteArtShareCommentConfirm' + artId + commentId);
+
+        $http.delete(`/art_share_comments/${commentId}`)
+        .then(deletedCommentData => {
+          let deletedComment = deletedCommentData.data;
+          for (let i = 0; i < vm.activeArtShares.length; i++) {
+            if (parseInt(vm.activeArtShares[i].id) === parseInt(artId)) {
+              for (let j = 0; j < vm.activeArtShares[i].comments.length; j++) {
+                if (parseInt(vm.activeArtShares[i].comments[j].id) === commentId) {
+                  vm.activeArtShares[i].comments.splice(j, 1);
+                  return;
+                }
+              }
+            }
+          }
+        });
+
+        editDeleteArtShareCommentDiv.setAttribute("style", "display: initial;");
+        deleteArtShareCommentConfirm.setAttribute("style", "display: none;");
+      }
+
+      function userArtShareCommentDeleteCancel(artId, commentId) {
+        let editDeleteArtShareCommentDiv = document.getElementById('editDeleteArtShareCommentDiv' + commentId);
+        let deleteArtShareCommentConfirm = document.getElementById('deleteArtShareCommentConfirm' + artId + commentId);
+
+        editDeleteArtShareCommentDiv.setAttribute("style", "display: initial;");
+        deleteArtShareCommentConfirm.setAttribute("style", "display: none;");
+      }
+
+      function userDeleteArtShareComment(artId, commentId) {
+        let editDeleteArtShareCommentDiv = document.getElementById('editDeleteArtShareCommentDiv' + commentId);
+        let deleteArtShareCommentConfirm = document.getElementById('deleteArtShareCommentConfirm' + artId + commentId);
+
+        editDeleteArtShareCommentDiv.setAttribute("style", "display: none;");
+        deleteArtShareCommentConfirm.setAttribute("style", "display: initial;");
+      }
 
       function secureMusicThemeFromMonth(musicMonth, musicShareAcceptUserThemeInputDiv, musicShareThemeLabel) {
         let month = musicMonth + 'byuser';

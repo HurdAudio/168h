@@ -4486,16 +4486,16 @@
                 <div class="thisIsArtShareCommentEditDoneDiv" id="thisIsArtCommentEditDoneDiv{{comment.id}}"><a class="btn" id="thisIsTheArtShareCommentEditorDoneButton{{comment.id}}" href="#" ng-click="$ctrl.userEditArtShareCommentCompleted(comment.id, art.id)">done</a></div>
                 <h3 id="thisIsArtShareCommentComment{{comment.id}}">{{comment.comment}}</h3><br>
 
-                <!-- <div id="deleteArtShareCommentConfirm{{art.id}}{{comment.id}}" class="messageEditDelete">
+                <div id="deleteArtShareCommentConfirm{{art.id}}{{comment.id}}" class="messageEditDelete">
 
                   <h3>Delete comment forever?</h3>
-                  <a class="btn" href="#" ng-click="$ctrl.userArtShareCommentDeleteCancel(art.id)">no</a>
-                  <a class="btn" href="#" ng-click="$ctrl.userArtShareCommentDeleteConfirmClick(art.id)">yes</a>
-                </div> -->
+                  <a class="btn" href="#" ng-click="$ctrl.userArtShareCommentDeleteCancel(art.id, comment.id)">no</a>
+                  <a class="btn" href="#" ng-click="$ctrl.userArtShareCommentDeleteConfirmClick(art.id, comment.id)">yes</a>
+                </div>
 
                 <div id="editDeleteArtShareCommentDiv{{comment.id}}" class="messageEditDelete">
                   <a class="btn" href="#" ng-click="$ctrl.userEditArtShareComment(comment.id, art.id)">edit</a>
-                  <a class="btn" href="#" ng-click="$ctrl.userDeleteArtShareComment(comment.id)">delete</a>
+                  <a class="btn" href="#" ng-click="$ctrl.userDeleteArtShareComment(art.id, comment.id)">delete</a>
                 </div><br><br><br><br>
               </main>
             </div>
