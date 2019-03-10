@@ -10735,6 +10735,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 690,
+          user_id: 1,
+          name: 'Moses Harman (anarchist/school teacher) born 1830',
+          color: '#2F2F2F',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/Moses_Harman.jpg',
+          day_of: new Date ('1830-10-12T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 691,
+          user_id: 1,
+          name: 'Lillian Harman (anarchist/sex radical feminist) born 1869.',
+          color: '#D4D4D4',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/lillian.png',
+          day_of: new Date ('1896-12-15T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
