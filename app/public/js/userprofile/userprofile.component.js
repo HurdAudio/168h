@@ -2384,6 +2384,7 @@
         let aDate;
         let bDate;
         let check;
+        let checkUp;
 
         $http.get('/observance_share_comments')
         .then(allObservanceShareData => {
@@ -2403,7 +2404,13 @@
               vm.activeObservanceShares[index].comments[i].comment = observanceComments[i].comment;
               vm.activeObservanceShares[index].comments[i].id = observanceComments[i].id;
               check = new Date(observanceComments[i].created_at);
-              vm.activeObservanceShares[index].comments[i].cleanDate = cleanDateHoliday(observanceComments[i].created_at) + ' at ' + check.toLocaleTimeString('en-GB') + '.';
+              checkUp = new Date(observanceComments[i].updated_at);
+              if ((checkUp.getTime() - check.getTime()) > 10000) {
+                vm.activeObservanceShares[index].comments[i].cleanDate = cleanDateHoliday(observanceComments[i].created_at) + ' at ' + check.toLocaleTimeString('en-GB') + ' - updated at ' + cleanDateHoliday(observanceComments[i].updated_at) + ' at ' + checkUp.toLocaleTimeString('en-GB') + '.';
+              } else {
+                vm.activeObservanceShares[index].comments[i].cleanDate = cleanDateHoliday(observanceComments[i].created_at) + ' at ' + check.toLocaleTimeString('en-GB') + '.';
+              }
+
               obtainObservanceCommenterDatas(observanceComments[i], index, i);
               vm.activeObservanceShares[index].comments[i].user_id = observanceComments[i].user_id;
             }
@@ -2427,12 +2434,19 @@
 
       function retrieveUserObservanceShares() {
         let check;
+        let shareDate;
+        let expireDate = new Date();
+        expireDate.setDate(expireDate.getDate() - 30);
 
         $http.get('/observance_shares')
         .then(allObservanceData => {
           let allObservance = allObservanceData.data;
           let userObservanceShares = allObservance.filter(entry => {
             return((parseInt(entry.user_id) === parseInt(currentUserId)) || (parseInt(entry.share_associate_id) === parseInt(currentUserId)));
+          });
+          userObservanceShares = userObservanceShares.filter(share => {
+            shareDate = new Date(share.created_at);
+            return(shareDate.getTime() > expireDate.getTime());
           });
           if (userObservanceShares.length > 0) {
             vm.activeObservanceShares = [];
