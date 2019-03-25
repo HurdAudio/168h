@@ -1138,6 +1138,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FAFCD3',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'Glass',
+          type: 'holiday',
+          src_string: 'https://s3.amazonaws.com/hours168-hurdaudio/img/march_tiles/neoBrokenWindow.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#0D0C0A',
+          color_medium: '#47678E',
+          color_light: '#E3B6A3',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
