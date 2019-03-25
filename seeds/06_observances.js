@@ -1129,7 +1129,7 @@ exports.seed = function(knex, Promise) {
           name: 'Cecil Taylor (pianist/composer), born 1929',
           color: '#767676',
           picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/ceciltaylor.jpg',
-          day_of: new Date ('1929-03-25T13:44:00.000Z'),
+          day_of: new Date ('1929-03-15T13:44:00.000Z'),
           is_annual: true,
           art_override: false,
           music_override: true,
