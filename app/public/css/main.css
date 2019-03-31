@@ -1732,9 +1732,9 @@ a.btn:hover {
   margin-left: 18vmin;
 }
 
-/* .userTilesShareImageDiv {
+.userTilesShareImageDiv {
   margin-left: 18vmin;
-} */
+}
 
 #userTilesCurratorImageUploaderDiv {
   visibility: hidden;

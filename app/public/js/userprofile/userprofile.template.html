@@ -4641,11 +4641,11 @@
       <div id="tileSharesNotifier">
 
         <div class="whoScheduledMe">
-          <!-- <main ng-repeat="music in $ctrl.activeMusicShares | orderBy : $ctrl.sortBy"> -->
-            <!-- <div id="thisIsMusicShareDeleteDiv{{music.id}}" class="profileDeleteOption"> -->
+          <main ng-repeat="tile in $ctrl.activeTileShares | orderBy : $ctrl.sortBy">
+            <div id="thisIsTileShareDeleteDiv{{tile.id}}" class="profileDeleteOption">
 
               <!-- <a class="btn" href="#" ng-click="$ctrl.deleteObservanceShare(observe.id)">delete</a><br><br> -->
-            <!-- </div> -->
+            </div>
 
 
             <img src="{{tile.inv_img}}"><br>
@@ -4654,7 +4654,7 @@
 
             <br><br><br><br><br><br>
             <div class="tilesOnDisplay">
-              <div class="userTilesShareImageDiv displayDay" style="background-image: url({{tile.img_path}}); background-repeat: {{tile.repeatValue}}; background-size: {{tile.size}};">
+              <div class="userTilesShareImageDiv displayDay" id="theSharedTile{{tile.id}}">
 
                 <h1 id="tilesCurratorDate{{tile.id}}">{{tile.currateDate}}</h1>
               </div>
@@ -4707,7 +4707,7 @@
                 </div><br><br><br><br>
               <!-- </main> -->
             </div>
-          <!-- </main> -->
+          </main>
         </div>
 
 
