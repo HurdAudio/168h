@@ -4489,7 +4489,7 @@ exports.seed = function(knex, Promise) {
           id: 225,
           user_id: 1,
           theme: 'Photography',
-          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/june/Ratcliffe+Power+Station,+Study+46,+Nottinghamshire,+England,+2003.jpeg',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/june/RATCLIFFE-POWER-STATION-STUDY-46-NOTTINGHAMSHIRE-ENGLAND-2003-by-MICHAEL-KENNA-C31820.jpg',
           title: 'Ratcliffe Power Station, Study 46, Nottinghamshire, England',
           artist: 'Michael Kenna',
           year: '2003',
