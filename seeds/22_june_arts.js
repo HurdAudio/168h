@@ -6929,7 +6929,7 @@ exports.seed = function(knex, Promise) {
           id: 347,
           user_id: 1,
           theme: 'Photography',
-          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/june/October+Skies#3.jpg',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/june/October%2BSkies%233.jpg',
           title: 'October Skies #3',
           artist: 'Alison Francis',
           year: '?',
