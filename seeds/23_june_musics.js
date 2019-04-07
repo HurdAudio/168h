@@ -3720,7 +3720,7 @@ exports.seed = function(knex, Promise) {
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1309080454/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://muzaneditions.bandcamp.com/album/the-are-no-endings',
-          a_string: 'The Are No Endings by April Larson',
+          a_string: 'There Are No Endings by April Larson',
           rule: {
             "monday": [ 30, 4, 10, 21 ],
             "tuesday": [ 29, 2, 7, 19 ],
