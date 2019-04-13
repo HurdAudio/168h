@@ -5242,6 +5242,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 292,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3723768546/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://steveroach.bandcamp.com/album/bloodmoon-rising-complete-5-hour-set',
+          a_string: 'Bloodmoon Rising Complete 5 hour set by Steve Roach',
+          rule: {
+            "monday": [ 11, 14, 19, 1 ],
+            "tuesday": [ 10, 13, 19, 1 ],
+            "wednesday": [ 10, 13, 19, 30 ],
+            "thursday": [ 8, 16, 18, 3 ],
+            "saturday": [ 12, 16, 22, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 293,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4004534232/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://coldwombdescent.bandcamp.com/album/ldaovh-trilogy',
+          a_string: 'Ldaovh Trilogy by Cold Womb Descent',
+          rule: {
+            "monday": [ 12, 16, 22, 3 ],
+            "tuesday": [ 11, 14, 19, 1 ],
+            "wednesday": [ 10, 13, 19, 1 ],
+            "thursday": [ 10, 13, 19, 30 ],
+            "saturday": [ 8, 16, 18, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 294,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1436126147/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://stellardrone.bandcamp.com/album/between-the-rings',
+          a_string: 'Between The Rings by Stellardrone',
+          rule: {
+            "monday": [ 9, 17, 19, 4 ],
+            "tuesday": [ 13, 17, 23, 4 ],
+            "wednesday": [ 12, 15, 20, 2 ],
+            "thursday": [ 11, 14, 20, 1 ],
+            "saturday": [ 11, 14, 20, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
