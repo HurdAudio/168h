@@ -311,6 +311,46 @@
       vm.shareCurratedArt = shareCurratedArt;
       vm.cancelArtShareInvite = cancelArtShareInvite;
       vm.addArtModuleComment = addArtModuleComment;
+      vm.userEditMusicShareComment = userEditMusicShareComment;
+      vm.userEditMusicShareCommentCompleted = userEditMusicShareCommentCompleted;
+
+      function userEditMusicShareCommentCompleted(commentId) {
+        let entry = document.getElementById('thisIsTheMusicShareCommentEditor' + commentId).value;
+        let now = new Date();
+
+        $http.get(`/music_share_comments/${commentId}`)
+        .then(commentData => {
+          let comment = commentData.data;
+          if (comment.comment !== entry) {
+            let subObj = {
+              comment: entry,
+              updated_at: now
+            };
+            $http.patch(`/music_share_comments/${commentId}`, subObj)
+            .then(updatedData => {
+              let updated = updatedData.data;
+              document.getElementById('thisIsMusicShareCommentComment' + commentId).innerHTML = updated.comment;
+            });
+          }
+        });
+        document.getElementById('editDeleteMusicShareCommentDiv' + commentId).setAttribute("style", "display: initial;");
+        document.getElementById('thisIsTheMusicShareCommentEditor' + commentId).setAttribute("style", "display: none;");
+        document.getElementById('thisIsTheMusicShareCommentEditorDoneButton' + commentId).setAttribute("style", "visibility: hidden;");
+        document.getElementById('thisIsMusicShareCommentComment' + commentId).setAttribute("style", "visibility: visible;");
+        document.getElementById('thisIsTheMusicShareCommentEditor' + commentId).value = '';
+      }
+
+      function userEditMusicShareComment(commentId) {
+        document.getElementById('editDeleteMusicShareCommentDiv' + commentId).setAttribute("style", "display: none;");
+        document.getElementById('thisIsTheMusicShareCommentEditor' + commentId).setAttribute("style", "display: initial;");
+        document.getElementById('thisIsTheMusicShareCommentEditorDoneButton' + commentId).setAttribute("style", "visibility: visible;");
+        document.getElementById('thisIsMusicShareCommentComment' + commentId).setAttribute("style", "visibility: hidden;");
+        $http.get(`/music_share_comments/${commentId}`)
+        .then(commentData => {
+          let comment = commentData.data;
+          document.getElementById('thisIsTheMusicShareCommentEditor' + commentId).value = comment.comment;
+        });
+      }
 
       function addArtModuleComment(artModAuthorId, artModTheme) {
         let subObj = {
@@ -933,12 +973,24 @@
               check = new Date(musicShareComments[i].updated_at);
               vm.activeMusicShares[index].comments[i] = {
                 id: musicShareComments[i].id,
+                user_id: musicShareComments[i].user_id,
                 comment: musicShareComments[i].comment,
                 cleanDate: cleanDateHoliday(musicShareComments[i].created_at) + ' at ' + check.toLocaleTimeString('en-GB') + '.'
               };
               obtainMusicShareCommenterDatas(musicShareComments[i], index, i);
 
             }
+            setTimeout(() => {
+              for (let j = 0; j < vm.activeMusicShares[index].comments.length; j++) {
+                document.getElementById('thisIsTheMusicShareCommentEditor' + vm.activeMusicShares[index].comments[j].id).setAttribute("style", "display: none;");
+                document.getElementById('thisIsTheMusicShareCommentEditorDoneButton' + vm.activeMusicShares[index].comments[j].id).setAttribute("style", "visibility: hidden;");
+                if ((parseInt(vm.activeMusicShares[index].comments[j].user_id) === (parseInt(currentUserId))) || (parseInt(vm.activeMusicShares[index].user_id) === parseInt(currentUserId))) {
+                  document.getElementById('editDeleteMusicShareCommentDiv' + vm.activeMusicShares[index].comments[j].id).setAttribute("style", "display: initial;");
+                } else {
+                  document.getElementById('editDeleteMusicShareCommentDiv' + vm.activeMusicShares[index].comments[j].id).setAttribute("style", "display: none;");
+                }
+              }
+            }, 150);
           }
         });
       }
