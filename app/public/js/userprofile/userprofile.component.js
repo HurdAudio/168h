@@ -313,6 +313,20 @@
       vm.addArtModuleComment = addArtModuleComment;
       vm.userEditMusicShareComment = userEditMusicShareComment;
       vm.userEditMusicShareCommentCompleted = userEditMusicShareCommentCompleted;
+      vm.deleteMusicShare = deleteMusicShare;
+
+      function deleteMusicShare(musicId) {
+        $http.delete(`/music_shares/${musicId}`)
+        .then(deletedMusicShareData => {
+          let deletedMusicShare = deletedMusicShareData.data;
+          for (let i = 0; i < vm.activeMusicShares.length; i++) {
+            if (parseInt(vm.activeMusicShares[i].id) === parseInt(musicId)) {
+              vm.activeMusicShares.splice(i, 1);
+              return;
+            }
+          }
+        });
+      }
 
       function userEditMusicShareCommentCompleted(commentId) {
         let entry = document.getElementById('thisIsTheMusicShareCommentEditor' + commentId).value;
@@ -1035,6 +1049,7 @@
             setTimeout(() => {
               for (let j = 0; j < vm.activeMusicShares.length; j++) {
                 if (parseInt(vm.activeMusicShares[j].user_id) === parseInt(currentUserId)) {
+                  document.getElementById('thisIsMusicShareDeleteDiv' + vm.activeMusicShares[j].id).setAttribute("style", "display: initial;");
                   document.getElementById('musicInviter' + vm.activeMusicShares[j].id).setAttribute("style", "display: none;");
                   document.getElementById('musicInvitee' + vm.activeMusicShares[j].id).setAttribute("style", "display: initial;");
                   if (vm.activeMusicShares[j].responded) {
@@ -1052,6 +1067,7 @@
                     document.getElementById('musicShareDeclined' + vm.activeMusicShares[j].id).setAttribute("style", "display: none;");
                   }
                 } else {
+                  document.getElementById('thisIsMusicShareDeleteDiv' + vm.activeMusicShares[j].id).setAttribute("style", "display: none;");
                   document.getElementById('musicInviter' + vm.activeMusicShares[j].id).setAttribute("style", "display: initial;");
                   document.getElementById('musicInvitee' + vm.activeMusicShares[j].id).setAttribute("style", "display: none;");
                   document.getElementById('musicAcceptDecline' + vm.activeMusicShares[j].id).setAttribute("style", "display: initial;");
@@ -1828,7 +1844,7 @@
             setTimeout(() => {
               for (let j = 0; j < vm.activeArtShares.length; j++) {
                 if ((parseInt(vm.activeArtShares[j].share_associate_id) === parseInt(currentUserId))) {
-                  document.getElementById('thisIsArtShareDeleteDiv' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
+                  document.getElementById('thisIsArtShareDeleteDiv' + vm.activeArtShares[j].id).setAttribute("style", "display: initial;");
                   document.getElementById('artblockInviter' + vm.activeArtShares[j].id).setAttribute("style", "display: initial;");
                   document.getElementById('artblockInvitee' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
                   if (vm.activeArtShares[j].responded) {
@@ -1846,7 +1862,7 @@
                     document.getElementById('artShareDeclined' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
                   }
                 } else {
-                  document.getElementById('thisIsArtShareDeleteDiv' + vm.activeArtShares[j].id).setAttribute("style", "display: initial;");
+                  document.getElementById('thisIsArtShareDeleteDiv' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
                   document.getElementById('artblockInviter' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
                   document.getElementById('artblockInvitee' + vm.activeArtShares[j].id).setAttribute("style", "display: initial;");
                   document.getElementById('artAcceptDecline' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
