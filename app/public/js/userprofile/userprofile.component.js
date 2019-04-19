@@ -1004,7 +1004,7 @@
                   document.getElementById('editDeleteMusicShareCommentDiv' + vm.activeMusicShares[index].comments[j].id).setAttribute("style", "display: none;");
                 }
               }
-            }, 150);
+            }, 4000);
           }
         });
       }
@@ -1073,7 +1073,7 @@
                   document.getElementById('musicAcceptDecline' + vm.activeMusicShares[j].id).setAttribute("style", "display: initial;");
                 }
               }
-            }, (vm.activeMusicShares.length * 100));
+            }, (vm.activeMusicShares.length * 1000));
           }
         });
       }
@@ -1803,9 +1803,9 @@
                   document.getElementById('editDeleteArtShareCommentDiv' + vm.activeArtShares[index].comments[j].id).setAttribute("style", "display: none;");
                 }
                 document.getElementById('thisIsTheArtShareCommentEditor' + vm.activeArtShares[index].comments[j].id).setAttribute("style", "display: none;");
-                document.getElementById('thisIsArtShareCommentEditDoneDiv' + vm.activeArtShares[index].comments[j].id).setAttribute("style", "display: none;");
+                document.getElementById('thisIsArtCommentEditDoneDiv' + vm.activeArtShares[index].comments[j].id).setAttribute("style", "display: none;");
               }
-            }, (vm.activeArtShares[index].comments.length * 100));
+            }, (vm.activeArtShares[index].comments.length * 1000));
           }
         });
       }
@@ -3436,10 +3436,9 @@
             bDate = new Date(b.created_at);
             return(aDate.getDate() - bDate.getDate());
           });
-          console.log(shareComments);
           if (shareComments.length > 0) {
             vm.activeOccasionShares[index].comments = [];
-            console.log(vm.activeOccasionShares[index]);
+            // console.log(vm.activeOccasionShares[index]);
             for (let i = 0; i < shareComments.length; i++) {
               createDate = new Date(shareComments[i].created_at);
               updateDate = new Date(shareComments[i].updated_at);
@@ -3455,8 +3454,7 @@
               }
             }
             setTimeout(()=>{
-
-              if (vm.activeOccasionShares[index].comments !== undefined) {
+              if ((vm.activeOccasionShares.length > 0) && (vm.activeOccasionShares[index].comments)) {
                 for (let j = 0; j < vm.activeOccasionShares[index].comments.length; j++) {
 
                   if (parseInt(vm.activeOccasionShares[index].comments[j].user_id) === parseInt(currentUserId)) {
@@ -3468,7 +3466,7 @@
                 }
               }
 
-            }, (shareComments.length * 100));
+            }, (shareComments.length * 40));
           }
         });
       }
@@ -3502,33 +3500,36 @@
               vm.activeOccasionShares[i].cleanUpdatedAt = cleanDateHoliday(shares[i].updated_at) + ' - ' + timeDate(shares[i].updated_at);
             }
             setTimeout(()=>{
-              for (let j = 0; j < shares.length; j++) {
+              for (let j = 0; j < vm.activeOccasionShares.length; j++) {
                 if (parseInt(shares[j].user_id) !== parseInt(currentUserId)) {
-                  document.getElementById('thisIsOccasionShareDeleteDiv' + shares[j].id).setAttribute("style", "display: none;");
+                  document.getElementById('thisIsOccasionShareDeleteDiv' + vm.activeOccasionShares[j].id).setAttribute("style", "display: none;");
                 }
-                if (shares[j].responded) {
-                  document.getElementById('occasionAcceptDecline' + shares[j].id).setAttribute("style", "display: none;");
-                  if (shares[j].accepted) {
-                    document.getElementById('occasionShareAccepted' + shares[j].id).setAttribute("style", "display: initial;");
-                    document.getElementById('occasionShareDeclined' + shares[j].id).setAttribute("style", "display: none;");
+                if (vm.activeOccasionShares[j].responded) {
+                  document.getElementById('occasionAcceptDecline' + vm.activeOccasionShares[j].id).setAttribute("style", "display: none;");
+                  if (vm.activeOccasionShares[j].accepted) {
+                    document.getElementById('occasionShareAccepted' + vm.activeOccasionShares[j].id).setAttribute("style", "display: initial;");
+                    document.getElementById('occasionShareDeclined' + vm.activeOccasionShares[j].id).setAttribute("style", "display: none;");
                   } else {
-                    document.getElementById('occasionShareAccepted' + shares[j].id).setAttribute("style", "display: none;");
-                    document.getElementById('occasionShareDeclined' + shares[j].id).setAttribute("style", "display: initial;");
+                    document.getElementById('occasionShareAccepted' + vm.activeOccasionShares[j].id).setAttribute("style", "display: none;");
+                    document.getElementById('occasionShareDeclined' + vm.activeOccasionShares[j].id).setAttribute("style", "display: initial;");
                   }
                 } else {
-                  document.getElementById('occasionShareAccepted' + shares[j].id).setAttribute("style", "display: none;");
-                  document.getElementById('occasionShareDeclined' + shares[j].id).setAttribute("style", "display: none;");
+                  document.getElementById('occasionShareAccepted' + vm.activeOccasionShares[j].id).setAttribute("style", "display: none;");
+                  document.getElementById('occasionShareDeclined' + vm.activeOccasionShares[j].id).setAttribute("style", "display: none;");
                 }
               }
-              for (let k = 0; k < vm.activeOccasionShares.length; k++) {
-                shareDate = new Date(vm.activeOccasionShares[k].updated_at);
-                expireTime = new Date(vm.activeOccasionShares[k].updated_at);
-                expireTime.setDate(expireTime.getDate() + 30);
-                if (now.getTime() > expireTime.getTime()) {
-                  vm.activeOccasionShares.splice(k, 1);
-                  k--;
+              setTimeout(() => {
+                for (let k = 0; k < vm.activeOccasionShares.length; k++) {
+                  shareDate = new Date(vm.activeOccasionShares[k].updated_at);
+                  expireTime = new Date(vm.activeOccasionShares[k].updated_at);
+                  expireTime.setDate(expireTime.getDate() + 30);
+                  if (now.getTime() > expireTime.getTime()) {
+                    vm.activeOccasionShares.splice(k, 1);
+                    k--;
+                  }
                 }
-              }
+              }, 250);
+
             }, 100);
           }
         });
@@ -16739,6 +16740,8 @@
           $http.post('/users/logout', {})
           .then(()=>{
             profileClock = false;
+            document.cookie = 'session' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+            document.cookie = 'session.sig' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
             $state.go('landing');
           });
         });
@@ -17110,8 +17113,8 @@
           $http.get(`/users/${appointment.share_associate_id}`)
           .then(inviteeData=>{
             let invitee = inviteeData.data;
-            console.log(inviter);
-            console.log(invitee);
+            // console.log(inviter);
+            // console.log(invitee);
             if (inviter.id === parseInt(currentUserId)) {
               vm.activeTimeblockShares[index].inviterImg = invitee.user_avatar_url;
             } else {
@@ -17270,7 +17273,7 @@
             checkDate = new Date(entry.start_time);
             return((checkDate.getFullYear() === checkStart.getFullYear()) && (checkDate.getMonth() === checkStart.getMonth()) && (checkDate.getDate() == checkStart.getDate()));
           });
-          console.log(dayOfUserBlocks);
+          // console.log(dayOfUserBlocks);
           if (dayOfUserBlocks.length < 1) {
             vm.activeTimeblockShares[index].conflictStatus = 'No conflicts with your current schedule.';
           } else {
@@ -17395,7 +17398,7 @@
       function pruneOutdatedAppointments(index) {
 
         let now = new Date();
-        console.log(vm.activeTimeblockShares[index]);
+        // console.log(vm.activeTimeblockShares[index]);
 
 
         $http.get(`/timeblocks/${vm.activeTimeblockShares[index].timeblock_id}`)
@@ -17679,7 +17682,7 @@
           $http.get('/messages')
           .then(allMessagesData=>{
             let allMessages = allMessagesData.data;
-            console.log(expireTime);
+            // console.log(expireTime);
             if (allMessages.length > 0) {
               for (let i = 0; i < allMessages.length; i++) {
                 updated = new Date(allMessages[i].updated_at);
@@ -17813,16 +17816,18 @@
               retrieveTaskCommenterProfileInfo(taskComments[i].user_id, index, i);
             }
             setTimeout(() => {
-              for (let j = 0; j < taskComments.length; j++) {
-                document.getElementById('thisIsTheTaskShareCommentEditor' + taskComments[j].id).setAttribute("style", "display: none;");
-                document.getElementById('thisIsTaskCommentEditDoneDiv' + taskComments[j].id).setAttribute("style", "display: none;");
-                if (parseInt(taskComments[j].user_id) === parseInt(currentUserId)) {
-                  document.getElementById('editDeleteTaskShareCommentDiv' + taskComments[j].id).setAttribute("style", "display: initial;");
-                } else {
-                  document.getElementById('editDeleteTaskShareCommentDiv' + taskComments[j].id).setAttribute("style", "display: none;");
+              if ((vm.activeTaskShares.length > 0) && (vm.activeTaskShares[index].comments)) {
+                for (let j = 0; j < vm.activeTaskShares[index].comments.length; j++) {
+                  document.getElementById('thisIsTheTaskShareCommentEditor' + vm.activeTaskShares[index].comments[j].id).setAttribute("style", "display: none;");
+                  document.getElementById('thisIsTaskCommentEditDoneDiv' + vm.activeTaskShares[index].comments[j].id).setAttribute("style", "display: none;");
+                  if (parseInt(vm.activeTaskShares[index].comments[j].user_id) === parseInt(currentUserId)) {
+                    document.getElementById('editDeleteTaskShareCommentDiv' + vm.activeTaskShares[index].comments[j].id).setAttribute("style", "display: initial;");
+                  } else {
+                    document.getElementById('editDeleteTaskShareCommentDiv' + vm.activeTaskShares[index].comments[j].id).setAttribute("style", "display: none;");
+                  }
                 }
               }
-            }, (taskComments.length * 25));
+            }, ((vm.activeTaskShares[index].comments.length * 25) + 150));
           }
         });
       }
@@ -17836,11 +17841,11 @@
         $http.get(`/task_shares`)
         .then(allTaskSharesData=>{
           let allTaskShares = allTaskSharesData.data;
-          console.log(allTaskShares);
+          // console.log(allTaskShares);
           let userTaskShares = allTaskShares.filter(tsk=>{
             return((parseInt(tsk.share_associate_id) === parseInt(currentUserId)) || (parseInt(tsk.user_id) === parseInt(currentUserId)));
           });
-          console.log(userTaskShares);
+          // console.log(userTaskShares);
           userTaskShares = userTaskShares.sort((a, b)=>{
             aDate = new Date(a.created_at);
             bDate = new Date(b.created_at);
@@ -17869,58 +17874,61 @@
               vm.activeTaskShares[i].updated_at = userTaskShares[i].updated_at;
               vm.activeTaskShares[i].created_at = userTaskShares[i].created_at;
               retrieveTaskShareComments(userTaskShares[i], i);
-              console.log(vm.activeTaskShares);
+              // console.log(vm.activeTaskShares);
             }
             setTimeout(()=>{
               let thinDate;
               let currentThin = new Date();
-              for (let thinner = 0; thinner < vm.activeTaskShares.length; thinner++) {
-                thinDate = new Date(vm.activeTaskShares[thinner].updated_at);
-                thinDate.setDate(thinDate.getDate() + 30);
-                if ((currentThin.getTime() > thinDate.getTime())) {
-                  vm.activeTaskShares.splice(thinner, 1);
-                  --thinner;
-                }
-              }
-              for (let j = 0; j < userTaskShares.length; j++) {
-                if (userTaskShares[j].share_associate_id !== currentUserId) {
+              for (let j = 0; j < vm.activeTaskShares.length; j++) {
+                if (vm.activeTaskShares[j].share_associate_id !== currentUserId) {
                   document.getElementById('taskSharer' + vm.activeTaskShares[j].id).setAttribute("style", "display: initial;");
                   document.getElementById('taskSharee' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
-                  document.getElementById('thisIsTaskShareDeleteDiv' + userTaskShares[j].id).setAttribute("style", "display: none;");
-                  if (userTaskShares[j].responded) {
+                  document.getElementById('thisIsTaskShareDeleteDiv' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
+                  if (vm.activeTaskShares[j].responded) {
                     document.getElementById('taskAcceptDecline' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
-                    if (userTaskShares[j].accepted) {
+                    if (vm.activeTaskShares[j].accepted) {
 
-                      document.getElementById('taskShareDeclined' + userTaskShares[j].id).setAttribute("style", "display: none;");
+                      document.getElementById('taskShareDeclined' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
                     } else {
-                      document.getElementById('taskShareAccepted' + userTaskShares[j].id).setAttribute("style", "display: none;");
+                      document.getElementById('taskShareAccepted' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
 
                     }
                   } else {
-                    document.getElementById('taskShareAccepted' + userTaskShares[j].id).setAttribute("style", "display: none;");
-                    document.getElementById('taskShareDeclined' + userTaskShares[j].id).setAttribute("style", "display: none;");
+                    document.getElementById('taskShareAccepted' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
+                    document.getElementById('taskShareDeclined' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
                   }
 
                 } else {
                   document.getElementById('taskSharer' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
                   document.getElementById('taskSharee' + vm.activeTaskShares[j].id).setAttribute("style", "display: initial;");
                   document.getElementById('taskAcceptDecline' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
-                  document.getElementById('thisIsTaskShareDeleteDiv' + userTaskShares[j].id).setAttribute("style", "display: initial;");
-                  if (userTaskShares[j].responded) {
-                    if (userTaskShares[j].accepted) {
+                  document.getElementById('thisIsTaskShareDeleteDiv' + vm.activeTaskShares[j].id).setAttribute("style", "display: initial;");
+                  if (vm.activeTaskShares[j].responded) {
+                    if (vm.activeTaskShares[j].accepted) {
 
-                      document.getElementById('taskShareDeclined' + userTaskShares[j].id).setAttribute("style", "display: none;");
+                      document.getElementById('taskShareDeclined' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
                     } else {
-                      document.getElementById('taskShareAccepted' + userTaskShares[j].id).setAttribute("style", "display: none;");
+                      document.getElementById('taskShareAccepted' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
 
                     }
                   } else {
-                    document.getElementById('taskShareAccepted' + userTaskShares[j].id).setAttribute("style", "display: none;");
-                    document.getElementById('taskShareDeclined' + userTaskShares[j].id).setAttribute("style", "display: none;");
+                    document.getElementById('taskShareAccepted' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
+                    document.getElementById('taskShareDeclined' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
                   }
                 }
               }
-            }, (vm.activeTaskShares.length * 50));
+              setTimeout(() => {
+                for (let thinner = 0; thinner < vm.activeTaskShares.length; thinner++) {
+                  thinDate = new Date(vm.activeTaskShares[thinner].updated_at);
+                  thinDate.setDate(thinDate.getDate() + 30);
+                  if ((currentThin.getTime() > thinDate.getTime())) {
+                    vm.activeTaskShares.splice(thinner, 1);
+                    --thinner;
+                  }
+                }
+              }, ((vm.activeTaskShares.length * 50) + 100));
+
+            }, ((vm.activeTaskShares.length * 50) + 100));
           }
         });
       }
@@ -17993,8 +18001,8 @@
                 user_id: userTileShares[i].user_id,
                 share_associate_id: userTileShares[i].share_associate_id
               };
-              console.log(vm.activeTileShares[i]);
-              console.log(userTileShares[i]);
+              // console.log(vm.activeTileShares[i]);
+              // console.log(userTileShares[i]);
               obtainTileData(userTileShares[i], i);
               obtainTileUsersData(userTileShares[i], i);
             }
@@ -18013,7 +18021,7 @@
                   document.getElementById('tileAcceptDecline' + vm.activeTileShares[j].id).setAttribute("style", "display: none;");
                 }
               }
-            }, 150);
+            }, 250);
           }
         });
       }
