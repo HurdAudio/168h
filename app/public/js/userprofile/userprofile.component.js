@@ -16740,6 +16740,8 @@
           $http.post('/users/logout', {})
           .then(()=>{
             profileClock = false;
+            document.cookie = 'session' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+            document.cookie = 'session.sig' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
             $state.go('landing');
           });
         });
