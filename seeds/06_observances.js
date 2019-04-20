@@ -10784,7 +10784,7 @@ exports.seed = function(knex, Promise) {
           name: 'William Batchelder Greene (individualist anarchist/minister/activist) born 1819',
           color: '#E1BB6A',
           picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/24776157_120355175161.jpg',
-          day_of: new Date ('1819-04-19T13:44:00.000Z'),
+          day_of: new Date ('1819-04-04T13:44:00.000Z'),
           is_annual: true,
           art_override: false,
           music_override: false,
