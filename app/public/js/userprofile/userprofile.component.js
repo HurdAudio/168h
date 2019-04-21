@@ -1001,7 +1001,7 @@
           thisIsTheArtShareCommentEditor.setAttribute("style", "display: initial;");
           thisIsTheArtShareCommentEditor.value = comment.comment;
           thisIsArtShareCommentComment.setAttribute("style", "visibility: hidden;");
-          document.getElementById('thisIsArtShareCommentEditDoneDiv' + commentId).setAttribute("style", "display: initial;");
+          document.getElementById('thisIsArtCommentEditDoneDiv' + commentId).setAttribute("style", "display: initial;");
         });
       }
 
