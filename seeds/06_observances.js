@@ -10852,6 +10852,44 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 698,
+          user_id: 1,
+          name: 'Han Bennink (drummer) born in 1942',
+          color: '#B29066',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/han_custom-8a5f1aab4fe211dd25ee6dcddaf8cf477f829a89-s800-c85.jpg',
+          day_of: new Date ('1942-04-17T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=1840006677/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3273528485/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1525818854/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=292956658/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1835375621/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=297108089/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=4062326923/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2179148209/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3894247798/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://destination-out.bandcamp.com/album/west-ost', 'http://terriehesselsterprecords.bandcamp.com/album/the-laughing-owl', 'http://terriehesselsterprecords.bandcamp.com/album/zeng', 'http://intaktrec.bandcamp.com/album/two-for-two', 'http://ayler-records.bandcamp.com/album/television', 'http://intaktrec.bandcamp.com/album/ir-ne-schweizer-han-bennink', 'http://muteantsoundsnetlabel.bandcamp.com/album/the-ass', 'http://blacksmithbrothermusic.com/album/coup-de-grace', 'http://theblueprintproject.bandcamp.com/album/people-i-like-feat-han-bennink' ],
+            "a_strings": [ 'West...Ost by HAN BENNINK', 'The Laughing Owl by Han Bennink &amp; Terrie Ex', 'Zeng! by Han Bennink &amp; Terrie Ex', 'Two For Two by Aki Takase &amp; Han Bennink', 'Television by Mark O&#39;Leary &amp; Han Bennink', 'Irène Schweizer - Han Bennink by Irène Schweizer, Han Bennink', '&quot;THE ASS&quot; by KENNY MILLIONS &amp; HAN BENNINK', 'COUP DE GRACE by ARMEN NALBANDIAN &amp; HAN BENNINK', 'People I Like (feat. Han Bennink) by The Blueprint Project' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 699,
+          user_id: 1,
+          name: 'Éliane Radigue (composer) born in 1932',
+          color: '#C6C6C6',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/1_-e6M2IAKwYBsBc9fuOKnzA.jpeg',
+          day_of: new Date ('1932-01-24T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=2960999910/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://senufoeditions.bandcamp.com/album/geelriandre-arthesis' ],
+            "a_strings": [ 'Geelriandre / Arthesis by Eliane Radigue' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
