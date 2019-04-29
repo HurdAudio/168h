@@ -2886,8 +2886,8 @@
                 vm.musicViewerHref = selectedMusicModule[centerIndex].href_string;
                 vm.musicViewerAnchor = selectedMusicModule[centerIndex].a_string;
                 musicModulePlayerIframe.src = vm.musicViewerSource;
-                musicModulePlayerAnchor.href = vm.musicViewerHref;
-                vm.musicViewerHref.innerHTML = vm.musicViewerAnchor;
+                // musicModulePlayerAnchor.href = vm.musicViewerHref;
+                // vm.musicViewerHref.innerHTML = vm.musicViewerAnchor;
               }
             });
           });
