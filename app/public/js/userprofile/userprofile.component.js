@@ -18076,6 +18076,57 @@
         });
       }
 
+      function retrieveTileCommenterData(tileComment, index, commentIndex) {
+        $http.get(`/users/${tileComment.user_id}`)
+        .then(commenterData => {
+          let commenter = commenterData.data;
+          vm.activeTileShares[index].comments[commentIndex].name = commenter.name;
+          vm.activeTileShares[index].comments[commentIndex].user_avatar_url = commenter.user_avatar_url;
+        });
+      }
+
+      function obtainTileComments(tileShare, index) {
+        let datea;
+        let dateb;
+
+        $http.get('/tile_share_comments')
+        .then(allTileShareCommentsData => {
+          let allTileShareComments = allTileShareCommentsData.data;
+          let tileComments = allTileShareComments.filter(tl => {
+            return(tl.tile_share === tileShare.id);
+          });
+          tileComments = tileComments.sort((a, b) => {
+            datea = new Date(a.created_at);
+            dateb = new Date(b.created_at);
+            return ((datea.getTime() - dateb.getTime()));
+          });
+          if (tileComments.length > 0) {
+            vm.activeTileShares[index].comments = [];
+            for (let i = 0; i < tileComments.length; i++) {
+              vm.activeTileShares[index].comments[i] = {
+                id: tileComments[i].id,
+                user_id: tileComments[i].user_id,
+                tile_share: tileComments[i].tile_share,
+                comment: tileComments[i].comment
+              };
+              vm.activeTileShares[index].comments[i].cleanDate = cleanDateHoliday(tileComments[i].created_at) + ' - ' + timeDate(tileComments[i].created_at);
+              retrieveTileCommenterData(tileComments[i], index, i);
+            }
+            setTimeout(() => {
+              for (let j = 0; j < vm.activeTileShares[index].comments.length; j++) {
+                if (parseInt(vm.activeTileShares[index].comments[j].user_id) === parseInt(currentUserId)) {
+                  document.getElementById('editDeleteTileShareCommentDiv' + vm.activeTileShares[index].comments[j].id).setAttribute("style", "display: initial;");
+                } else {
+                  document.getElementById('editDeleteTileShareCommentDiv' + vm.activeTileShares[index].comments[j].id).setAttribute("style", "display: none;");
+                }
+                document.getElementById('thisIsTheTileShareCommentEditor' +    vm.activeTileShares[index].comments[j].id).setAttribute("style", "display: none;");
+                document.getElementById('thisIsTileShareCommentEditDoneDiv' + vm.activeTileShares[index].comments[j].id).setAttribute("style", "display: none;");
+              }
+            }, (tileComments.length * 50));
+          }
+        })
+      }
+
       function retrieveUserTileShares() {
         let datea;
         let dateb;
@@ -18106,6 +18157,7 @@
               // console.log(userTileShares[i]);
               obtainTileData(userTileShares[i], i);
               obtainTileUsersData(userTileShares[i], i);
+              obtainTileComments(userTileShares[i], i);
             }
             setTimeout(() => {
               for (let j = 0; j < vm.activeTileShares.length; j++) {

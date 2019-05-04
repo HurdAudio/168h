@@ -4697,7 +4697,7 @@
               <!-- <a class="btn" href="#" ng-click="$ctrl.addNewArtShareComment(art.id)" id="newArtShareCommentButton{{art.id}}">add</a> -->
             <!-- </div> -->
             <div id="tileShareComments" class="occasionShareComments">
-              <!-- <main ng-repeat="comment in art.comments | orderBy : $ctrl.sortBy"> -->
+              <main ng-repeat="comment in tile.comments | orderBy : $ctrl.sortBy">
                 <img src="{{comment.user_avatar_url}}"><br><br><br>
                 <br><br><br><p>From: {{comment.name}} <br>
                 on {{comment.cleanDate}}</p><br><br>
@@ -4716,7 +4716,7 @@
                   <a class="btn" href="#" ng-click="$ctrl.userEditTileShareComment(comment.id)">edit</a>
                   <a class="btn" href="#" ng-click="$ctrl.userDeleteTileShareComment(comment.id)">delete</a>
                 </div><br><br><br><br>
-              <!-- </main> -->
+              </main>
             </div>
           </main>
         </div>
