@@ -5350,6 +5350,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 298,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4280229468/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://olivianeutron-john.bandcamp.com/album/olivia-neutron-john',
+          a_string: 'Olivia Neutron-John by Olivia Neutron-John',
+          rule: {
+            "monday": [ 13, 15, 19, 27 ],
+            "tuesday": [ 12, 14, 18, 26 ],
+            "wednesday": [ 11, 13, 17, 25 ],
+            "thursday": [ 10, 11, 16, 24 ],
+            "saturday": [ 9, 11, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 299,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2042391048/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://deathandvanillamusic.bandcamp.com/album/are-you-a-dreamer',
+          a_string: 'Are You A Dreamer? by Death &amp; Vanilla',
+          rule: {
+            "monday": [ 9, 11, 15, 23 ],
+            "tuesday": [ 13, 15, 19, 27 ],
+            "wednesday": [ 12, 14, 18, 26 ],
+            "thursday": [ 11, 13, 17, 25 ],
+            "saturday": [ 10, 11, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 300,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2670993182/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://greys.bandcamp.com/album/age-hasnt-spoiled-you',
+          a_string: 'Age Hasn&#39;t Spoiled You by Greys',
+          rule: {
+            "monday": [ 10, 11, 16, 24 ],
+            "tuesday": [ 9, 11, 15, 23 ],
+            "wednesday": [ 13, 15, 19, 27 ],
+            "thursday": [ 12, 14, 18, 26 ],
+            "saturday": [ 11, 13, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
