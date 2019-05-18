@@ -317,6 +317,42 @@
       vm.addNewArtShareComment = addNewArtShareComment;
       vm.declineTileShare = declineTileShare;
       vm.acceptTileShare = acceptTileShare;
+      vm.userDeleteMusicShareComment = userDeleteMusicShareComment;
+      vm.userMusicShareCommentDeleteCancel = userMusicShareCommentDeleteCancel;
+      vm.userMusicShareCommentDeleteConfirmClick = userMusicShareCommentDeleteConfirmClick;
+
+      function userMusicShareCommentDeleteConfirmClick(commentId, musicId) {
+        $http.delete(`/music_share_comments/${commentId}`)
+        .then(goneCommentData => {
+          let goneComment = goneCommentData.data;
+          for (let i = 0; i < vm.activeMusicShares.length; i++) {
+            if (parseInt(vm.activeMusicShares[i].id) === parseInt(musicId)) {
+              for (let j = 0; j < vm.activeMusicShares[i].comments.length; j++) {
+                if (parseInt(vm.activeMusicShares[i].comments[j].id) === parseInt(commentId)) {
+                  vm.activeMusicShares[i].comments.splice(j, 1);
+                  return;
+                }
+              }
+            }
+          }
+        });
+      }
+
+      function userMusicShareCommentDeleteCancel(commentId, musicId) {
+        let deleteMusicShareCommentConfirm = document.getElementById('deleteMusicShareCommentConfirm' + commentId);
+        let editDeleteMusicShareCommentDiv = document.getElementById('editDeleteMusicShareCommentDiv' + commentId);
+
+        deleteMusicShareCommentConfirm.setAttribute("style", "display: none;");
+        editDeleteMusicShareCommentDiv.setAttribute("style", "display: initial;");
+      }
+
+      function userDeleteMusicShareComment(commentId) {
+        let deleteMusicShareCommentConfirm = document.getElementById('deleteMusicShareCommentConfirm' + commentId);
+        let editDeleteMusicShareCommentDiv = document.getElementById('editDeleteMusicShareCommentDiv' + commentId);
+
+        deleteMusicShareCommentConfirm.setAttribute("style", "display: initial;");
+        editDeleteMusicShareCommentDiv.setAttribute("style", "display: none;");
+      }
 
       function acceptTileShare(tileShareId) {
         let optionElement;
