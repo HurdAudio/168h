@@ -10946,6 +10946,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 704,
+          user_id: 1,
+          name: 'Josh Berman (cornet) born 1972',
+          color: '#3B4441',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/JOSH-BERMAN_DELMARK-588LP-586x586.jpg',
+          day_of: new Date ('1972-09-24T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 705,
+          user_id: 1,
+          name: 'Moses Brown (abolitionist/industrialist) born 1738',
+          color: '#5F2600',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/Moses_Brown_portrait_painting.jpg',
+          day_of: new Date ('1738-09-23T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
