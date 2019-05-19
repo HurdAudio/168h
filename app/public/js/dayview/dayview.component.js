@@ -165,7 +165,7 @@
       }
 
       function shareMusicWith(musicSelection) {
-        // console.log(musicSelection);
+        console.log(musicSelection);
         let shareMusicPane = document.getElementById('shareMusicPane');
 
         let musicFriendsSearchList = document.getElementById('musicFriendsSearchList');
