@@ -10519,7 +10519,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 675,
           user_id: 1,
-          name: 'Malcom X (human rights activist) born in 1925',
+          name: 'Malcolm X (human rights activist) born in 1925',
           color: '#080808',
           picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/Malcolm_X_NYWTS_2a.jpg',
           day_of: new Date ('1925-05-19T13:44:00.000Z'),
