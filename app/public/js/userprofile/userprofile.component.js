@@ -13929,78 +13929,78 @@
             holidayArray = [];
             holidayArray = grabHolidays(userHolidays, checkDate);
             if (holidayArray.length > 0) {
-              if (checkDate.getMonth() === 0) {
+              if (checkDate.getUTCMonth() === 0) {
                 vm.holidayReporter[0].calendarJanTotal++;
               }
-              if (checkDate.getMonth() === 1) {
+              if (checkDate.getUTCMonth() === 1) {
                 vm.holidayReporter[0].calendarFebTotal++;
               }
-              if (checkDate.getMonth() === 2) {
+              if (checkDate.getUTCMonth() === 2) {
                 vm.holidayReporter[0].calendarMarTotal++;
               }
-              if (checkDate.getMonth() === 3) {
+              if (checkDate.getUTCMonth() === 3) {
                 vm.holidayReporter[0].calendarAprTotal++;
               }
-              if (checkDate.getMonth() === 4) {
+              if (checkDate.getUTCMonth() === 4) {
                 vm.holidayReporter[0].calendarMayTotal++;
               }
-              if (checkDate.getMonth() === 5) {
+              if (checkDate.getUTCMonth() === 5) {
                 vm.holidayReporter[0].calendarJunTotal++;
               }
-              if (checkDate.getMonth() === 6) {
+              if (checkDate.getUTCMonth() === 6) {
                 vm.holidayReporter[0].calendarJulTotal++;
               }
-              if (checkDate.getMonth() === 7) {
+              if (checkDate.getUTCMonth() === 7) {
                 vm.holidayReporter[0].calendarAugTotal++;
               }
-              if (checkDate.getMonth() === 8) {
+              if (checkDate.getUTCMonth() === 8) {
                 vm.holidayReporter[0].calendarSepTotal++;
               }
-              if (checkDate.getMonth() === 9) {
+              if (checkDate.getUTCMonth() === 9) {
                 vm.holidayReporter[0].calendarOctTotal++;
               }
-              if (checkDate.getMonth() === 10) {
+              if (checkDate.getUTCMonth() === 10) {
                 vm.holidayReporter[0].calendarNovTotal++;
               }
-              if (checkDate.getMonth() === 11) {
+              if (checkDate.getUTCMonth() === 11) {
                 vm.holidayReporter[0].calendarDecTotal++;
               }
               vm.holidayReporter[0].calendarTotal++;
               if (holidayArray.length > 1) {
-                if (checkDate.getMonth() === 0) {
+                if (checkDate.getUTCMonth() === 0) {
                   vm.holidayReporter[0].calendarJanOverlap += holidayArray.length;
                 }
-                if (checkDate.getMonth() === 1) {
+                if (checkDate.getUTCMonth() === 1) {
                   vm.holidayReporterl[0].calendarFebOverlap += holidayArray.length;
                 }
-                if (checkDate.getMonth() === 2) {
+                if (checkDate.getUTCMonth() === 2) {
                   vm.holidayReporter[0].calendarMarOverlap += holidayArray.length;
                 }
-                if (checkDate.getMonth() === 3) {
+                if (checkDate.getUTCMonth() === 3) {
                   vm.holidayReporter[0].calendarAprOverlap += holidayArray.length;
                 }
-                if (checkDate.getMonth() === 4) {
+                if (checkDate.getUTCMonth() === 4) {
                   vm.holidayReporter[0].calendarMayOverlap += holidayArray.length;
                 }
-                if (checkDate.getMonth() === 5) {
+                if (checkDate.getUTCMonth() === 5) {
                   vm.holidayReporter[0].calendarJunOverlap += holidayArray.length;
                 }
-                if (checkDate.getMonth() === 6) {
+                if (checkDate.getUTCMonth() === 6) {
                   vm.holidayReporter[0].calendarJulOverlap += holidayArray.length;
                 }
-                if (checkDate.getMonth() === 7) {
+                if (checkDate.getUTCMonth() === 7) {
                   vm.holidayReporter[0].calendarAugOverlap += holidayArray.length;
                 }
-                if (checkDate.getMonth() === 8) {
+                if (checkDate.getUTCMonth() === 8) {
                   vm.holidayReporter[0].calendarSepOverlap += holidayArray.length;
                 }
-                if (checkDate.getMonth() === 9) {
+                if (checkDate.getUTCMonth() === 9) {
                   vm.holidayReporter[0].calendarOctOverlap += holidayArray.length;
                 }
-                if (checkDate.getMonth() === 10) {
+                if (checkDate.getUTCMonth() === 10) {
                   vm.holidayReporter[0].calendarNovOverlap += holidayArray.length;
                 }
-                if (checkDate.getMonth() === 11) {
+                if (checkDate.getUTCMonth() === 11) {
                   vm.holidayReporter[0].calendarDecOverlap += holidayArray.length;
                 }
                 for (let i = 0; i < holidayArray.length; i++) {
@@ -14009,51 +14009,51 @@
                   } else {
                     vm.holidayReporter[0].calendarFloat++;
                   }
-                  if (checkDate.getMonth() === 0) {
+                  if (checkDate.getUTCMonth() === 0) {
                     vm.holidayReporter[0].calendarJanHolidays.push(holidayArray[i].name);
                     vm.holidayReporter[0].calendarJan = vm.holidayReporter[0].calendarJanHolidays.length;
                   }
-                  if (checkDate.getMonth() === 1) {
+                  if (checkDate.getUTCMonth() === 1) {
                     vm.holidayReporter[0].calendarFebHolidays.push(holidayArray[i].name);
                     vm.holidayReporter[0].calendarFeb = vm.holidayReporter[0].calendarFebHolidays.length;
                   }
-                  if (checkDate.getMonth() === 2) {
+                  if (checkDate.getUTCMonth() === 2) {
                     vm.holidayReporter[0].calendarMarHolidays.push(holidayArray[i].name);
                     vm.holidayReporter[0].calendarMar = vm.holidayReporter[0].calendarMarHolidays.length;
                   }
-                  if (checkDate.getMonth() === 3) {
+                  if (checkDate.getUTCMonth() === 3) {
                     vm.holidayReporter[0].calendarAprHolidays.push(holidayArray[i].name);
                     vm.holidayReporter[0].calendarApr = vm.holidayReporter[0].calendarAprHolidays.length;
                   }
-                  if (checkDate.getMonth() === 4) {
+                  if (checkDate.getUTCMonth() === 4) {
                     vm.holidayReporter[0].calendarMayHolidays.push(holidayArray[i].name);
                     vm.holidayReporter[0].calendarMay = vm.holidayReporter[0].calendarMayHolidays.length;
                   }
-                  if (checkDate.getMonth() === 5) {
+                  if (checkDate.getUTCMonth() === 5) {
                     vm.holidayReporter[0].calendarJunHolidays.push(holidayArray[i].name);
                     vm.holidayReporter[0].calendarJun = vm.holidayReporter[0].calendarJunHolidays.length;
                   }
-                  if (checkDate.getMonth() === 6) {
+                  if (checkDate.getUTCMonth() === 6) {
                     vm.holidayReporter[0].calendarJulHolidays.push(holidayArray[i].name);
                     vm.holidayReporter[0].calendarJul = vm.holidayReporter[0].calendarJulHolidays.length;
                   }
-                  if (checkDate.getMonth() === 7) {
+                  if (checkDate.getUTCMonth() === 7) {
                     vm.holidayReporter[0].calendarAugHolidays.push(holidayArray[i].name);
                     vm.holidayReporter[0].calendarAug = vm.holidayReporter[0].calendarAugHolidays.length;
                   }
-                  if (checkDate.getMonth() === 8) {
+                  if (checkDate.getUTCMonth() === 8) {
                     vm.holidayReporter[0].calendarSepHolidays.push(holidayArray[i].name);
                     vm.holidayReporter[0].calendarSep = vm.holidayReporter[0].calendarSepHolidays.length;
                   }
-                  if (checkDate.getMonth() === 9) {
+                  if (checkDate.getUTCMonth() === 9) {
                     vm.holidayReporter[0].calendarOctHolidays.push(holidayArray[i].name);
                     vm.holidayReporter[0].calendarOct = vm.holidayReporter[0].calendarOctHolidays.length;
                   }
-                  if (checkDate.getMonth() === 10) {
+                  if (checkDate.getUTCMonth() === 10) {
                     vm.holidayReporter[0].calendarNovHolidays.push(holidayArray[i].name);
                     vm.holidayReporter[0].calendar = vm.holidayReporter[0].calendarNovHolidays.length;
                   }
-                  if (checkDate.getMonth() === 11) {
+                  if (checkDate.getUTCMonth() === 11) {
                     vm.holidayReporter[0].calendarDecHolidays.push(holidayArray[i].name);
                     vm.holidayReporter[0].calendar = vm.holidayReporter[0].calendarDecHolidays.length;
                   }
@@ -14064,51 +14064,51 @@
                 } else {
                   vm.holidayReporter[0].calendarFloat++;
                 }
-                if (checkDate.getMonth() === 0) {
+                if (checkDate.getUTCMonth() === 0) {
                   vm.holidayReporter[0].calendarJanHolidays.push(holidayArray[0].name);
                   vm.holidayReporter[0].calendarJan = vm.holidayReporter[0].calendarJanHolidays.length;
                 }
-                if (checkDate.getMonth() === 1) {
+                if (checkDate.getUTCMonth() === 1) {
                   vm.holidayReporter[0].calendarFebHolidays.push(holidayArray[0].name);
                   vm.holidayReporter[0].calendarFeb = vm.holidayReporter[0].calendarFebHolidays.length;
                 }
-                if (checkDate.getMonth() === 2) {
+                if (checkDate.getUTCMonth() === 2) {
                   vm.holidayReporter[0].calendarMarHolidays.push(holidayArray[0].name);
                   vm.holidayReporter[0].calendarMar = vm.holidayReporter[0].calendarMarHolidays.length;
                 }
-                if (checkDate.getMonth() === 3) {
+                if (checkDate.getUTCMonth() === 3) {
                   vm.holidayReporter[0].calendarAprHolidays.push(holidayArray[0].name);
                   vm.holidayReporter[0].calendarApr = vm.holidayReporter[0].calendarAprHolidays.length;
                 }
-                if (checkDate.getMonth() === 4) {
+                if (checkDate.getUTCMonth() === 4) {
                   vm.holidayReporter[0].calendarMayHolidays.push(holidayArray[0].name);
                   vm.holidayReporter[0].calendarMay = vm.holidayReporter[0].calendarMayHolidays.length;
                 }
-                if (checkDate.getMonth() === 5) {
+                if (checkDate.getUTCMonth() === 5) {
                   vm.holidayReporter[0].calendarJunHolidays.push(holidayArray[0].name);
                   vm.holidayReporter[0].calendarJun = vm.holidayReporter[0].calendarJunHolidays.length;
                 }
-                if (checkDate.getMonth() === 6) {
+                if (checkDate.getUTCMonth() === 6) {
                   vm.holidayReporter[0].calendarJulHolidays.push(holidayArray[0].name);
                   vm.holidayReporter[0].calendarJul = vm.holidayReporter[0].calendarJulHolidays.length;
                 }
-                if (checkDate.getMonth() === 7) {
+                if (checkDate.getUTCMonth() === 7) {
                   vm.holidayReporter[0].calendarAugHolidays.push(holidayArray[0].name);
                   vm.holidayReporter[0].calendarAug = vm.holidayReporter[0].calendarAugHolidays.length;
                 }
-                if (checkDate.getMonth() === 8) {
+                if (checkDate.getUTCMonth() === 8) {
                   vm.holidayReporter[0].calendarSepHolidays.push(holidayArray[0].name);
                   vm.holidayReporter[0].calendarSep = vm.holidayReporter[0].calendarSepHolidays.length;
                 }
-                if (checkDate.getMonth() === 9) {
+                if (checkDate.getUTCMonth() === 9) {
                   vm.holidayReporter[0].calendarOctHolidays.push(holidayArray[0].name);
                   vm.holidayReporter[0].calendarOct = vm.holidayReporter[0].calendarOctHolidays.length;
                 }
-                if (checkDate.getMonth() === 10) {
+                if (checkDate.getUTCMonth() === 10) {
                   vm.holidayReporter[0].calendarNovHolidays.push(holidayArray[0].name);
                   vm.holidayReporter[0].calendarNov = vm.holidayReporter[0].calendarNovHolidays.length;
                 }
-                if (checkDate.getMonth() === 11) {
+                if (checkDate.getUTCMonth() === 11) {
                   vm.holidayReporter[0].calendarDecHolidays.push(holidayArray[0].name);
                   vm.holidayReporter[0].calendarDec = vm.holidayReporter[0].calendarDecHolidays.length;
                 }
