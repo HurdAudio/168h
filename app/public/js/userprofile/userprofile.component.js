@@ -1368,9 +1368,11 @@
         let thisIsArtCommentEditDoneDiv = document.getElementById('thisIsArtCommentEditDoneDiv' + commentId);
         let thisIsArtShareCommentComment = document.getElementById('thisIsArtShareCommentComment' + commentId);
         let editDeleteArtShareCommentDiv = document.getElementById('editDeleteArtShareCommentDiv' + commentId);
+        let now = new Date();
 
         let subObj = {
-          comment: thisIsTheArtShareCommentEditor.value
+          comment: thisIsTheArtShareCommentEditor.value,
+          updated_at: now
         }
 
         $http.get(`/art_share_comments/${commentId}`)
@@ -2264,6 +2266,7 @@
 
       function getArtShareComments(artShare, index) {
         let check;
+        let checkUp;
 
         $http.get('/art_share_comments')
         .then(artShareCommentsData => {
@@ -2283,7 +2286,12 @@
               };
               getArtShareCommenterDetails(shareComments[i], index, i);
               check = new Date(shareComments[i].created_at);
-              vm.activeArtShares[index].comments[i].cleanDate = cleanDateHoliday(shareComments[i].created_at) + ' at ' + check.toLocaleTimeString('en-GB') + '.';
+              checkUp = new Date(shareComments[i].updated_at);
+              if ((checkUp.getTime() - check.getTime()) > 10000) {
+                vm.activeArtShares[index].comments[i].cleanDate = cleanDateHoliday(shareComments[i].created_at) + ' at ' + check.toLocaleTimeString('en-GB') + ' - updated: ' + cleanDateHoliday(shareComments[i].updated_at) + ' at ' + checkUp.toLocaleTimeString('en-GB') + '.';
+              } else {
+                vm.activeArtShares[index].comments[i].cleanDate = cleanDateHoliday(shareComments[i].created_at) + ' at ' + check.toLocaleTimeString('en-GB') + '.';
+              }
             }
             setTimeout(() => {
               for (let j = 0; j < vm.activeArtShares[index].comments.length; j++) {
@@ -2310,6 +2318,12 @@
           let allArtShares = allArtSharesData.data;
           let artShares = allArtShares.filter(entry => {
             return((parseInt(entry.share_associate_id) === parseInt(currentUserId)) || (parseInt(entry.user_id) === parseInt(currentUserId)));
+          });
+          artShares = artShares.filter(entry => {
+            check = new Date();
+            check.setDate(check.getDate() - 30);
+            aDate = new Date(entry.created_at);
+            return(aDate.getTime() > check.getTime());
           });
           artShares = artShares.sort((a, b) => {
             aDate = new Date(a.created_at);
