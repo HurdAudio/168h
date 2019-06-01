@@ -5888,6 +5888,48 @@
         });
       }
 
+      function musicModuleCommenterData(comment, previewIndex, commentIndex) {
+        $http.get(`/users/${comment.user_id}`)
+        .then(commenterData => {
+          let commenter = commenterData.data;
+          vm.musicModulePreview[previewIndex].comments[commentIndex].authorImg = commenter.user_avatar_url;
+          vm.musicModulePreview[previewIndex].comments[commentIndex].authorName = commenter.name;
+        });
+      }
+
+      function retrieveMusicModuleComments(modulePreview, index) {
+        let checkA;
+        let checkB;
+
+        $http.get('/music_module_comments')
+        .then(allMusicModuleCommentsData => {
+          let allMusicModuleComments = allMusicModuleCommentsData.data;
+          let musicModuleComments = allMusicModuleComments.filter(entry => {
+            return((parseInt(entry.music_module_author_id) === parseInt(modulePreview.user_author_id)) && (entry.theme === modulePreview.theme));
+          });
+          musicModuleComments = musicModuleComments.sort((a, b) => {
+            checkA = new Date(a.created_at);
+            checkB = new Date(b.created_at);
+            return(checkB.getTime() - checkA.getTime());
+          });
+          console.log(musicModuleComments);
+          if (musicModuleComments.length > 0) {
+            vm.musicModulePreview[index].comments = [];
+            for (let i = 0; i < musicModuleComments.length; i++) {
+              vm.musicModulePreview[index].comments[i] = {
+                id: musicModuleComments[i].id,
+                user_id: musicModuleComments[i].user_id,
+                comment: musicModuleComments[i].comment
+              };
+              console.log(vm.musicModulePreview[index]);
+              vm.musicModulePreview[index].comments[i].cleanDate = cleanDateHoliday(musicModuleComments[i].created_at) + ' - ' + timeDate(musicModuleComments[i].created_at);
+              musicModuleCommenterData(vm.musicModulePreview[index].comments[i], index, i);
+
+            }
+          }
+        });
+      }
+
       function musicModuleDisplay() {
         let tileModuleDisplayButton = document.getElementById('tileModuleDisplayButton');
         let availableArtModules = document.getElementById('availableArtModules');
@@ -5935,6 +5977,8 @@
             vm.musicModulePreview[k].a_string = modules[k][selection].a_string;
             vm.musicModulePreview[k].theme = modules[k][selection].theme;
             musicModuleAuthorName(k, modules[k][selection].user_author_id);
+            console.log(vm.musicModulePreview[k]);
+            retrieveMusicModuleComments(vm.musicModulePreview[k], k);
           }
         });
 
