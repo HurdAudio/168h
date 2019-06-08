@@ -7641,7 +7641,7 @@ footer img {
   background-repeat: repeat;
   background-size: 75%;
   padding-bottom: 5em;
-  padding-left: 8vmin;
+  /* padding-left: 8vmin; */
 }
 
 #messagesSpace {
