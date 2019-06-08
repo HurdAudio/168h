@@ -11089,7 +11089,7 @@ exports.seed = function(knex, Promise) {
           id: 555,
           user_id: 1,
           theme: 'Women\'s History Month',
-          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/march/.jpeg',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/march/cliton-hill-bar.jpeg',
           title: 'Cliton Hill Bar',
           artist: 'Hai-Hsin Huang',
           year: '2015',
