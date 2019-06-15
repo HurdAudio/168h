@@ -324,6 +324,19 @@
       vm.cancelMusicShareInvite = cancelMusicShareInvite;
       vm.userEditTileShareComment = userEditTileShareComment;
       vm.userEditTileShareCommentCompleted = userEditTileShareCommentCompleted;
+      vm.deleteTileShare = deleteTileShare;
+
+      function deleteTileShare(tileId) {
+        $http.delete(`/tile_shares/${tileId}`)
+        .then(deletedTileShareData => {
+          let deletedTileShare = deletedTileShareData.data;
+          for (let i = 0; i < vm.activeTileShares.length; i++) {
+            if (parseInt(vm.activeTileShares[i].id) === parseInt(tileId)) {
+              vm.activeTileShares.splice(i, 1);
+            }
+          }
+        });
+      }
 
       function userEditTileShareCommentCompleted(commentId) {
         let editDeleteTileShareCommentDiv = document.getElementById('editDeleteTileShareCommentDiv' + commentId);
