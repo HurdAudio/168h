@@ -10204,6 +10204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 511,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/august/port-of-marseilles-1916.jpeg',
+          title: 'Port of Marseilles',
+          artist: 'Albert Marquet',
+          year: '1916',
+          rule: {
+            "monday": [ 12, 14, 24, 9 ],
+            "tuesday": [ 11, 13, 23, 8 ],
+            "wednesday": [ 10, 13, 22, 7 ],
+            "thursday": [ 9, 12, 21, 6 ],
+            "friday": [ 15, 19, 27, 12 ],
+            "saturday": [ 14, 17, 26, 11 ],
+            "sunday": [ 13, 17, 25, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 512,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/august/tea-party.jpeg',
+          title: 'Tea Party',
+          artist: 'Andrei Ryabushkin',
+          year: '1903',
+          rule: {
+            "monday": [ 13, 17, 25, 10 ],
+            "tuesday": [ 12, 14, 24, 9 ],
+            "wednesday": [ 11, 13, 23, 8 ],
+            "thursday": [ 10, 13, 22, 7 ],
+            "friday": [ 9, 12, 21, 6 ],
+            "saturday": [ 15, 19, 27, 12 ],
+            "sunday": [ 14, 17, 26, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 513,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/august/chinese-bowl.jpeg',
+          title: 'Chinese Bowl',
+          artist: 'Max Weber',
+          year: '1912',
+          rule: {
+            "monday": [ 14, 17, 26, 11 ],
+            "tuesday": [ 13, 17, 25, 10 ],
+            "wednesday": [ 12, 14, 24, 9 ],
+            "thursday": [ 11, 13, 23, 8 ],
+            "friday": [ 10, 13, 22, 7 ],
+            "saturday": [ 9, 12, 21, 6 ],
+            "sunday": [ 15, 19, 27, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 514,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/august/starlit-night-miyajima-1928.jpeg',
+          title: 'Starlit Night, Miyajima',
+          artist: 'Hasui Kawase',
+          year: '1928',
+          rule: {
+            "monday": [ 15, 19, 27, 12 ],
+            "tuesday": [ 14, 17, 26, 11 ],
+            "wednesday": [ 13, 17, 25, 10 ],
+            "thursday": [ 12, 14, 24, 9 ],
+            "friday": [ 11, 13, 23, 8 ],
+            "saturday": [ 10, 13, 22, 7 ],
+            "sunday": [ 9, 12, 21, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 515,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/august/perfume-1910.jpeg',
+          title: 'Perfume',
+          artist: 'Luigi Russolo',
+          year: '1910',
+          rule: {
+            "monday": [ 9, 12, 21, 6 ],
+            "tuesday": [ 15, 19, 27, 12 ],
+            "wednesday": [ 14, 17, 26, 11 ],
+            "thursday": [ 13, 17, 25, 10 ],
+            "friday": [ 12, 14, 24, 9 ],
+            "saturday": [ 11, 13, 23, 8 ],
+            "sunday": [ 10, 13, 22, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

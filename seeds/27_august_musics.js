@@ -5458,6 +5458,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 304,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1286371382/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://stensandell.bandcamp.com/album/string-with-straw',
+          a_string: 'STRING WITH STRAW by sten sandell',
+          rule: {
+            "monday": [ 21, 29, 11, 10 ],
+            "tuesday": [ 20, 28, 10, 9 ],
+            "wednesday": [ 24, 1, 14, 13 ],
+            "thursday": [ 23, 31, 13, 12 ],
+            "saturday": [ 22, 30, 12, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 305,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1229854494/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://heddyboubaker.bandcamp.com/album/lack-of-conversation',
+          a_string: 'Lack Of Conversation by Heddy Boubaker',
+          rule: {
+            "monday": [ 22, 30, 12, 11 ],
+            "tuesday": [ 21, 29, 11, 10 ],
+            "wednesday": [ 20, 28, 10, 9 ],
+            "thursday": [ 24, 1, 14, 13 ],
+            "saturday": [ 23, 31, 13, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 306,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3355940593/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://heddyboubaker.bandcamp.com/album/etoiles-mortes-2',
+          a_string: 'Etoiles Mortes by ZED',
+          rule: {
+            "monday": [ 23, 31, 13, 12 ],
+            "tuesday": [ 22, 30, 12, 11 ],
+            "wednesday": [ 21, 29, 11, 10 ],
+            "thursday": [ 20, 28, 10, 9 ],
+            "saturday": [ 24, 1, 14, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
