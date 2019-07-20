@@ -9989,7 +9989,7 @@ exports.seed = function(knex, Promise) {
           id: 500,
           user_id: 1,
           theme: 'Russian Revolution',
-          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/october/.jpg',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/october/popup_knowledge_to_everyone.jpg',
           title: 'Knowledge - to everyone!',
           artist: 'V.Karakashev, L.Levshunova',
           year: '1972',
