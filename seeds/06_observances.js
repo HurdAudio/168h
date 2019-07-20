@@ -11096,6 +11096,44 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20  21:00:00 GMT'),
           updated_at: new Date('2017-07-20  21:00:00 GMT')
+        },
+        {
+          id: 714,
+          user_id: 1,
+          name: 'Frank Rosaly (drummer) born 1974',
+          color: '#030303',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/Health_and_Beauty_W710010.jpg',
+          day_of: new Date ('1974-05-30  21:00:00 GMT'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=65540849/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1747420297/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3426210236/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=4058412698/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2489696976/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1289550539/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2749167174/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://frankrosaly.bandcamp.com/album/costra', 'http://frankrosaly.bandcamp.com/album/frank-rosalys-viscous', 'http://frankrosaly.bandcamp.com/album/tim-haldeman-frank-rosaly-shitty-sons', 'http://frankrosaly.bandcamp.com/album/milkwork', 'http://frankrosaly.bandcamp.com/album/frank-rosaly-the-rada-remixes', 'http://frankrosaly.bandcamp.com/album/frank-rosaly-solo', 'http://frankrosaly.bandcamp.com/album/one-two' ],
+            "a_strings": [ 'Costra by Frank Rosaly', 'Frank Rosaly&#39;s Viscous by Frank Rosaly', 'Tim Haldeman/Frank Rosaly - Shitty Sons by Frank Rosaly', 'Milkwork by Frank Rosaly', 'Frank Rosaly - The Rada Remixes by Frank Rosaly/Rob Rada', 'Frank Rosaly Solo by Frank Rosaly', 'One &amp; Two by Frank Rosaly' ]
+          },
+          created_at: new Date('2017-07-20  21:00:00 GMT'),
+          updated_at: new Date('2017-07-20  21:00:00 GMT')
+        },
+        {
+          id: 715,
+          user_id: 1,
+          name: 'Jason Adasiewicz (composer/vibraphonist) born 1977',
+          color: '#441C05',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/ct-xpm-2012-06-22-ct-ott-0622-jason-adasiewicz-20120621.jpg',
+          day_of: new Date ('1977-10-14  21:00:00 GMT'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=204774978/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=653992401/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://cuneiformrecords.bandcamp.com/album/varmint', 'http://gustafsson1.bandcamp.com/album/timeless' ],
+            "a_strings": [ 'Varmint by Jason Adasiewicz’s Rolldown', 'Timeless by Mats Gustafsson and Jason Adasiewicz' ]
+          },
+          created_at: new Date('2017-07-20  21:00:00 GMT'),
+          updated_at: new Date('2017-07-20  21:00:00 GMT')
         }
       ]);
     }).then(() => {
