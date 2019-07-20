@@ -7866,6 +7866,11 @@ footer img {
   margin: 1vmin 2vmin 1vmin 4vmin;
 }
 
+#musicModuleCommentSpace textarea {
+  margin: 1vmin 2vmin 1vmin 4vmin;
+  width: 80%;
+}
+
 #tilesModuleCommentSpace img {
   float: left;
   height: 3em;
