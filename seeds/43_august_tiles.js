@@ -1222,6 +1222,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E7D75E',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'week',
+          src_string: 'https://s3.amazonaws.com/hours168-hurdaudio/img/august_tiles/scott-walsh-Zqwo009nmCc-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#040A09',
+          color_medium: '#7E040F',
+          color_light: '#D4D9DC',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
