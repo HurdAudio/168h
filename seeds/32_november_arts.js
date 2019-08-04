@@ -9904,6 +9904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 496,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/november/wavy-lines-with-black-border-1997.jpeg',
+          title: 'Wavy Lines with Black Border',
+          artist: 'Sol LeWitt',
+          year: '1997',
+          rule: {
+            "monday": [ 12, 17, 23, 28 ],
+            "tuesday": [ 12, 17, 23, 30 ],
+            "wednesday": [ 18, 23, 29, 4 ],
+            "thursday": [ 17, 19, 27, 3 ],
+            "friday": [ 16, 20, 27, 31 ],
+            "saturday": [ 15, 18, 25, 30 ],
+            "sunday": [ 13, 18, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 497,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/november/lattice-1997.jpeg',
+          title: 'Lattice',
+          artist: 'Daniel Dezeuze',
+          year: '1997',
+          rule: {
+            "monday": [ 14, 19, 25, 30 ],
+            "tuesday": [ 13, 18, 24, 29 ],
+            "wednesday": [ 13, 18, 24, 1 ],
+            "thursday": [ 19, 24, 30, 5 ],
+            "friday": [ 18, 20, 28, 4 ],
+            "saturday": [ 17, 21, 28, 1 ],
+            "sunday": [ 16, 19, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 498,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/november/six-soft-stones-1997.jpeg',
+          title: 'Six Soft Stones',
+          artist: 'Sheila Hicks',
+          year: '1997',
+          rule: {
+            "monday": [ 16, 19, 26, 1 ],
+            "tuesday": [ 14, 19, 25, 30 ],
+            "wednesday": [ 13, 18, 24, 29 ],
+            "thursday": [ 13, 18, 24, 1 ],
+            "friday": [ 19, 24, 30, 5 ],
+            "saturday": [ 18, 20, 28, 4 ],
+            "sunday": [ 17, 21, 28, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 499,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/november/untitled-1997-1.jpeg',
+          title: 'Untitled',
+          artist: 'Marc Vaux',
+          year: '1997',
+          rule: {
+            "monday": [ 17, 21, 28, 1 ],
+            "tuesday": [ 16, 19, 26, 1 ],
+            "wednesday": [ 14, 19, 25, 30 ],
+            "thursday": [ 13, 18, 24, 29 ],
+            "friday": [ 13, 18, 24, 1 ],
+            "saturday": [ 19, 24, 30, 5 ],
+            "sunday": [ 18, 20, 28, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 500,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/november/seascape-sea-of-japan-1997.jpeg',
+          title: 'Seascape: Sea of Japan',
+          artist: 'Hiroshi Sugimoto',
+          year: '1997',
+          rule: {
+            "monday": [ 18, 20, 28, 4 ],
+            "tuesday": [ 17, 21, 28, 1 ],
+            "wednesday": [ 16, 19, 26, 1 ],
+            "thursday": [ 14, 19, 25, 30 ],
+            "friday": [ 13, 18, 24, 29 ],
+            "saturday": [ 13, 18, 24, 1 ],
+            "sunday": [ 19, 24, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
