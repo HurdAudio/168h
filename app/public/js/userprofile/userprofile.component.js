@@ -328,6 +328,43 @@
       vm.addNewMusicShareComment = addNewMusicShareComment;
       vm.userEditMusicModuleComment = userEditMusicModuleComment;
       vm.userEditMusicModuleCommentCompleted = userEditMusicModuleCommentCompleted;
+      vm.userDeleteTileShareComment = userDeleteTileShareComment;
+      vm.userTileShareCommentDeleteCancel = userTileShareCommentDeleteCancel;
+      vm.userTileShareCommentDeleteConfirmClick = userTileShareCommentDeleteConfirmClick;
+
+      function userTileShareCommentDeleteConfirmClick(tileId, commentId) {
+        $http.delete(`/tile_share_comments/${commentId}`)
+        .then(deletedTileShareData => {
+          let deletedTileShare = deletedTileShareData.data;
+          for (let i = 0; i < vm.activeTileShares.length; i++) {
+            if (parseInt(vm.activeTileShares[i].id) === parseInt(tileId)) {
+              for (let j = 0; j < vm.activeTileShares[i].comments.length; j++) {
+                if (parseInt(vm.activeTileShares[i].comments[j].id) === parseInt(commentId)) {
+                  vm.activeTileShares[i].comments.splice(j, 1);
+                  userTileShareCommentDeleteCancel(commentId);
+                  return;
+                }
+              }
+            }
+          }
+        });
+      }
+
+      function userTileShareCommentDeleteCancel(commentId) {
+        let editDeleteTileShareCommentDiv = document.getElementById('editDeleteTileShareCommentDiv' + commentId);
+        let deleteTileShareCommentConfirm = document.getElementById('deleteTileShareCommentConfirm' + commentId);
+
+        editDeleteTileShareCommentDiv.setAttribute("style", "display: initial;");
+        deleteTileShareCommentConfirm.setAttribute("style", "display: none;");
+      }
+
+      function userDeleteTileShareComment(commentId) {
+        let editDeleteTileShareCommentDiv = document.getElementById('editDeleteTileShareCommentDiv' + commentId);
+        let deleteTileShareCommentConfirm = document.getElementById('deleteTileShareCommentConfirm' + commentId);
+
+        editDeleteTileShareCommentDiv.setAttribute("style", "display: none;");
+        deleteTileShareCommentConfirm.setAttribute("style", "display: initial;");
+      }
 
       function userEditMusicModuleCommentCompleted(commentId) {
         let thisIsTheMusicModuleCommentEditor = document.getElementById('thisIsTheMusicModuleCommentEditor' + commentId);
