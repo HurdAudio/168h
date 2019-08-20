@@ -1798,6 +1798,8 @@
 
       function retrieveMusicShareComments(musicShare, index) {
         let check;
+        let created;
+        let updated;
 
         $http.get('music_share_comments')
         .then(allMusicShareCommentsData => {
@@ -1815,6 +1817,11 @@
                 comment: musicShareComments[i].comment,
                 cleanDate: cleanDateHoliday(musicShareComments[i].created_at) + ' at ' + check.toLocaleTimeString('en-GB') + '.'
               };
+              created = new Date(musicShareComments[i].created_at);
+              updated = new Date(musicShareComments[i].updated_at);
+              if ((updated.getTime() - created.getTime()) > 10000) {
+                vm.activeMusicShares[index].comments[i].cleanDate += ' Updated: ' + cleanDateHoliday(musicShareComments[i].updated_at) + ' at ' + updated.toLocaleTimeString('en-GB') + '.';
+              }
               obtainMusicShareCommenterDatas(musicShareComments[i], index, i);
 
             }
@@ -1837,12 +1844,19 @@
         let datea;
         let dateb;
         let check;
-        let checkup
+        let checkup;
+        let datec;
+        let expireDate = new Date();
+        expireDate.setDate(expireDate.getDate() - 30);
         $http.get('music_shares')
         .then(allMusicSharesData => {
           let allMusicShares = allMusicSharesData.data;
           let musicShares = allMusicShares.filter(entry => {
             return((parseInt(entry.user_id) === parseInt(currentUserId)) || (parseInt(entry.share_associate_id) === parseInt(currentUserId)));
+          });
+          musicShares = musicShares.filter(entry => {
+            datec = new Date(entry.created_at);
+            return((datec.getTime() - expireDate.getTime()) > 0);
           });
           musicShares = musicShares.sort((a, b) => {
             datea = new Date(a.created_at);
