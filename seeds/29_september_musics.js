@@ -5566,6 +5566,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 310,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3837754190/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://michaeleaton.bandcamp.com/album/tenor-triage',
+          a_string: 'Tenor Triage by Tenor Triage',
+          rule: {
+            "monday": [ 17, 7, 15, 8 ],
+            "tuesday": [ 17, 6, 14, 8 ],
+            "wednesday": [ 15, 5, 13, 7 ],
+            "thursday": [ 19, 9, 17, 11 ],
+            "saturday": [ 18, 8, 16, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 311,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2478047450/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://stephanthelen-moonjune.bandcamp.com/album/fractal-guitar-remixes-and-extra-tracks-including-urban-nightscape-bill-laswell-remix-hd-24bit',
+          a_string: 'Fractal Guitar Remixes and Extra Tracks, including Urban Nightscape (Bill Laswell Remix - HD 24bit) by Stephan Thelen',
+          rule: {
+            "monday": [ 18, 8, 16, 10 ],
+            "tuesday": [ 17, 7, 15, 8 ],
+            "wednesday": [ 17, 6, 14, 8 ],
+            "thursday": [ 15, 5, 13, 7 ],
+            "saturday": [ 19, 9, 17, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 312,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2880310038/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/modi',
+          a_string: 'Modi by Piero Milesi',
+          rule: {
+            "monday": [ 19, 9, 17, 11 ],
+            "tuesday": [ 18, 8, 16, 10 ],
+            "wednesday": [ 17, 7, 15, 8 ],
+            "thursday": [ 17, 6, 14, 8 ],
+            "saturday": [ 15, 5, 13, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
