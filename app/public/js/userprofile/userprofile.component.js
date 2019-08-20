@@ -333,6 +333,36 @@
       vm.userTileShareCommentDeleteConfirmClick = userTileShareCommentDeleteConfirmClick;
       vm.shareTilesCurrate = shareTilesCurrate;
       vm.cancelTileShareInvite = cancelTileShareInvite;
+      vm.userDeleteMusicModuleComment = userDeleteMusicModuleComment;
+      vm.userMusicModuleCommentDeleteCancel = userMusicModuleCommentDeleteCancel;
+      vm.userMusicModuleCommentDeleteConfirmClick = userMusicModuleCommentDeleteConfirmClick;
+
+      function userMusicModuleCommentDeleteConfirmClick(commentId) {
+        $http.delete(`/music_module_comments/${commentId}`)
+        .then(goneCommentData => {
+          let goneComment = goneCommentData.data;
+          for (let i = 0; i < vm.musicModulePreview.length; i++) {
+            for (let j = 0; j < vm.musicModulePreview[i].comments.length; j++) {
+              if (parseInt(vm.musicModulePreview[i].comments[j].id) === parseInt(commentId)) {
+                vm.musicModulePreview[i].comments.splice(j, 1);
+                return;
+              }
+            }
+          }
+        });
+      }
+
+      function userMusicModuleCommentDeleteCancel(commentId) {
+        let deleteMusicModuleCommentConfirm = document.getElementById('deleteMusicModuleCommentConfirm' + commentId);
+
+        deleteMusicModuleCommentConfirm.setAttribute("style", "display: none;");
+      }
+
+      function userDeleteMusicModuleComment(commentId) {
+        let deleteMusicModuleCommentConfirm = document.getElementById('deleteMusicModuleCommentConfirm' + commentId);
+
+        deleteMusicModuleCommentConfirm.setAttribute("style", "display: initial;");
+      }
 
       function cancelTileShareInvite() {
         let shareTilePane = document.getElementById('shareTilePane');
