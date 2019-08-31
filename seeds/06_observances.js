@@ -2669,7 +2669,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 169,
           user_id: 1,
-          name: 'Christie Mathewson (pitcher), born 1880',
+          name: 'Christy Mathewson (pitcher), born 1880',
           color: '#7C7C7C',
           picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/baseball/christiemathewson.jpg',
           day_of: new Date ('1880-08-12  21:00:00 GMT'),
