@@ -3489,7 +3489,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           name: 'F Scott Fitzgerald (author), born 1896',
           color: '#9C9C9C',
-          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/authors/fscottfitzgerald.jpg',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/authors/fscottfitzgerald.JPG',
           day_of: new Date ('1896-09-24  21:00:00 GMT'),
           is_annual: true,
           art_override: false,
