@@ -9127,6 +9127,7 @@ footer img {
 .reactionDelete {
   float: right !important;
   font-size: 18px !important;
+  cursor: pointer;
   margin: 2vmin 2vmin 2vmin 1vmin !important;
 }
 
