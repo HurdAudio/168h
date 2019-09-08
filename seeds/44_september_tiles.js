@@ -1264,6 +1264,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#C3CED0',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'Leather',
+          type: 'sunday',
+          src_string: 'https://s3.amazonaws.com/hours168-hurdaudio/img/september_tiles/daniel-von-appen-NILW2G2H0Ck-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160`%',
+          color_dark: '#13161C',
+          color_medium: '#897874',
+          color_light: '#9FA7AA',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
