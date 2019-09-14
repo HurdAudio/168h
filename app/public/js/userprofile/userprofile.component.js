@@ -337,6 +337,43 @@
       vm.userMusicModuleCommentDeleteCancel = userMusicModuleCommentDeleteCancel;
       vm.userMusicModuleCommentDeleteConfirmClick = userMusicModuleCommentDeleteConfirmClick;
       vm.messageReactionDelete = messageReactionDelete;
+      vm.addNewTileShareComment = addNewTileShareComment;
+
+      function addNewTileShareComment(tileId) {
+        let index;
+        let commentIndex;
+        let check = new Date();
+        let subObj = {
+          user_id: currentUserId,
+          tile_share: tileId,
+          comment: ''
+        };
+        $http.post('/tile_share_comments', subObj)
+        .then(submittedCommentData => {
+          let submittedComment = submittedCommentData.data[0];
+          for (let i = 0; i < vm.activeTileShares.length; i++) {
+            if (parseInt(vm.activeTileShares[i].id) === parseInt(tileId)) {
+              index = i;
+            }
+          }
+          if ((vm.activeTileShares[index].comments === undefined) || (vm.activeTileShares[index].comments === null)) {
+            vm.activeTileShares[index].comments = [];
+          }
+          commentIndex = vm.activeTileShares[index].comments.length;
+          vm.activeTileShares[index].comments.push(submittedComment);
+          $http.get(`/users/${currentUserId}`)
+          .then(userData => {
+            let user = userData.data;
+            vm.activeTileShares[index].comments[commentIndex].name = user.name;
+            vm.activeTileShares[index].comments[commentIndex].user_avatar_url = user.user_avatar_url;
+            vm.activeTileShares[index].comments[commentIndex].cleanDate = cleanDateHoliday(submittedComment.created_at) + ' at ' + check.toLocaleTimeString('en-GB') + '.';
+            userEditTileShareComment(submittedComment.id);
+            setTimeout(() => {
+              document.getElementById('editDeleteTileShareCommentDiv' + submittedComment.id).focus();
+            }, 100);
+          });
+        });
+      }
 
       function messageReactionDelete(reaction, message) {
         $http.get('/messages_reactions')
@@ -642,6 +679,36 @@
         });
       }
 
+      function emptyTileCommentRemover(commentId) {
+        $http.delete(`/tile_share_comments/${commentId}`)
+        .then(removedCommentData => {
+          let removedComment = removedCommentData.data;
+          for (let i = 0; i < vm.activeTileShares.length; i++) {
+            if ((vm.activeTileShares[i].comments !== undefined) && (vm.activeTileShares[i].comments !== null) && (vm.activeTileShares[i].comments.length > 0)) {
+              for (let j = 0; j < vm.activeTileShares[i].comments.length; j++) {
+                if (parseInt(vm.activeTileShares[i].comments[j].id) === parseInt(commentId)) {
+                  vm.activeTileShares[i].comments.splice(j, 1);
+                  return;
+                }
+              }
+            }
+          }
+        });
+      }
+
+      function removeEmptyTileComments() {
+        $http.get(`/tile_share_commentsbyuser/${currentUserId}`)
+        .then(allUserTileCommentsData => {
+          let allUserTileComments = allUserTileCommentsData.data;
+          console.log(allUserTileComments);
+          for (let i = 0; i < allUserTileComments.length; i++) {
+            if (allUserTileComments[i].comment === '') {
+              emptyTileCommentRemover(allUserTileComments[i].id);
+            }
+          }
+        });
+      }
+
       function userEditTileShareCommentCompleted(commentId) {
         let editDeleteTileShareCommentDiv = document.getElementById('editDeleteTileShareCommentDiv' + commentId);
         let thisIsTileShareCommentComment = document.getElementById('thisIsTileShareCommentComment' + commentId);
@@ -666,12 +733,14 @@
               thisIsTileShareCommentComment.setAttribute("style", "visibility: visible;");
               thisIsTileShareCommentEditDoneDiv.setAttribute("style", "display: none;");
               thisIsTheTileShareCommentEditor.setAttribute("style", "display: none;");
+              removeEmptyTileComments();
             });
           } else {
             editDeleteTileShareCommentDiv.setAttribute("style", "display: initial;");
             thisIsTileShareCommentComment.setAttribute("style", "visibility: visible;");
             thisIsTileShareCommentEditDoneDiv.setAttribute("style", "display: none;");
             thisIsTheTileShareCommentEditor.setAttribute("style", "display: none;");
+            removeEmptyTileComments();
           }
         });
       }
