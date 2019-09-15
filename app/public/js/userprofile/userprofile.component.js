@@ -1148,9 +1148,11 @@
       }
 
       function declineTileShare(tileShareId) {
+        let now = new Date();
         let subObj = {
           responded: true,
-          accepted: false
+          accepted: false,
+          updated_at: now
         };
         $http.patch(`/tile_shares/${tileShareId}`, subObj)
         .then(patchedTileShareData => {
@@ -19286,6 +19288,7 @@
       function retrieveUserTileShares() {
         let datea;
         let dateb;
+        let check;
         let currateDate = Math.floor(Math.random() * 30) + 1;
 
         $http.get('/tile_shares')
@@ -19309,7 +19312,9 @@
                 user_id: userTileShares[i].user_id,
                 share_associate_id: userTileShares[i].share_associate_id,
                 responded: userTileShares[i].responded,
-                accepted: userTileShares[i].accepted
+                accepted: userTileShares[i].accepted,
+                created_at: userTileShares[i].created_at,
+                updated_at: userTileShares[i].updated_at
               };
               // console.log(vm.activeTileShares[i]);
               // console.log(userTileShares[i]);
@@ -19324,6 +19329,8 @@
                 handleHoverTile(document.getElementById('tilesCurratorDate' + vm.activeTileShares[j].id), vm.activeTileShares[j]);
                 if (parseInt(vm.activeTileShares[j].share_associate_id) === parseInt(currentUserId)) {
                   if (vm.activeTileShares[j].responded) {
+                    check = new Date(vm.activeTileShares[j].updated_at);
+                    vm.activeTileShares[j].responseCleanDate = cleanDateHoliday(vm.activeTileShares[j].updated_at) + ' at ' + check.toLocaleTimeString('en-GB') + '.';
                     document.getElementById('tileAcceptDecline' + vm.activeTileShares[j].id).setAttribute("style", "display: none;");
                     if (vm.activeTileShares[j].accepted) {
                       document.getElementById('tileShareAccepted' + vm.activeTileShares[j].id).setAttribute("style", "display: initial;");
@@ -19345,6 +19352,8 @@
                   document.getElementById('tileInvitee' + vm.activeTileShares[j].id).setAttribute("style", "display: initial;");
                   document.getElementById('tileAcceptDecline' + vm.activeTileShares[j].id).setAttribute("style", "display: none;");
                   if (vm.activeTileShares[j].responded) {
+                    check = new Date(vm.activeTileShares[j].updated_at);
+                    vm.activeTileShares[j].responseCleanDate = cleanDateHoliday(vm.activeTileShares[j].updated_at) + ' at ' + check.toLocaleTimeString('en-GB') + '.';
                     if (vm.activeTileShares[j].accepted) {
                       document.getElementById('tileShareAccepted' + vm.activeTileShares[j].id).setAttribute("style", "display: initial;");
                       document.getElementById('tileShareDeclined' + vm.activeTileShares[j].id).setAttribute("style", "display: none;");
