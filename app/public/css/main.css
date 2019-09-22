@@ -9171,8 +9171,8 @@ footer img {
 }
 
 
-/* .day {
-  background-image: url(https://s3.amazonaws.com/hours168-hurdaudio/img/january_tiles/ice-2832051_1920.jpg);
+.day {
+  background-image: url(https://s3.amazonaws.com/hours168-hurdaudio/img/tiles/picture-with-a-black-arch-1912.jpeg);
   background-repeat: no-repeat;
-  background-size: 150%;
-} */
+  background-size: cover;
+}
