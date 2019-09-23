@@ -5674,6 +5674,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 316,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1953198100/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://alestorm.bandcamp.com/album/captain-morgans-revenge-10th-anniversary-edition',
+          a_string: 'Captain Morgan&#39;s Revenge - 10th Anniversary Edition by Alestorm',
+          rule: {
+            "monday": [ 22, 1, 11, 14 ],
+            "tuesday": [ 21, 1, 10, 13 ],
+            "wednesday": [ 20, 30, 10, 12 ],
+            "thursday": [ 19, 29, 8, 11 ],
+            "saturday": [ 23, 2, 12, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 317,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=217266736/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blazonstone.bandcamp.com/album/hymns-of-triumph-and-death',
+          a_string: 'Hymns Of Triumph And Death by Blazon Stone',
+          rule: {
+            "monday": [ 23, 2, 12, 15 ],
+            "tuesday": [ 22, 1, 11, 14 ],
+            "wednesday": [ 21, 1, 10, 13 ],
+            "thursday": [ 20, 30, 10, 12 ],
+            "saturday": [ 19, 29, 8, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 318,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2060376570/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jeanpaul2.bandcamp.com/album/pirate-hymn-crossbones',
+          a_string: 'Pirate Hymn - Crossbones by Jean Paul',
+          rule: {
+            "monday": [ 19, 29, 8, 11 ],
+            "tuesday": [ 23, 2, 12, 15 ],
+            "wednesday": [ 22, 1, 11, 14 ],
+            "thursday": [ 21, 1, 10, 13 ],
+            "saturday": [ 20, 30, 10, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
