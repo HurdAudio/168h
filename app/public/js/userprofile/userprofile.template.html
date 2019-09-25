@@ -4462,10 +4462,12 @@
               <h1>Comments:</h1>
             </div>
             <div id="musicModuleCommentSpace">
+              <a class="btn" href="" style="float: right;" ng-click="$ctrl.addMusicModuleComment(musicmod.user_author_id, musicmod.theme)">add</a>
+              <br><br><br>
               <main ng-repeat="comment in musicmod.comments | orderBy : $ctrl.sortBy">
                 <img src="{{comment.authorImg}}">
-                <p>{{comment.authorName}} commented <br> {{comment.cleanDate}}</p><br><br><br>
-                <h3 id="thisIsMusicModuleCommentComment{{comment.id}}">{{comment.comment}}</h3>
+                <p>{{comment.authorName}} commented <br> {{comment.cleanDate}}</p><br><br><br><br><br><br>
+                <h3 id="thisIsMusicModuleCommentComment{{comment.id}}">{{comment.comment}}</h3><br><br><br><br><br><br><br><br><br>
 
                 <textarea id="thisIsTheMusicModuleCommentEditor{{comment.id}}" class="pure-input-1" rows="5"></textarea>
                 <div class="thisIsMusicModuleCommentEditDoneDiv" id="thisIsMusicModuleCommentEditDoneDiv{{comment.id}}"><a class="btn" id="thisIsTheMusicModuleCommentEditorDoneButton{{comment.id}}" href="#" ng-click="$ctrl.userEditMusicModuleCommentCompleted(comment.id)">done</a></div>
