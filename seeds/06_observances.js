@@ -11365,6 +11365,34 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20  21:00:00 GMT'),
           updated_at: new Date('2017-07-20  21:00:00 GMT')
+        },
+        {
+          id: 730,
+          user_id: 1,
+          name: 'Luigi Galleani (anarchist) born 1861',
+          color: '#9C9C9C',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/Lugi_Gallean2.jpg',
+          day_of: new Date ('1861-08-12  21:00:00 GMT'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20  21:00:00 GMT'),
+          updated_at: new Date('2017-07-20  21:00:00 GMT')
+        },
+        {
+          id: 731,
+          user_id: 1,
+          name: 'Sébastien Faure (anarchist/freethought/secularist) born 1858',
+          color: '#D8D3B6',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/Fauresebastien_police.jpeg',
+          day_of: new Date ('1858-01-06  21:00:00 GMT'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20  21:00:00 GMT'),
+          updated_at: new Date('2017-07-20  21:00:00 GMT')
         }
       ]);
     }).then(() => {
