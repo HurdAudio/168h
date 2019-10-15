@@ -339,6 +339,42 @@
       vm.messageReactionDelete = messageReactionDelete;
       vm.addNewTileShareComment = addNewTileShareComment;
       vm.addMusicModuleComment = addMusicModuleComment;
+      vm.commentReactionDelete = commentReactionDelete;
+
+      function commentReactionDelete(reaction, comment) {
+        $http.get('/comment_reactions')
+        .then(allReactionsData => {
+          let allReactions = allReactionsData.data;
+          let someReactions = allReactions.filter(entry => {
+            return(parseInt(entry.comment_id) === parseInt(comment.id));
+          });
+          let userReaction = someReactions.filter(entry => {
+            return((parseInt(entry.user_author_id) === parseInt(currentUserId)) && (entry.reaction === reaction.type));
+          });
+          $http.delete(`/comment_reactions/${userReaction[0].id}`)
+          .then(removedData => {
+            let removed = removedData.data;
+            for (let i = 0; i < vm.userMessages.length; i++) {
+              if ((vm.userMessages[i].comments !== undefined) && (vm.userMessages[i].comments !== null) && (vm.userMessages[i].comments.length > 0)) {
+                for (let j = 0; j < vm.userMessages[i].comments.length; j++) {
+                  if (parseInt(vm.userMessages[i].comments[j].id) === parseInt(comment.id)) {
+                    for (let k = 0; k < vm.userMessages[i].comments[j].reactions.length; k++) {
+                      if (vm.userMessages[i].comments[j].reactions[k].type === reaction.type) {
+                        if (vm.userMessages[i].comments[j].reactions[k].total === 1) {
+                          vm.userMessages[i].comments[j].reactions.splice(k, 1);
+                        } else {
+                          vm.userMessages[i].comments[j].reactions[k].total -= 1;
+                          vm.userMessages[i].comments[j].reactions[k].user_react = false;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          });
+        });
+      }
 
       function addTimeblockShareCommentReactor(appointmentIndex, commentIndex, reactionIndex, reactorId) {
         $http.get(`/users/${reactorId}`)
@@ -18305,6 +18341,10 @@
         .then(reactorData => {
           let reactor = reactorData.data;
           vm.userMessages[messagesIndex].comments[index].reactions[reactionIndex].reactors += reactor.name + '   ';
+          if (parseInt(reactorId) === parseInt(currentUserId)) {
+            vm.userMessages[messagesIndex].comments[index].reactions[reactionIndex].user_react = true;
+          }
+
         });
       }
 
@@ -18335,7 +18375,8 @@
                   message_id: commentReactions[i].message_id,
                   type: commentReactions[i].reaction,
                   total: 1,
-                  reactors: ''
+                  reactors: '',
+                  user_react: false
                 };
                 switch(commentReactions[i].reaction) {
                   case('thumbsUp'):
