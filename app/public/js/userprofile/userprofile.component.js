@@ -825,9 +825,11 @@
         $http.get(`/music_module_comments/${commentId}`)
         .then(commentData => {
           let comment = commentData.data;
+          let now = new Date();
           if (thisIsTheMusicModuleCommentEditor.value !== comment.comment) {
             let subObj = {
-              comment: thisIsTheMusicModuleCommentEditor.value
+              comment: thisIsTheMusicModuleCommentEditor.value,
+              updated_at: now
             };
             $http.patch(`/music_module_comments/${commentId}`, subObj)
             .then(editedCommentData => {
@@ -6645,7 +6647,14 @@
                 comment: musicModuleComments[i].comment
               };
               console.log(vm.musicModulePreview[index]);
-              vm.musicModulePreview[index].comments[i].cleanDate = cleanDateHoliday(musicModuleComments[i].created_at) + ' - ' + timeDate(musicModuleComments[i].created_at);
+              checkA = new Date(musicModuleComments[i].created_at);
+              checkB = new Date(musicModuleComments[i].updated_at);
+              if ((checkB.getTime() - checkA.getTime()) < 1000) {
+                vm.musicModulePreview[index].comments[i].cleanDate = cleanDateHoliday(musicModuleComments[i].created_at) + ' - ' + timeDate(musicModuleComments[i].created_at);
+              } else {
+                vm.musicModulePreview[index].comments[i].cleanDate = cleanDateHoliday(musicModuleComments[i].created_at) + ' - ' + timeDate(musicModuleComments[i].created_at) + ' - updated at - ' + cleanDateHoliday(musicModuleComments[i].updated_at) + ' - ' + timeDate(musicModuleComments[i].updated_at) + '.';
+              }
+
               musicModuleCommenterData(vm.musicModulePreview[index].comments[i], index, i);
 
             }
