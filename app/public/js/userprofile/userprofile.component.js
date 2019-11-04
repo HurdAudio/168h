@@ -965,6 +965,7 @@
             $http.patch(`/tile_share_comments/${commentId}`, subObj)
             .then(updatedCommentData => {
               let updatedComment = updatedCommentData.data;
+              alert(updatedComment.updated_at);
               thisIsTileShareCommentComment.innerHTML = updatedComment.comment;
               editDeleteTileShareCommentDiv.setAttribute("style", "display: initial;");
               thisIsTileShareCommentComment.setAttribute("style", "visibility: visible;");
@@ -19517,6 +19518,8 @@
       function obtainTileComments(tileShare, index) {
         let datea;
         let dateb;
+        let dateCreate;
+        let dateUpdate;
 
         $http.get('/tile_share_comments')
         .then(allTileShareCommentsData => {
@@ -19538,7 +19541,14 @@
                 tile_share: tileComments[i].tile_share,
                 comment: tileComments[i].comment
               };
-              vm.activeTileShares[index].comments[i].cleanDate = cleanDateHoliday(tileComments[i].created_at) + ' - ' + timeDate(tileComments[i].created_at);
+              dateCreate = new Date(tileComments[i].created_at);
+              dateUpdate = new Date(tileComments[i].update_at);
+              if ((dateUpdate.getTime() - dateCreate.getTime()) < 1000) {
+                vm.activeTileShares[index].comments[i].cleanDate = cleanDateHoliday(tileComments[i].created_at) + ' - ' + timeDate(tileComments[i].created_at);
+              } else {
+                vm.activeTileShares[index].comments[i].cleanDate = cleanDateHoliday(tileComments[i].created_at) + ' - ' + timeDate(tileComments[i].created_at) + '- updated at -' + cleanDateHoliday(tileComments[i].updated_at) + ' - ' + timeDate(tileComments[i].updated_at) + '.';
+              }
+
               retrieveTileCommenterData(tileComments[i], index, i);
             }
             setTimeout(() => {
@@ -19561,12 +19571,18 @@
         let dateb;
         let check;
         let currateDate = Math.floor(Math.random() * 30) + 1;
+        let expiration = new Date();
+        expiration.setDate(expiration.getDate() - 30);
 
         $http.get('/tile_shares')
         .then(allTileSharesData => {
           let allTileShares = allTileSharesData.data;
           let userTileShares = allTileShares.filter(entry => {
             return((parseInt(entry.user_id) === parseInt(currentUserId)) || (parseInt(entry.share_associate_id) === parseInt(currentUserId)));
+          });
+          userTileShares = userTileShares.filter(entry => {
+            datea = new Date(entry.created_at);
+            return(datea.getTime() > expiration.getTime());
           });
           userTileShares = userTileShares.sort((a, b) => {
             datea = new Date(a.created_at);
