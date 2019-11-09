@@ -2728,9 +2728,9 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Ethiopian & Pan-African',
           source: 'bandcamp',
-          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=286440587/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          href_string: 'http://preschmedia.bandcamp.com/album/alva-ja-tik-b-tu-cd-lp-1978-2015',
-          a_string: 'ALVA - Ja Tik Būtu CD/LP (1978) 2015 by Alva',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1158895568/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thesoapgirls.bandcamp.com/album/elephant-in-the-room',
+          a_string: 'Elephant in the Room by The SoapGirls',
           rule: {
             "monday": [ 22, 3, 14, 18 ],
             "tuesday": [ 21, 2, 13, 17 ],

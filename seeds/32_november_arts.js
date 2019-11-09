@@ -9510,7 +9510,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Minimalism',
           img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/november/untitled-1993.jpeg',
-          title: '"Untitled"',
+          title: 'Untitled',
           artist: 'Felix Gonzalez-Torres',
           year: '1993',
           rule: {
