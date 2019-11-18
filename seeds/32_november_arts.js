@@ -10804,6 +10804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 541,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/november/village-vi-no-i-10-2005.jpeg',
+          title: 'Village VI, No. I, 10',
+          artist: 'Richard Tuttle',
+          year: '2005',
+          rule: {
+            "monday": [ 24, 28, 5, 8 ],
+            "tuesday": [ 23, 26, 3, 8 ],
+            "wednesday": [ 21, 26, 2, 7 ],
+            "thursday": [ 20, 25, 1, 6 ],
+            "friday": [ 20, 25, 1, 8 ],
+            "saturday": [ 26, 1, 7, 12 ],
+            "sunday": [ 25, 27, 5, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 542,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/november/old-green-2005.jpeg',
+          title: 'Old Green',
+          artist: 'Alex Hay',
+          year: '2005',
+          rule: {
+            "monday": [ 25, 27, 5, 1 ],
+            "tuesday": [ 24, 28, 5, 8 ],
+            "wednesday": [ 23, 26, 3, 8 ],
+            "thursday": [ 21, 26, 2, 7 ],
+            "friday": [ 20, 25, 1, 6 ],
+            "saturday": [ 20, 25, 1, 8 ],
+            "sunday": [ 26, 1, 7, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 543,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/november/o-t-reforzate-5-2005.jpeg',
+          title: 'o. T. (Reforzate.5)',
+          artist: 'Jurgen Partenheimer',
+          year: '2005',
+          rule: {
+            "monday": [ 26, 1, 7, 12 ],
+            "tuesday": [ 25, 27, 5, 1 ],
+            "wednesday": [ 24, 28, 5, 8 ],
+            "thursday": [ 23, 26, 3, 8 ],
+            "friday": [ 21, 26, 2, 7 ],
+            "saturday": [ 20, 25, 1, 6 ],
+            "sunday": [ 20, 25, 1, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 544,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/november/column-structure-ix-2006.jpeg',
+          title: 'Column Structure IX',
+          artist: 'Robert Mangold',
+          year: '2006',
+          rule: {
+            "monday": [ 20, 25, 1, 8 ],
+            "tuesday": [ 26, 1, 7, 12 ],
+            "wednesday": [ 25, 27, 5, 1 ],
+            "thursday": [ 24, 28, 5, 8 ],
+            "friday": [ 23, 26, 3, 8 ],
+            "saturday": [ 21, 26, 2, 7 ],
+            "sunday": [ 20, 25, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 545,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/november/untitled-drawing-2006.jpeg',
+          title: 'Untitled Drawing',
+          artist: 'David Batchelor',
+          year: '2006',
+          rule: {
+            "monday": [ 20, 25, 1, 6 ],
+            "tuesday": [ 20, 25, 1, 8 ],
+            "wednesday": [ 26, 1, 7, 12 ],
+            "thursday": [ 25, 27, 5, 1 ],
+            "friday": [ 24, 28, 5, 8 ],
+            "saturday": [ 23, 26, 3, 8 ],
+            "sunday": [ 21, 26, 2, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

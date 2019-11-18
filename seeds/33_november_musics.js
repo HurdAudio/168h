@@ -5782,6 +5782,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 322,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=371636845/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sorcerers.bandcamp.com/album/in-pursuit-of-shai-hulud-the-anderson-spectrum',
+          a_string: 'In Pursuit Of Shai Hulud/The Anderson Spectrum by The Sorcerers',
+          rule: {
+            "monday": [ 17, 28, 9, 13 ],
+            "tuesday": [ 16, 27, 8, 12 ],
+            "wednesday": [ 15, 26, 7, 18 ],
+            "thursday": [ 14, 25, 6, 18 ],
+            "saturday": [ 18, 29, 10, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 323,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=117443838/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ethiopianrecords.bandcamp.com/album/qen-sew',
+          a_string: 'Qen Sew ቅን ሰዉ by Ethiopian Records',
+          rule: {
+            "monday": [ 18, 29, 10, 14 ],
+            "tuesday": [ 17, 28, 9, 13 ],
+            "wednesday": [ 16, 27, 8, 12 ],
+            "thursday": [ 15, 26, 7, 18 ],
+            "saturday": [ 14, 25, 6, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 324,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4161711652/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ethiopianrecords.bandcamp.com/album/letu-sinega',
+          a_string: 'Letu Sinega by Ethiopian Records',
+          rule: {
+            "monday": [ 14, 25, 6, 18 ],
+            "tuesday": [ 18, 29, 10, 14 ],
+            "wednesday": [ 17, 28, 9, 13 ],
+            "thursday": [ 16, 27, 8, 12 ],
+            "saturday": [ 15, 26, 7, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
