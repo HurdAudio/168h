@@ -1353,7 +1353,7 @@ exports.seed = function(knex, Promise) {
           id: 97,
           user_id: 1,
           theme: 'Autumnal',
-          type: 'sunday',
+          type: 'holiday',
           src_string: 'https://s3.amazonaws.com/hours168-hurdaudio/img/october_tiles/autumn_dorwin_staircase_by_boldfrontiers_dcr1bn1-pre.jpg',
           repeat_value: 'no-repeat',
           size_value: 'cover',
