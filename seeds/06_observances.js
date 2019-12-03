@@ -11463,7 +11463,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 736,
           user_id: 1,
-          name: 'Samuel Fielden (Methodist pastor/socialist/anarchist/labor activist/) born 1847. One of the 1886 Haymarket 8 who was convicted.',
+          name: 'Samuel Fielden (Methodist pastor/socialist/anarchist/labor activist) born 1847. One of the 1886 Haymarket 8 who was convicted.',
           color: '#E3E0DB',
           picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/Samuel_Fielden_portrait_2.jpg',
           day_of: new Date ('1847-02-25  21:00:00 GMT'),
@@ -11481,6 +11481,39 @@ exports.seed = function(knex, Promise) {
           color: '#60594F',
           picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/Victor_serge.jpg',
           day_of: new Date ('1890-12-30  21:00:00 GMT'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20  21:00:00 GMT'),
+          updated_at: new Date('2017-07-20  21:00:00 GMT')
+        },
+        {
+          id: 738,
+          user_id: 1,
+          name: 'Linda Oh (bassist/composer) born 1984.',
+          color: '#9D072C',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/461794_10150589461387064_818230713_o.jpg',
+          day_of: new Date ('1984-08-25  21:00:00 GMT'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=1527382468/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2970219357/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://lindaoh.bandcamp.com/album/sun-pictures', 'http://lindaoh.bandcamp.com/album/initial-here' ],
+            "a_strings": [ 'Sun Pictures by Linda Oh', 'Initial Here by Linda Oh' ]
+          },
+          created_at: new Date('2017-07-20  21:00:00 GMT'),
+          updated_at: new Date('2017-07-20  21:00:00 GMT')
+        },
+        {
+          id: 739,
+          user_id: 1,
+          name: 'Greg Cohen (bassist/composer) born 1953',
+          color: '#B42213',
+          picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/Greg_Cohen_jpg.jpg',
+          day_of: new Date ('1953-07-13  21:00:00 GMT'),
           is_annual: true,
           art_override: false,
           music_override: false,
