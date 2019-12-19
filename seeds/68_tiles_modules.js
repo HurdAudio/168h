@@ -1114,6 +1114,21 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+          {
+          id: 75,
+          user_author_id: 1,
+          theme: 'Kandinsky',
+          type: 'sunday',
+          src_string: 'https://s3.amazonaws.com/hours168-hurdaudio/img/tiles/gloomy-situation-1933.jpeg',
+          repeat_value: 'no-repeat',
+          size_value: 'cover',
+          color_dark: '#',
+          color_medium: '#',
+          color_light: '#',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
