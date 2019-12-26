@@ -4617,7 +4617,7 @@ exports.seed = function (knex, Promise) {
                     id: 385,
                     user_author_id: 1,
                     theme: 'Transavantgarde',
-                    img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/modules/.jpeg',
+                    img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/modules/wounded-kitty-s-going-doggy-s-ear-he-s-gnawing-1989.jpeg',
                     title: 'Wounded Kitty\'s Going, Doggy\'s Ear He\'s Gnawing',
                     artist: 'Valeria Trubina',
                     year: '1989',
