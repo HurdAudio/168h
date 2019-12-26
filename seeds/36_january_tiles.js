@@ -1488,6 +1488,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#EFF3FF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+          {
+          id: 107,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'holiday',
+          src_string: 'https://s3.amazonaws.com/hours168-hurdaudio/img/january_tiles/ice_waterfall_by_glauxbryonia_dc4hj16-fullview.jpg',
+          repeat_value: 'no-repeat',
+          size_value: 'cover',
+          color_dark: '#121F26',
+          color_medium: '#87BBEC',
+          color_light: '#BEEDFE',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
