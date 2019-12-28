@@ -11690,9 +11690,9 @@ exports.seed = function (knex, Promise) {
                     user_id: 1,
                     theme: 'Modern Art before World War II',
                     img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/august/.jpeg',
-                    title: '',
-                    artist: '',
-                    year: '',
+                    title: 'Fish Circus',
+                    artist: 'Eileen Agar',
+                    year: '1939',
                     rule: {
                         "monday": [18, 21, 30, 15],
                         "tuesday": [24, 28, 5, 21],
