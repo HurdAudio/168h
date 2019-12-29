@@ -6474,7 +6474,7 @@ exports.seed = function (knex, Promise) {
                     source: 'bandcamp',
                     src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4155406989/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
                     href_string: 'http://slowmeadow.bandcamp.com/album/happy-occident',
-                    a_string: 'Happy Occident by Slow Meadow',
+                    a_string: 'Happy Occident by Slow Meadow    ',
                     rule: {
                         "monday": [18, 26, 28, 13],
                         "tuesday": [22, 26, 2, 13],
