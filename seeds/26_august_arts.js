@@ -11689,7 +11689,7 @@ exports.seed = function (knex, Promise) {
                     id: 585,
                     user_id: 1,
                     theme: 'Modern Art before World War II',
-                    img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/august/.jpeg',
+                    img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/august/fish-circus-1939.jpeg',
                     title: 'Fish Circus',
                     artist: 'Eileen Agar',
                     year: '1939',
