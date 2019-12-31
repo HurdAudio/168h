@@ -4664,13 +4664,8 @@ exports.seed = function (knex, Promise) {
                     day_of: new Date('1944-11-02  21:00:00 GMT'),
                     is_annual: true,
                     art_override: false,
-                    music_override: true,
-                    override_content: {
-                        "sources": ['bandcamp'],
-                        "src_strings": ['https://bandcamp.com/EmbeddedPlayer/album=3073841860/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/'],
-                        "href_strings": ['http://mellowrecords.bandcamp.com/album/keith-emerson-san-juan-capistrano-1998'],
-                        "a_strings": ['KEITH EMERSON  San Juan Capistrano 1998 by KEITH EMERSON']
-                    },
+                    music_override: false,
+                    override_content: null,
                     created_at: new Date('2017-07-20  21:00:00 GMT'),
                     updated_at: new Date('2017-07-20  21:00:00 GMT')
         },
