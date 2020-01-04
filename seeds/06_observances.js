@@ -11543,6 +11543,34 @@ exports.seed = function (knex, Promise) {
                     override_content: null,
                     created_at: new Date('2017-07-20  21:00:00 GMT'),
                     updated_at: new Date('2017-07-20  21:00:00 GMT')
+        },
+                {
+                    id: 742,
+                    user_id: 1,
+                    name: 'William Wilberforce (abolitionist) born 1759',
+                    color: '#0E0D13',
+                    picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/William_wilberforce.jpg',
+                    day_of: new Date('1759-08-24  21:00:00 GMT'),
+                    is_annual: true,
+                    art_override: false,
+                    music_override: false,
+                    override_content: null,
+                    created_at: new Date('2017-07-20  21:00:00 GMT'),
+                    updated_at: new Date('2017-07-20  21:00:00 GMT')
+        },
+                {
+                    id: 743,
+                    user_id: 1,
+                    name: 'Henri Grégoire (abolitionist/revolutionary leader) born 1750',
+                    color: '#F4F4F4',
+                    picture: 'https://hours168-hurdaudio.s3.amazonaws.com/img/dissent/Abbe%CC%81_Gre%CC%81goire_by_Auguste_Bry.jpg',
+                    day_of: new Date('1750-12-04  21:00:00 GMT'),
+                    is_annual: true,
+                    art_override: false,
+                    music_override: false,
+                    override_content: null,
+                    created_at: new Date('2017-07-20  21:00:00 GMT'),
+                    updated_at: new Date('2017-07-20  21:00:00 GMT')
         }
       ]);
         }).then(() => {
