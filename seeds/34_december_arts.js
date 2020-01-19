@@ -11004,6 +11004,106 @@ exports.seed = function (knex, Promise) {
                     },
                     created_at: new Date('2017-07-20T13:44:00.000Z'),
                     updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 551,
+                    user_id: 1,
+                    theme: 'Pulp Art',
+                    img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/december/14-00,StreetSmith.jpg',
+                    title: 'Street & Smith',
+                    artist: 'D. C. Hutchison',
+                    year: '1914',
+                    rule: {
+                        "monday": [16, 29, 6, 12],
+                        "tuesday": [15, 27, 26, 11],
+                        "wednesday": [4, 27, 15, 22], 
+                        "thursday": [20, 2, 10, 16], 
+                        "friday": [19, 31, 9, 15], 
+                        "saturday": [18, 31, 8, 14], 
+                        "sunday": [17, 30, 7, 13]  
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 552,
+                    user_id: 1,
+                    theme: 'Pulp Art',
+                    img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/december/39-12,Astounding.jpg',
+                    title: 'Astounding',
+                    artist: 'Pagsilang Rey Isip',
+                    year: '1939',
+                    rule: {
+                        "monday": [17, 30, 7, 13],
+                        "tuesday": [16, 29, 6, 12], 
+                        "wednesday": [15, 27, 26, 11],
+                        "thursday": [4, 27, 15, 22], 
+                        "friday": [20, 2, 10, 16], 
+                        "saturday": [19, 31, 9, 15], 
+                        "sunday": [18, 31, 8, 14]  
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 553,
+                    user_id: 1,
+                    theme: 'Pulp Art',
+                    img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/december/06-07-28,SatEvenPost.jpg',
+                    title: 'Saturday Evening Post',
+                    artist: 'Percy V. E. Ivory',
+                    year: '1906',
+                    rule: {
+                        "monday": [19, 1, 9, 15],
+                        "tuesday": [18, 31, 8, 14], 
+                        "wednesday": [17, 30, 7, 13],
+                        "thursday": [16, 28, 27, 12], 
+                        "friday": [5, 28, 16, 23], 
+                        "saturday": [21, 3, 11, 17], 
+                        "sunday": [20, 1, 10, 16]  
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 554,
+                    user_id: 1,
+                    theme: 'Pulp Art',
+                    img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/december/06-03,CountryLife.jpg',
+                    title: 'Country Life',
+                    artist: 'Arthur Jameson',
+                    year: '1906',
+                    rule: {
+                        "monday": [20, 1, 10, 16],
+                        "tuesday": [19, 1, 9, 15],  
+                        "wednesday": [18, 31, 8, 14], 
+                        "thursday": [17, 30, 7, 13], 
+                        "friday": [16, 28, 27, 12],
+                        "saturday": [5, 28, 16, 23], 
+                        "sunday": [21, 3, 11, 17]  
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 555,
+                    user_id: 1,
+                    theme: 'Pulp Art',
+                    img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/december/34-03,SctAgtX.jpg',
+                    title: 'Secret Agent X',
+                    artist: 'J. George Janes',
+                    year: '1934',
+                    rule: {
+                        "monday": [21, 3, 11, 17],
+                        "tuesday": [20, 1, 10, 16], 
+                        "wednesday": [19, 1, 9, 15],  
+                        "thursday": [18, 31, 8, 14], 
+                        "friday": [17, 30, 7, 13], 
+                        "saturday": [16, 28, 27, 12],
+                        "sunday": [5, 28, 16, 23]  
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
         }).then(() => {
