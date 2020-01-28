@@ -5944,6 +5944,60 @@ exports.seed = function (knex, Promise) {
                     },
                     created_at: new Date('2017-07-20T13:44:00.000Z'),
                     updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 331,
+                    user_id: 1,
+                    theme: 'Brazil & Pan-South American',
+                    source: 'bandcamp',
+                    src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3536220550/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+                    href_string: 'http://escarnium.bandcamp.com/album/escarnium-interitus',
+                    a_string: 'Escarnium - Interitus by Escarnium',
+                    rule: {
+                        "monday": [22, 28, 3, 9],
+                        "tuesday": [19, 27, 2, 8],  
+                        "wednesday": [18, 26, 1, 7],  
+                        "thursday": [19, 25, 31, 6], 
+                        "saturday": [23, 29, 4, 10]  
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 332,
+                    user_id: 1,
+                    theme: 'Brazil & Pan-South American',
+                    source: 'bandcamp',
+                    src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3322287686/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+                    href_string: 'http://mumblr.bandcamp.com/album/genie',
+                    a_string: 'Genie by Mumblr',
+                    rule: {
+                        "monday": [23, 29, 4, 10],
+                        "tuesday": [22, 28, 3, 9],  
+                        "wednesday": [19, 27, 2, 8],  
+                        "thursday": [18, 26, 1, 7],  
+                        "saturday": [19, 25, 31, 6]  
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 333,
+                    user_id: 1,
+                    theme: 'Brazil & Pan-South American',
+                    source: 'bandcamp',
+                    src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2167888224/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+                    href_string: 'http://madremonte.bandcamp.com/album/lo-que-hay',
+                    a_string: 'Lo Que Hay by Madre Monte',
+                    rule: {
+                        "monday": [19, 25, 31, 6],
+                        "tuesday": [23, 29, 4, 10], 
+                        "wednesday": [22, 28, 3, 9],  
+                        "thursday": [19, 27, 2, 8],  
+                        "saturday": [18, 26, 1, 7]   
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
         }).then(() => {
