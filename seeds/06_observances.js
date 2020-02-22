@@ -11177,7 +11177,7 @@ exports.seed = function (knex, Promise) {
                     user_id: 1,
                     name: 'Lito Mayo (dada artist/graphic artist) born 1954',
                     color: '#FEFFF1',
-                    picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/artists/AMAYO321.jpeg',
+                    picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/artists/AMAYO321.jpg',
                     day_of: new Date('1954-12-17  21:00:00 GMT'),
                     is_annual: true,
                     art_override: true,
