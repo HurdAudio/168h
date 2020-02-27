@@ -11693,6 +11693,39 @@ exports.seed = function (knex, Promise) {
                     override_content: null,
                     created_at: new Date('2017-07-20  21:00:00 GMT'),
                     updated_at: new Date('2017-07-20  21:00:00 GMT')
+        },
+                {
+                    id: 752,
+                    user_id: 1,
+                    name: 'Günter Sommer (drums) born 1943.',
+                    color: '#30569F',
+                    picture: 'https://hours168-hurdaudio.s3.amazonaws.com/img/musicians/Günter_Sommer_02_(fcm).jpg',
+                    day_of: new Date('1943-08-25  21:00:00 GMT'),
+                    is_annual: true,
+                    art_override: false,
+                    music_override: true,
+                    override_content: {
+                        "sources": ['bandcamp', 'bandcamp', 'bandcamp', 'bandcamp'],
+                        "src_strings": ['https://bandcamp.com/EmbeddedPlayer/album=1510962040/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=333431083/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=467073118/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=632166463/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/'],
+                        "href_strings": ['http://destination-out.bandcamp.com/album/h-rmusik', 'http://intaktrec.bandcamp.com/album/s-chsische-schatulle', 'http://intaktrec.bandcamp.com/album/ir-ne-schweizer-g-nter-sommer', 'http://guenterbabysommer.bandcamp.com/album/dedications'],
+                        "a_strings": ['Hörmusik by GÜNTER SOMMER', 'Sächsische Schatulle by Günter Sommer', 'Irène Schweizer - Günter Sommer by Irène Schweizer, Günter Sommer', 'Dedications by Günter Baby Sommer']
+                    },
+                    created_at: new Date('2017-07-20  21:00:00 GMT'),
+                    updated_at: new Date('2017-07-20  21:00:00 GMT')
+        },
+                {
+                    id: 753,
+                    user_id: 1,
+                    name: 'Jacob Appelbaum (independent journalist/computer security researcher/artist/hacker) born 1983.',
+                    color: '#0C0D11',
+                    picture: 'https://hours168-hurdaudio.s3.amazonaws.com/img/dissent/Jacob_Appelbaum-IMG_9320.jpg',
+                    day_of: new Date('1983-04-01  21:00:00 GMT'),
+                    is_annual: true,
+                    art_override: false,
+                    music_override: false,
+                    override_content: null,
+                    created_at: new Date('2017-07-20  21:00:00 GMT'),
+                    updated_at: new Date('2017-07-20  21:00:00 GMT')
         }
       ]);
         }).then(() => {
