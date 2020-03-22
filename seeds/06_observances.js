@@ -647,7 +647,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 41,
                     user_id: 1,
-                    name: 'Bill Fisell (guitarist), born 1951',
+                    name: 'Bill Frisell (guitarist), born 1951',
                     color: '#EDF0E9',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/billfrisell.jpg',
                     day_of: new Date('1951-03-18  21:00:00 GMT'),
@@ -1129,7 +1129,7 @@ exports.seed = function (knex, Promise) {
                     name: 'Cecil Taylor (pianist/composer), born 1929',
                     color: '#767676',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/ceciltaylor.jpg',
-                    day_of: new Date('1929-03-15  21:00:00 GMT'),
+                    day_of: new Date('1929-03-25  21:00:00 GMT'),
                     is_annual: true,
                     art_override: false,
                     music_override: true,
@@ -10026,7 +10026,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 643,
                     user_id: 1,
-                    name: 'The world ended on this day in 2014 when asteroid 2003 QQ47 slammed into the earth exactly as DailyMotion and numerous other "reputable" online sourced reported it would.',
+                    name: 'The world ended on this day in 2014 when asteroid 2003 QQ47 slammed into the earth exactly as DailyMotion and numerous other "reputable" online sources reported it would.',
                     color: '#1D1A25',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/doomsday/METEOR.jpg',
                     day_of: new Date('2014-03-21  21:00:00 GMT'),
