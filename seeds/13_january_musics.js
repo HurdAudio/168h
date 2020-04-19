@@ -118,9 +118,9 @@ exports.seed = function (knex, Promise) {
                     user_id: 1,
                     theme: 'American Maverick Tradition',
                     source: 'bandcamp',
-                    src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2996579334/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-                    href_string: 'http://prawnshocker.bandcamp.com/album/charles-ives-orchestral-set-no-2',
-                    a_string: 'Charles Ives - Orchestral Set no. 2 by Prawnshocker',
+                    src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1009247007/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+                    href_string: 'http://yalesymphonyorchestra.bandcamp.com/album/december-1-1984-in-woolsey-hall',
+                    a_string: 'December 1, 1984 in Woolsey Hall by Leif Bjaland, Music Director',
                     rule: {
                         "monday": [7, 14, 16, 15],
                         "tuesday": [5, 9, 11, 16],
