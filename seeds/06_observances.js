@@ -11816,7 +11816,7 @@ exports.seed = function (knex, Promise) {
                     id: 759,
                     user_id: 1,
                     name: 'Rudolf Rocker (writer/activist/anarchist) born in 1873',
-                    color: '#',
+                    color: '#5b523f',
                     picture: 'https://hours168-hurdaudio.s3.amazonaws.com/img/dissent/28903.jpg',
                     day_of: new Date('1873-03-25  21:00:00 GMT'),
                     is_annual: true,
