@@ -11858,6 +11858,34 @@ exports.seed = function (knex, Promise) {
                     override_content: null,
                     created_at: new Date('2017-07-20  21:00:00 GMT'),
                     updated_at: new Date('2017-07-20  21:00:00 GMT')
+        },
+                {
+                    id: 762,
+                    user_id: 1,
+                    name: 'Don Buchla (inventor) born 1937',
+                    color: '#d6ae8b',
+                    picture: 'https://hours168-hurdaudio.s3.amazonaws.com/img/musicians/18Buchla-articleLarge.jpg',
+                    day_of: new Date('1937-04-17  21:00:00 GMT'),
+                    is_annual: true,
+                    art_override: false,
+                    music_override: false,
+                    override_content: null,
+                    created_at: new Date('2017-07-20  21:00:00 GMT'),
+                    updated_at: new Date('2017-07-20  21:00:00 GMT')
+        },
+                {
+                    id: 763,
+                    user_id: 1,
+                    name: 'Frantz Fanon (psychiatrist/political philosopher) born 1925',
+                    color: '#1f201f',
+                    picture: 'https://hours168-hurdaudio.s3.amazonaws.com/img/dissent/fanon3.jpg',
+                    day_of: new Date('1925-07-20  21:00:00 GMT'),
+                    is_annual: true,
+                    art_override: false,
+                    music_override: false,
+                    override_content: null,
+                    created_at: new Date('2017-07-20  21:00:00 GMT'),
+                    updated_at: new Date('2017-07-20  21:00:00 GMT')
         }
       ]);
         }).then(() => {
