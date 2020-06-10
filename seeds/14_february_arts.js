@@ -13995,12 +13995,112 @@ exports.seed = function (knex, Promise) {
                     year: '?',
                     rule: {
                         "monday":[21, 26, 3, 13],
-                        "tuesday":  [20, 28, 7, 15], 
+                        "tuesday": [20, 28, 7, 15], 
                         "wednesday": [22, 3, 9, 15], 
                         "thursday": [24, 3, 11, 21], 
                         "friday": [24, 5, 1, 20], 
                         "saturday": [14, 22, 1, 9], 
                         "sunday": [15, 24, 3, 11]  
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 701,
+                    user_id: 1,
+                    theme: 'Black History Month',
+                    img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/february/jennie-c-jones-compilation-237.jpg',
+                    title: 'Sustained Black with Broken Time and Undertone',
+                    artist: 'Jennie C. Jones',
+                    year: '2011',
+                    rule: {
+                        "monday":[15, 24, 3, 11],
+                        "tuesday": [21, 26, 3, 13], 
+                        "wednesday": [20, 28, 7, 15], 
+                        "thursday": [22, 3, 9, 15],  
+                        "friday": [24, 3, 11, 21], 
+                        "saturday": [24, 5, 1, 20],  
+                        "sunday": [14, 22, 1, 9]   
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 702,
+                    user_id: 1,
+                    theme: 'Black History Month',
+                    img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/february/picJonesGlyphsw1050ful.jpg',
+                    title: 'Glyphs',
+                    artist: 'Lois Mailou Jones',
+                    year: '1985',
+                    rule: {
+                        "monday": [14, 22, 1, 9],
+                        "tuesday": [15, 24, 3, 11], 
+                        "wednesday": [21, 26, 3, 13], 
+                        "thursday": [20, 28, 7, 15], 
+                        "friday": [22, 3, 9, 15],  
+                        "saturday": [24, 3, 11, 21], 
+                        "sunday": [24, 5, 1, 20]   
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 703,
+                    user_id: 1,
+                    theme: 'Black History Month',
+                    img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/february/lawrence-arthur-jones-jackson-beach---chicago---1946.jpg',
+                    title: 'Jackson Beach - Chicago - 1946',
+                    artist: 'Lawrence Arthur Jones',
+                    year: '1946',
+                    rule: {
+                        "monday": [24, 5, 1, 20],
+                        "tuesday": [14, 22, 1, 9],  
+                        "wednesday": [15, 24, 3, 11], 
+                        "thursday": [21, 26, 3, 13], 
+                        "friday": [20, 28, 7, 15], 
+                        "saturday": [22, 3, 9, 15],  
+                        "sunday": [24, 3, 11, 21]  
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 704,
+                    user_id: 1,
+                    theme: 'Black History Month',
+                    img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/february/165731.jpg',
+                    title: 'Divine Shrine of the Collard Green',
+                    artist: 'Seitu Jones',
+                    year: '2013',
+                    rule: {
+                        "monday": [24, 3, 11, 21],
+                        "tuesday": [24, 5, 1, 20],  
+                        "wednesday": [14, 22, 1, 9],  
+                        "thursday": [15, 24, 3, 11], 
+                        "friday": [21, 26, 3, 13], 
+                        "saturday": [20, 28, 7, 15], 
+                        "sunday": [22, 3, 9, 15]   
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 705,
+                    user_id: 1,
+                    theme: 'Black History Month',
+                    img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/february/unnamediiiiii.jpg',
+                    title: 'Still Life',
+                    artist: 'Ronald Joseph',
+                    year: '1950/1954',
+                    rule: {
+                        "monday": [22, 3, 9, 15],
+                        "tuesday": [24, 3, 11, 21], 
+                        "wednesday": [24, 5, 1, 20],  
+                        "thursday": [14, 22, 1, 9],  
+                        "friday": [15, 24, 3, 11], 
+                        "saturday": [21, 26, 3, 13], 
+                        "sunday": [20, 28, 7, 15]  
                     },
                     created_at: new Date('2017-07-20T13:44:00.000Z'),
                     updated_at: new Date('2017-07-20T13:44:00.000Z')
