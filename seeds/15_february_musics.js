@@ -7564,6 +7564,60 @@ exports.seed = function (knex, Promise) {
                     },
                     created_at: new Date('2017-07-20T13:44:00.000Z'),
                     updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 421,
+                    user_id: 1,
+                    theme: 'Black History Month',
+                    source: 'bandcamp',
+                    src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1038696456/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+                    href_string: 'http://freddiemcgregor.bandcamp.com/album/bobby-bobylon-deluxe-edition',
+                    a_string: 'Bobby Bobylon: Deluxe Edition by Freddie McGregor',
+                    rule: {
+                        "monday": [5, 9, 11, 15],
+                        "tuesday": [19, 11, 13, 15],
+                        "wednesday": [19, 13, 15, 17],
+                        "thursday": [21, 15, 17, 23],
+                        "saturday": [22, 16, 18, 24] 
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 422,
+                    user_id: 1,
+                    theme: 'Black History Month',
+                    source: 'bandcamp',
+                    src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4167874067/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+                    href_string: 'http://hempresssativa.bandcamp.com/album/unconquerebel',
+                    a_string: 'Unconquerebel by Hempress Sativa',
+                    rule: {
+                        "monday": [22, 16, 18, 24],
+                        "tuesday": [5, 9, 11, 15],  
+                        "wednesday": [19, 11, 13, 15],
+                        "thursday": [19, 13, 15, 17],
+                        "saturday": [21, 15, 17, 23] 
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 423,
+                    user_id: 1,
+                    theme: 'Black History Month',
+                    source: 'bandcamp',
+                    src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1638957037/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+                    href_string: 'http://kabakapyramid.bandcamp.com/album/kontraband',
+                    a_string: 'Kontraband by Kabaka Pyramid',
+                    rule: {
+                        "monday": [21, 15, 17, 23],
+                        "tuesday": [22, 16, 18, 24],
+                        "wednesday": [5, 9, 11, 15],  
+                        "thursday": [19, 11, 13, 15],
+                        "saturday": [19, 13, 15, 17] 
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
         }).then(() => {
