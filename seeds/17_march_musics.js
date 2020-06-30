@@ -7510,6 +7510,60 @@ exports.seed = function (knex, Promise) {
                     },
                     created_at: new Date('2017-07-20T13:44:00.000Z'),
                     updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 418,
+                    user_id: 1,
+                    theme: 'Women\'s History Month',
+                    source: 'bandcamp',
+                    src_string: '',
+                    href_string: '',
+                    a_string: '',
+                    rule: {
+                        "monday": [30, 5, 11, 19],
+                        "tuesday": [3, 9, 15, 23],  
+                        "wednesday": [2, 8, 13, 22],  
+                        "thursday": [1, 7, 13, 22],  
+                        "saturday": [30, 6, 12, 20]  
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 419,
+                    user_id: 1,
+                    theme: 'Women\'s History Month',
+                    source: 'bandcamp',
+                    src_string: '',
+                    href_string: '',
+                    a_string: '',
+                    rule: {
+                        "monday": [30, 6, 12, 20],
+                        "tuesday": [30, 5, 11, 19], 
+                        "wednesday": [3, 9, 15, 23],  
+                        "thursday": [2, 8, 13, 22],  
+                        "saturday": [1, 7, 13, 22]   
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 420,
+                    user_id: 1,
+                    theme: 'Women\'s History Month',
+                    source: 'bandcamp',
+                    src_string: '',
+                    href_string: '',
+                    a_string: '',
+                    rule: {
+                        "monday": [2, 8, 14, 23],
+                        "tuesday": [31, 7, 13, 21], 
+                        "wednesday": [31, 6, 12, 20],  
+                        "thursday": [4, 10, 16, 24],  
+                        "saturday": [3, 9, 14, 23]   
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
         }).then(() => {
