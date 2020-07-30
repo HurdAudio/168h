@@ -1648,12 +1648,12 @@ exports.seed = function (knex, Promise) {
                     user_id: 1,
                     theme: 'Light',
                     type: 'week',
-                    src_string: 'https://s3.amazonaws.com/hours168-hurdaudio/img/june_tiles/.jpg',
+                    src_string: 'https://s3.amazonaws.com/hours168-hurdaudio/img/june_tiles/operation-lamp-5380238_1920.jpg',
                     repeat_value: 'no-repeat',
                     size_value: 'cover',
-                    color_dark: '',
-                    color_medium: '',
-                    color_light: '',
+                    color_dark: '#282d3d',
+                    color_medium: '#54617a',
+                    color_light: '#caced8',
                     created_at: new Date('2017-07-20T13:44:00.000Z'),
                     updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
