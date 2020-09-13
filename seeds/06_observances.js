@@ -12003,6 +12003,34 @@ exports.seed = function (knex, Promise) {
                     override_content: null,
                     created_at: new Date('2017-07-20  21:00:00 GMT'),
                     updated_at: new Date('2017-07-20  21:00:00 GMT')
+        },
+                {
+                    id: 772,
+                    user_id: 1,
+                    name: 'Bennie Maupin (reeds) born 1940',
+                    color: '#cd66a6',
+                    picture: 'https://hours168-hurdaudio.s3.amazonaws.com/img/musicians/6a00e008dca1f088340240a48df517200d-500wi.jpg',
+                    day_of: new Date('1940-08-29  21:00:00 GMT'),
+                    is_annual: true,
+                    art_override: false,
+                    music_override: false,
+                    override_content: null,
+                    created_at: new Date('2017-07-20  21:00:00 GMT'),
+                    updated_at: new Date('2017-07-20  21:00:00 GMT')
+        },
+                {
+                    id: 773,
+                    user_id: 1,
+                    name: 'Jacobo Timerman (1923 - 1999), was a Soviet-born Argentine publisher, journalist, and author, who is most noted for his confronting and reporting the atrocities of the Argentine military regime\'s Dirty War during a period of widespread repression in which an estimated 30,000 political prisoners were disappeared. He was persecuted, tortured and imprisoned by the Argentine junta in the late 1970s and was exiled in 1979 with his wife to Israel. He was widely honored for his work as a journalist and publisher.\n\nIn Israel, Timerman wrote and published his most well-known book, Prisoner Without A Name, Cell Without a Number (1981), a memoir of his prison experience that added to his international reputation. A longtime Zionist, he also published The Longest War, a strongly critical book about Israel\'s 1982 Lebanon war.\n\nTimerman returned to Argentina in 1984, and testified to the National Commission on the Disappearance of Persons. He continued to write, publishing books in 1987 about Chile under the Augusto Pinochet regime and in 1990 about Cuba under Fidel Castro.',
+                    color: '#18110e',
+                    picture: 'https://hours168-hurdaudio.s3.amazonaws.com/img/dissent/Timerman_en_sept_2015_(cropped).jpg',
+                    day_of: new Date('1923-01-06  21:00:00 GMT'),
+                    is_annual: true,
+                    art_override: false,
+                    music_override: false,
+                    override_content: null,
+                    created_at: new Date('2017-07-20  21:00:00 GMT'),
+                    updated_at: new Date('2017-07-20  21:00:00 GMT')
         }
       ]);
         }).then(() => {
