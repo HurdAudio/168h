@@ -809,9 +809,9 @@ exports.seed = function (knex, Promise) {
                     id: 41,
                     user_id: 1,
                     theme: 'Women\'s History Month',
-                    img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/march/3-lemons-18x24in-2015-oil-svetlana-kanyo-2.jpg',
+                    img_path: 'https://s3.amazonaws.com/hours168-hurdaudio/img/march/3-lemons-18x24in-2015-oil-svetlana-kanyo-2.JPG',
                     title: 'Lemons',
-                    artist: 'Svetlana Kanyo',
+                    artist: 'Lana Kanyo',
                     year: '2015',
                     rule: {
                         "monday": [3, 13, 21, 31],
