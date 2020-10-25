@@ -7726,6 +7726,60 @@ exports.seed = function (knex, Promise) {
                     },
                     created_at: new Date('2017-07-20T13:44:00.000Z'),
                     updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 430,
+                    user_id: 1,
+                    theme: 'Women\'s History Month',
+                    source: 'bandcamp',
+                    src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1311532989/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+                    href_string: 'https://repsych.bandcamp.com/album/laurence-vanay-galaxies-1974-female-french-folk-jazz-rock-experimental',
+                    a_string: 'Laurence Vanay - Galaxies (1974 Female French Folk Jazz Rock Experimental) by Laurence Vanay',
+                    rule: {
+                        "monday": [3, 9, 15, 24],
+                        "tuesday": [1, 8, 14, 22],  
+                        "wednesday": [1, 7, 13, 21],  
+                        "thursday": [5, 11, 17, 25], 
+                        "saturday": [4, 10, 15, 24]  
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 431,
+                    user_id: 1,
+                    theme: 'Women\'s History Month',
+                    source: 'bandcamp',
+                    src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1411797419/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+                    href_string: 'https://repsych.bandcamp.com/album/laurence-vanay-gate-away-evening-colours-1975-female-french-folk-jazz-rock-experimental',
+                    a_string: 'Laurence Vanay * Gate away / Evening colours (1975 Female * French Folk * Jazz Rock * Experimental) by Laurence Vanay (Gate away)',
+                    rule: {
+                        "monday": [4, 10, 15, 24],
+                        "tuesday": [3, 9, 15, 24],  
+                        "wednesday": [1, 8, 14, 22],  
+                        "thursday": [1, 7, 13, 21],  
+                        "saturday": [5, 11, 17, 25]  
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+                {
+                    id: 432,
+                    user_id: 1,
+                    theme: 'Women\'s History Month',
+                    source: 'bandcamp',
+                    src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2796527984/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+                    href_string: 'https://repsych.bandcamp.com/album/laurence-vanay-glaciers-interdits-70s-soundtrack-instrumental-experimental-rock-female-french-beautiful-ballad',
+                    a_string: 'Laurence Vanay - Glaciers interdits (70s soundtrack instrumental experimental rock female french + beautiful ballad) by Laurence Vanay',
+                    rule: {
+                        "monday": [5, 11, 17, 25],
+                        "tuesday": [4, 10, 15, 24], 
+                        "wednesday": [3, 9, 15, 24],  
+                        "thursday": [1, 8, 14, 22],  
+                        "saturday": [1, 7, 13, 21]   
+                    },
+                    created_at: new Date('2017-07-20T13:44:00.000Z'),
+                    updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
         }).then(() => {
