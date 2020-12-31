@@ -506,7 +506,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 32,
                     user_id: 1,
-                    name: 'Elmer Gantry by Sinclair Lewis, published in 1927. Banned in Boston and other cities and denounced from pulpits across the US.',
+                    name: 'Elmer Gantry published on this day in 1927. It is a satirical novel written by Sinclair Lewis in 1926 that presents aspects of the religious activity of America in fundamentalist and evangelistic circles and the attitudes of the 1920s public toward it. The novel\'s protagonist, the Reverend Dr. Elmer Gantry, is initially attracted by booze and easy money (though he eventually renounces tobacco and alcohol) and chasing women. After various forays into evangelism, he becomes a successful Methodist minister despite his hypocrisy and serial sexual indiscretions.\n\n Elmer Gantry was first published in the United States by Harcourt Trade Publishers in March 1927, dedicated by Lewis to the American journalist and satirist H. L. Mencken.',
                     color: '#E6CE6D',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/books/elmergantry.jpg',
                     day_of: new Date('1927-03-01  21:00:00 GMT'),
@@ -520,7 +520,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 33,
                     user_id: 1,
-                    name: 'Marie Louise Berneri (anarchist/activist/author), born in 1918',
+                    name: 'Marie Louise Berneri (March 1, 1918 – April 13, 1949) was an anarchist activist and author. Born in Italy, she spent much of her life in Spain, France, and England. She was involved with the short-lived publication, Revision, with Luis Mercier Vega and was a member of the group that edited Revolt, War Commentary, and the Freedom newspaper, which is still being published by the Freedom Bookstore in London. She was a continuous contributor to Spain and the World. She also wrote a survey of utopias, Journey Through Utopia, first published in 1950 and re-issued in 2020. Neither East Nor West is a selection of her writings (1952).',
                     color: '#949494',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/marielouiseberneri.jpg',
                     day_of: new Date('1918-03-01  21:00:00 GMT'),
@@ -534,7 +534,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 34,
                     user_id: 1,
-                    name: 'John Irving (author), born in 1942',
+                    name: 'John Irving (born John Wallace Blunt Jr.; March 2, 1942) is an American-Canadian novelist and screenwriter.\n\n Irving achieved critical and popular acclaim after the international success of The World According to Garp in 1978. Many of Irving\'s novels, including The Cider House Rules (1985), A Prayer for Owen Meany (1989), and A Widow for One Year (1998) have been bestsellers. He won the Academy Award for Best Adapted Screenplay in the 72nd Academy Awards (1999) for his script of The Cider House Rules.\n\nFive of his novels have been adapted into films (Garp, Hotel, Meany, Cider, Widow). Several of Irving\'s books (Garp, Meany, Widow) and short stories have been set in and around Phillips Exeter Academy in the town of Exeter, New Hampshire.',
                     color: '#3A6240',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/authors/johnirving.jpg',
                     day_of: new Date('1942-03-02  21:00:00 GMT'),
@@ -548,7 +548,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 35,
                     user_id: 1,
-                    name: 'Georg Cantor (mathematician), born 1845',
+                    name: 'Georg Ferdinand Ludwig Philipp Cantor (March 3 1845 – January 6, 1918) was a German mathematician. He created set theory, which has become a fundamental theory in mathematics. Cantor established the importance of one-to-one correspondence between the members of two sets, defined infinite and well-ordered sets, and proved that the real numbers are more numerous than the natural numbers. In fact, Cantor\'s method of proof of this theorem implies the existence of an infinity of infinities. He defined the cardinal and ordinal numbers and their arithmetic. Cantor\'s work is of great philosophical interest, a fact he was well aware of.\n\n Cantor\'s theory of transfinite numbers was originally regarded as so counter-intuitive – even shocking – that it encountered resistance from mathematical contemporaries such as Leopold Kronecker and Henri Poincaré and later from Hermann Weyl and L. E. J. Brouwer, while Ludwig Wittgenstein raised philosophical objections. Cantor, a devout Lutheran, believed the theory had been communicated to him by God. Some Christian theologians (particularly neo-Scholastics) saw Cantor\'s work as a challenge to the uniqueness of the absolute infinity in the nature of God – on one occasion equating the theory of transfinite numbers with pantheism – a proposition that Cantor vigorously rejected.\n\n The objections to Cantor\'s work were occasionally fierce: Leopold Kronecker\'s public opposition and personal attacks included describing Cantor as a "scientific charlatan", a "renegade" and a "corrupter of youth". Kronecker objected to Cantor\'s proofs that the algebraic numbers are countable, and that the transcendental numbers are uncountable, results now included in a standard mathematics curriculum. Writing decades after Cantor\'s death, Wittgenstein lamented that mathematics is "ridden through and through with the pernicious idioms of set theory", which he dismissed as "utter nonsense" that is "laughable" and "wrong". Cantor\'s recurring bouts of depression from 1884 to the end of his life have been blamed on the hostile attitude of many of his contemporaries, though some have explained these episodes as probable manifestations of a bipolar disorder.\n\n The harsh criticism has been matched by later accolades. In 1904, the Royal Society awarded Cantor its Sylvester Medal, the highest honor it can confer for work in mathematics. David Hilbert defended it from its critics by declaring, "No one shall expel us from the paradise that Cantor has created."',
                     color: '#2C2C2C',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/maths/georgcantor.jpg',
                     day_of: new Date('1845-03-03  21:00:00 GMT'),
@@ -562,7 +562,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 36,
                     user_id: 1,
-                    name: 'Peter Brötzmann (saxophonist, free-improvisation warrior), born 1941',
+                    name: 'Peter Brötzmann (born 6 March 1941) is a German free jazz saxophonist and clarinetist.',
                     color: '#788B27',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/peterbrotzmann.jpg',
                     day_of: new Date('1941-03-06  21:00:00 GMT'),
@@ -581,7 +581,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 37,
                     user_id: 1,
-                    name: 'Ornette Coleman (harmolodic guru, multi-instrumentalist, composer), born 1930',
+                    name: 'Randolph Denard Ornette Coleman (March 9, 1930 – June 11, 2015) was an American jazz saxophonist, violinist, trumpeter, and composer known as a principal founder of the free jazz genre, a term derived from his 1960 album Free Jazz: A Collective Improvisation.\n\n Born in Fort Worth, Texas, Coleman began his musical career playing in local R&B and bebop groups, and eventually formed his own group in Los Angeles featuring members such as Ed Blackwell, Don Cherry, Charlie Haden, and Billy Higgins. In 1959, he released the controversial album The Shape of Jazz to Come and began a long residency at the Five Spot jazz club in New York City. His pioneering performances often dispensed with the chordal and harmony-based playing found in bebop, instead emphasizing a jarring and free approach to improvisation. In the 1970s, Coleman formed the group Prime Time and explored funk and his concept of Harmolodic music.\n\n Coleman\'s "Broadway Blues" and "Lonely Woman" became genre standards and are cited as important early works in free jazz. His album Sound Grammar received the 2007 Pulitzer Prize for Music. AllMusic called him "one of the most important (and controversial) innovators of the jazz avant-garde."',
                     color: '#994942',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/ornettecoleman55.jpg',
                     day_of: new Date('1930-03-09  21:00:00 GMT'),
@@ -600,7 +600,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 38,
                     user_id: 1,
-                    name: 'Leroy Jenkins (violinist, improvisor, composer), born 1932',
+                    name: 'Leroy Jenkins (March 11, 1932 – February 24, 2007) was an American composer and violinist/violist.',
                     color: '#636363',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/leroyjenkins.jpg',
                     day_of: new Date('1932-03-11  21:00:00 GMT'),
@@ -614,7 +614,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 39,
                     user_id: 1,
-                    name: 'Albert Einstein (physicist), born 1879',
+                    name: 'Albert Einstein (14 March 1879 – 18 April 1955) was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics (alongside quantum mechanics). His work is also known for its influence on the philosophy of science. He is best known to the general public for his mass–energy equivalence formula E = mc2, which has been dubbed "the world\'s most famous equation". He received the 1921 Nobel Prize in Physics "for his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect", a pivotal step in the development of quantum theory.\n\n The son of a salesman who later operated an electrochemical factory, Einstein was born in the German Empire, but moved to Switzerland in 1895, forsaking his German citizenship the following year. Specializing in physics and mathematics, he received his academic teaching diploma from the Swiss Federal Polytechnic School in Zürich in 1900. The following year, he acquired Swiss citizenship, which he kept for his entire life. After initially struggling to find work, from 1902 to 1909 he was employed as a patent examiner at the Swiss Patent Office in Bern.\n\n Near the beginning of his career, Einstein thought that the laws of classical mechanics could no longer be reconciled with those of the electromagnetic field. This led him to develop his special theory of relativity during his time as a patent clerk. In 1905, called his annus mirabilis (\'miracle year\'), he published four groundbreaking papers which attracted the attention of the academic world; the first paper outlined the theory of the photoelectric effect, the second explained Brownian motion, the third introduced special relativity, and the fourth mass–energy equivalence. That year, at the age of 26, he was awarded a PhD by the University of Zurich.\n\n Although initially treated with skepticism from many in the scientific community, Einstein\'s works gradually came to be recognised as significant advancements. He was invited to teach theoretical physics at the University of Bern in 1908 and the following year moved to the University of Zurich, then in 1911 to Charles University in Prague before returning to ETH (the newly renamed Federal Polytechnic School) in Zürich in 1912. In 1914, he was elected to the Prussian Academy of Sciences in Berlin, where he remained for 19 years. Soon after publishing his work on special relativity, Einstein began working to extend the theory to gravitational fields; he then published a paper on general relativity in 1916, introducing his theory of gravitation. He continued to deal with problems of statistical mechanics and quantum theory, which led to his explanations of particle theory and the motion of molecules. He also investigated the thermal properties of light and the quantum theory of radiation, the basis of the laser, which laid the foundation of the photon theory of light. In 1917, he applied the general theory of relativity to model the structure of the universe.\n\n In 1933, while Einstein was visiting the United States, Adolf Hitler came to power. Because of his Jewish background, Einstein did not return to Germany. He settled in the United States and became an American citizen in 1940. On the eve of World War II, he endorsed a letter to President Franklin D. Roosevelt alerting him to the potential German nuclear weapons program and recommending that the US begin similar research. Einstein supported the Allies, but generally denounced the idea of nuclear weapons.\n\n Einstein was affiliated with the Institute for Advanced Study in Princeton, New Jersey, until his death in 1955. He published more than 300 scientific papers and more than 150 non-scientific works. His intellectual achievements and originality have made the word "Einstein" synonymous with "genius". Eugene Wigner compared him to his contemporaries, writing that "Einstein\'s understanding was deeper even than Jancsi von Neumann\'s. His mind was both more penetrating and more original than von Neumann\'s."',
                     color: '#333A44',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/maths/alberteinstein.jpg',
                     day_of: new Date('1879-03-14  21:00:00 GMT'),
@@ -628,7 +628,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 40,
                     user_id: 1,
-                    name: 'Ben Johnston (composer), born 1926',
+                    name: 'Benjamin Burwell Johnston Jr. (March 15, 1926 – July 21, 2019) was an American contemporary music composer using just intonation. He was called "one of the foremost composers of microtonal music" by Philip Bush (1997) and "one of the best non-famous composers this country has to offer" by John Rockwell (1990).',
                     color: '#4D4B3E',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/benjohnston.jpg',
                     day_of: new Date('1926-03-15  21:00:00 GMT'),
@@ -642,7 +642,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 41,
                     user_id: 1,
-                    name: 'Bill Frisell (guitarist), born 1951',
+                    name: 'William Richard Frisell (born March 18, 1951) is an American guitarist, composer and arranger. One of the leading guitarists in jazz since the late 1980s, Frisell came to prominence as a stalwart for ECM Records. He went on to work in a variety of contexts, notably as a member of the New York City Downtown Scene where he formed a long partnership with John Zorn. He was also a longtime member of Paul Motian\'s groups from the early 1980s until Motian\'s death in 2011. Since 2000, Frisell\'s eclectic output as a bandleader has emphasized folk, country music, and Americana.',
                     color: '#EDF0E9',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/billfrisell.jpg',
                     day_of: new Date('1951-03-18  21:00:00 GMT'),
@@ -661,7 +661,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 42,
                     user_id: 1,
-                    name: 'Josef Albers (artist), born 1888',
+                    name: 'Josef Albers (March 19, 1888 – March 25, 1976) was a German-born artist and educator. He taught at the Bauhaus and Black Mountain College, headed Yale University\'s department of design, and is considered one of the most influential teachers of the visual arts in the twentieth century.\n\n As an artist, Albers worked in several disciplines, including photography, typography, murals and printmaking. He is best known for his work as an abstract painter and a theorist. His book Interaction of Color was published in 1963.',
                     color: '#DFDEDC',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/artists/josefalbers.jpg',
                     day_of: new Date('1888-03-19  21:00:00 GMT'),
@@ -680,7 +680,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 43,
                     user_id: 1,
-                    name: 'Erich Fromm (theorist), born 1900',
+                    name: 'Erich Seligmann Fromm (March 23, 1900 – March 18, 1980) was a German social psychologist, psychoanalyst, sociologist, humanistic philosopher, and democratic socialist. He was a German Jew who fled the Nazi regime and settled in the US. He was one of the Founders of The William Alanson White Institute of Psychiatry, Psychoanalysis and Psychology in New York City and was associated with the Frankfurt School of critical theory.',
                     color: '#B24924',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/erichfromm.png',
                     day_of: new Date('1900-03-23  21:00:00 GMT'),
@@ -694,7 +694,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 44,
                     user_id: 1,
-                    name: 'Dave Douglas (trumpet/composer), born 1963',
+                    name: 'Dave Douglas (born March 24, 1963) is an American jazz trumpeter, composer, and educator. His career includes more than fifty recordings as a leader and more than 500 published compositions. His ensembles include the Dave Douglas Quintet; Sound Prints, a quintet co-led with saxophonist Joe Lovano; Uplift, a sextet with bassist Bill Laswell; Present Joys with pianist Uri Caine and Andrew Cyrille; High Risk, an electronic ensemble with Shigeto, Jonathan Aaron, and Ian Chang; and Engage, a sextet with Jeff Parker, Tomeka Reid, Anna Webber, Nick Dunston, and Kate Gentile.\n\n He has won a Doris Duke Performing Artist Award, a Guggenheim Fellowship, an Aaron Copland award, and received Grammy Award nominations. As a composer, Douglas has received commissions from the Trisha Brown Dance Company, Birmingham Contemporary Music Group, Norddeutscher Rundfunk, Essen Philharmonie, The Library of Congress, Stanford University and Monash Art Ensemble, which premiered his chamber orchestra piece Fabliaux in March 2014.\n\n From 2002 to 2012, he served as artistic director of the Workshop in Jazz and Creative Music at the Banff Centre in Canada. He is a co-founder of the Festival of New Trumpet Music in New York with trumpeter Roy Campbell Jr.. Since 2003, Douglas has served as director of the nonprofit festival. He is on the faculty at the Mannes School of Music and is a guest coach for the Juilliard Jazz Composer\'s Ensemble. In 2016, he accepted a four-year appointment as the artistic director of the Bergamo Jazz Festival.\n\n In 2005 Douglas founded Greenleaf Music, a record labels for his albums, sheet music, podcasts, as well as the music of other modern jazz musicians. Greenleaf has produced over 70 albums.',
                     color: '#515659',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/davedouglas.jpg',
                     day_of: new Date('1963-03-24  21:00:00 GMT'),
@@ -713,7 +713,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 45,
                     user_id: 1,
-                    name: 'Pierre Boulez (composer, theorist, conductor), born 1925',
+                    name: 'Pierre Louis Joseph Boulez CBE (French: [26 March 1925 – 5 January 2016) was a French composer, conductor, writer and founder of several musical institutions. He was one of the dominant figures of the post-war classical music world.\n\n Born in Montbrison in the Loire department of France, the son of an engineer, Boulez studied at the Conservatoire de Paris with Olivier Messiaen, and privately with Andrée Vaurabourg and René Leibowitz. He began his professional career in the late 1940s as music director of the Renaud-Barrault theatre company in Paris. As a young composer in the 1950s he quickly became a leading figure in avant-garde music, playing an important role in the development of integral serialism and controlled chance music. From the 1970s onwards he pioneered the electronic transformation of instrumental music in real time. His tendency to revise earlier compositions meant that his body of completed works was relatively small, but it included pieces regarded by many as landmarks of twentieth-century music, such as Le Marteau sans maître, Pli selon pli and Répons. His uncompromising commitment to modernism and the trenchant, polemical tone in which he expressed his views on music led some to criticise him as a dogmatist.\n\n In parallel with his activities as a composer Boulez became one of the most prominent conductors of his generation. In a career lasting more than sixty years he held the positions of chief conductor of the New York Philharmonic and the BBC Symphony Orchestra, music director of the Ensemble intercontemporain and principal guest conductor of the Chicago Symphony Orchestra and the Cleveland Orchestra. He made frequent guest appearances with many of the world\'s other great orchestras, including the Vienna Philharmonic, the Berlin Philharmonic and the London Symphony Orchestra. He was particularly known for his performances of the music of the first half of the twentieth century—including Debussy and Ravel, Stravinsky and Bartók, and the Second Viennese School—as well as that of his contemporaries, such as Ligeti, Berio and Carter. His work in the opera house included the Jahrhundertring—the production of Wagner\'s Ring cycle for the centenary of the Bayreuth Festival—and the world premiere of the three-act version of Alban Berg\'s Lulu. His recorded legacy is extensive.\n\n He founded a number of musical institutions in Paris, including the Domaine musical, the Institut de recherche et coordination acoustique/musique (IRCAM), the Ensemble intercontemporain and the Cité de la Musique, as well as the Lucerne Festival Academy in Switzerland.',
                     color: '#30303B',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/pierreboulez.jpg',
                     day_of: new Date('1925-03-26  21:00:00 GMT'),
@@ -727,7 +727,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 46,
                     user_id: 1,
-                    name: 'Marilyn Crispell (piano, improviser), born 1947',
+                    name: 'Marilyn Crispell (born March 30, 1947) is an American jazz pianist and composer. Scott Yanow described her as "a powerful player... who has her own way of using space... She is near the top of her field." Jon Pareles of The New York Times wrote: "Hearing Marilyn Crispell play solo piano is like monitoring an active volcano... She is one of a very few pianists who rise to the challenge of free jazz." In addition to her own extensive work as a soloist or bandleader, Crispell is also known as a longtime member of saxophonist Anthony Braxton\'s quartet in the 1980s and \'90s',
                     color: '#560408',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/marilyncrispell.jpg',
                     day_of: new Date('1947-03-30  21:00:00 GMT'),
@@ -746,7 +746,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 47,
                     user_id: 1,
-                    name: 'René Descartes (philosopher, mathematician, scientist), born 1596',
+                    name: 'René Descartes ((31 March 1596 – 11 February 1650) was a French-born philosopher, mathematician, and scientist. A native of the Kingdom of France, he spent about 20 years (1629–1649) of his life in the Dutch Republic after serving for a while in the Dutch States Army of Maurice of Nassau, Prince of Orange and the Stadtholder of the United Provinces. One of the most notable intellectual figures of the Dutch Golden Age, Descartes is also widely regarded as one of the founders of modern philosophy.\n\n Many elements of Descartes\'s philosophy have precedents in late Aristotelianism, the revived Stoicism of the 16th century, or in earlier philosophers like Augustine. In his natural philosophy, he differed from the schools on two major points: first, he rejected the splitting of corporeal substance into matter and form; second, he rejected any appeal to final ends, divine or natural, in explaining natural phenomena. In his theology, he insists on the absolute freedom of God\'s act of creation. Refusing to accept the authority of previous philosophers, Descartes frequently set his views apart from the philosophers who preceded him. In the opening section of the Passions of the Soul, an early modern treatise on emotions, Descartes goes so far as to assert that he will write on this topic "as if no one had written on these matters before." His best known philosophical statement is "cogito, ergo sum" ("I think, therefore I am"; French: Je pense, donc je suis), found in Discourse on the Method (1637; in French and Latin) and Principles of Philosophy (1644, in Latin).\n\n Descartes has often been called the father of modern philosophy, and is largely seen as responsible for the increased attention given to epistemology in the 17th century. He laid the foundation for 17th-century continental rationalism, later advocated by Spinoza and Leibniz, and was later opposed by the empiricist school of thought consisting of Hobbes, Locke, Berkeley, and Hume. In the 17th-century Dutch Republic, the rise of early modern rationalism – as a highly systematic school of philosophy in its own right for the first time in history – exerted an immense and profound influence on modern Western thought in general, with the birth of two influential rationalistic philosophical systems of Descartes (who spent most of his adult life and wrote all his major work in the United Provinces of the Netherlands) and Spinoza – namely Cartesianism and Spinozism. It was the 17th-century arch-rationalists like Descartes, Spinoza and Leibniz who have given the "Age of Reason" its name and place in history. Leibniz, Spinoza, and Descartes were all well-versed in mathematics as well as philosophy, and Descartes and Leibniz contributed greatly to science as well.\n\n Descartes\'s Meditations on First Philosophy (1641) continues to be a standard text at most university philosophy departments. Descartes\'s influence in mathematics is equally apparent; the Cartesian coordinate system was named after him. He is credited as the father of analytical geometry, the bridge between algebra and geometry—used in the discovery of infinitesimal calculus and analysis. Descartes was also one of the key figures in the Scientific Revolution.',
                     color: '#FAEBD6',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/maths/renedescartes.jpg',
                     day_of: new Date('1596-03-31  21:00:00 GMT'),
@@ -760,7 +760,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 48,
                     user_id: 1,
-                    name: 'Alexandra Kollontai (communist revolutionary), born 1872',
+                    name: 'Alexandra Mikhailovna Kollontai (31 March 1872 – 9 March 1952) was a Russian revolutionary, politician, diplomat and Marxist theoretician. Serving as the People\'s Commissar for Welfare in Vladimir Lenin\'s government in 1917–1918, she was a highly prominent woman within the Bolshevik party and the first woman in history to become an official member of a governing cabinet.\n\n The daughter of an Imperial Russian Army general, Kollontai embraced radical politics in the 1890s and joined the Russian Social Democratic Labour Party (RSDLP) in 1899. During the RSDLP ideological split, she sided with Julius Martov\'s Mensheviks against Lenin\'s Bolsheviks. Exiled from Russia in 1908, Kollontai toured Western Europe and the United States and advocated against participation in the First World War. In 1915, she broke with the Mensheviks and became a member of the Bolsheviks.\n\n Following the 1917 February Revolution which ousted the Tsar, Kollontai returned to Russia. She supported Lenin\'s radical proposals and, as a member of the party\'s Central Committee, voted for the policy of armed uprising which led to the October Revolution and the fall of Alexander Kerensky\'s Provisional Government. She was appointed People\'s Commissar for Social Welfare in the first Soviet government, but soon resigned due to her opposition to the peace treaty of Brest-Litovsk in the ranks of the Left Communists. In 1919, Kollontai founded the Zhenotdel, which worked to improve the status of women in the Soviet Union. She was a champion of women\'s liberation and an advocate of free love, and later came to be recognized as a key figure in Marxist feminism.\n\n Kollontai was outspoken against bureaucratic influences over the Communist Party and its undemocratic internal practices. To that end, she sided with the left-wing Workers\' Opposition in 1920, but was eventually defeated and sidelined, narrowly avoiding her own expulsion from the party altogether. From 1922 on, she was appointed to various diplomatic posts abroad, serving in Norway, Mexico and Sweden. In 1943, she was promoted to the title of ambassador to Sweden. Kollontai retired from diplomatic service in 1945 and died in Moscow in 1952.',
                     color: '#6D6C77',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/alexandrakollontai.jpg',
                     day_of: new Date('1872-03-31  21:00:00 GMT'),
@@ -793,7 +793,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 50,
                     user_id: 1,
-                    name: 'Alan Hovhaness (composer), born 1911',
+                    name: 'Alan Hovhaness (March 8, 1911 – June 21, 2000) was an American composer. He was one of the most prolific 20th-century composers, with his official catalog comprising 67 numbered symphonies (surviving manuscripts indicate over 70) and 434 opus numbers. The true tally is well over 500 surviving works, since many opus numbers comprise two or more distinct works.\n\n The Boston Globe music critic Richard Buell wrote: "Although he has been stereotyped as a self-consciously Armenian composer (rather as Ernest Bloch is seen as a Jewish composer), his output assimilates the music of many cultures. What may be most American about all of it is the way it turns its materials into a kind of exoticism. The atmosphere is hushed, reverential, mystical, nostalgic."',
                     color: '#678BBF',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/alanhovhaness.jpg',
                     day_of: new Date('1911-03-08  21:00:00 GMT'),
@@ -990,7 +990,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 63,
                     user_id: 1,
-                    name: 'Nicolas Collins (composer), born 1954',
+                    name: 'Nicolas Collins (born March 26, 1954 in New York City) is a composer of mostly electronic music, a sound artist and writer. He received his BA and MA from Wesleyan University, and his PhD from the University of East Anglia. Upon graduating from Wesleyan, he was a Watson Fellow.',
                     color: '#692226',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/nicolascollins.jpg',
                     day_of: new Date('1954-03-26  21:00:00 GMT'),
@@ -1004,7 +1004,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 64,
                     user_id: 1,
-                    name: 'Lori Freedman (reeds/improviser), born 1958',
+                    name: 'Lori Freedman (born March 19, 1958) is a 21-century clarinet player. She tours extensively, often sporting 3 or 4 instruments at a time, including the contrabass, bass, B-flat and E-flat clarinets. Continuing to draw from a unique and impressive array of works from the contemporary repertoire Freedman is equally at home performing her own compositions and those written by other musicians, often specifically for her. Both on stage and in the recording studio, Freedman delivers astonishing poetry to written and improvised music in the versatile roles as accapella soloist, featured soloist with ensemble, and as ensemble player. Her own catalogue of works written for a variety of instrumental combinations grows steadily and, in addition to this already full schedule, Freedman also coaches contemporary and improvised music to all instrumentalists and vocalists alike.',
                     color: '#FDEDE3',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/lorifreedman.jpg',
                     day_of: new Date('1958-03-19  21:00:00 GMT'),
@@ -1032,7 +1032,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 66,
                     user_id: 1,
-                    name: 'Jon Hassell (trumpet), born 1937',
+                    name: 'Jon Hassell (born March 22, 1937) is an American trumpet player and composer active since the 1960s. He is best known for developing the concept of "Fourth World" music, which describes a "unified primitive/futurist sound" combining elements of various world ethnic traditions with modern electronic techniques. The concept was first articulated on Fourth World, Vol. 1: Possible Musics, his 1980 collaboration with Brian Eno. He has also worked with artists such as the Theatre of Eternal Music, Talking Heads, Farafina, Peter Gabriel, Tears for Fears, Ani DiFranco, Techno Animal, Ry Cooder, Moritz von Oswald, and Carl Craig.',
                     color: '#FBF9F5',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/jonhassell.jpg',
                     day_of: new Date('1937-03-22  21:00:00 GMT'),
@@ -1121,7 +1121,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 72,
                     user_id: 1,
-                    name: 'Cecil Taylor (pianist/composer), born 1929',
+                    name: 'Cecil Percival Taylor (March 25, 1929 – April 5, 2018) was an American pianist and poet.\n\n Taylor was classically trained and was one of the pioneers of free jazz. His music is characterized by an energetic, physical approach, resulting in complex improvisation often involving tone clusters and intricate polyrhythms. His technique has been compared to percussion. Referring to the number of keys on a standard piano, Val Wilmer used the phrase "eighty-eight tuned drums" to describe Taylor\'s style. He has been referred to as being "like Art Tatum with contemporary-classical leanings".',
                     color: '#767676',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/ceciltaylor.jpg',
                     day_of: new Date('1929-03-25  21:00:00 GMT'),
@@ -1503,7 +1503,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 95,
                     user_id: 1,
-                    name: 'Heather has Two Mommies (frequently banned book), published 1989',
+                    name: 'First published on this day in 1989, Heather Has Two Mommies is a children\'s book written by Lesléa Newman with illustrations by Diana Souza. This ground-breaking novel was one of the first pieces of LGBTQ children\'s literature to garner broad attention. While the book is often noted as the first lesbian picture book, Jane Severance\'s book, When Megan Went Away, also has lesbian characters and debuted ten years before Newman\'s.',
                     color: '#ECEC75',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/books/heatherhastwomommies.jpg',
                     day_of: new Date('1989-03-17  21:00:00 GMT'),
@@ -1531,7 +1531,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 97,
                     user_id: 1,
-                    name: 'Mel Ott (outfielder/third baseman), born 1909',
+                    name: 'Melvin Thomas Ott (March 2, 1909 – November 21, 1958), nicknamed "Master Melvin", was an American professional baseball right fielder, who played in Major League Baseball (MLB) for the New York Giants, from 1926 through 1947.\n\n He batted left-handed and threw right-handed. Though unusually slight in stature for a power hitter, at 5 feet 9 inches (1.75 m), 170 pounds (77 kg), Ott led the National League in home runs a then record six times. He was an All-Star for 11 consecutive seasons, and was the first National League player to surpass 500 career home runs.\n\n He was elected to the National Baseball Hall of Fame in 1951.',
                     color: '#484848',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/baseball/melott.jpg',
                     day_of: new Date('1909-03-02  21:00:00 GMT'),
@@ -1559,8 +1559,8 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 99,
                     user_id: 1,
-                    name: 'Carmelo Arden Quin (artist), born 1913',
-                    color: '	#88B7B9',
+                    name: 'Carmelo Arden Quin (16 March 1913 – 27 September 2010) was a Uruguayan artist. Arden Quin’s primary focuses were painting and poetry. From a young age, Arden Quin was an ambitious and idealistic artist. Today, Arden Quin is most recognized for his co-founding of the Madí movement, which began in Argentina but ultimately became an international movement. Arden Quin’s commitment to invention, rather than replication or representation, drove his relentless pursuit of new forms and ideas.',
+                    color: '#88B7B9',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/artists/carmeloardenquinn.png',
                     day_of: new Date('1913-03-16  21:00:00 GMT'),
                     is_annual: true,
@@ -2043,7 +2043,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 130,
                     user_id: 1,
-                    name: 'Elliott Sharp (composer/guitarist), born 1951',
+                    name: 'Elliott Sharp (born March 1, 1951 in Cleveland, Ohio) is an American contemporary classical composer, multi-instrumentalist, and performer.\n\n A central figure in the avant-garde and experimental music scene in New York City since the late 1970s, Sharp has released over eighty-five recordings ranging from contemporary classical, avant-garde, free improvisation, jazz, experimental, and orchestral music to noise, no wave, and electronic music. He pioneered the use of personal computers in live performance with his Virtual Stance project of the 1980s. He has used algorithms and fibonacci numbers in experimental composition since the 1970s. He has cited literature as an inspiration for his music and often favors improvisation. He is an inveterate performer, playing mainly guitar, saxophone and bass clarinet. Sharp has led many ensembles over the years, including the blues-oriented Terraplane and Orchestra Carbon.',
                     color: '#1D1A15',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/elliottsharp.jpg',
                     day_of: new Date('1951-03-01  21:00:00 GMT'),
@@ -2090,7 +2090,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 133,
                     user_id: 1,
-                    name: 'Christian Wolff (composer), born 1934',
+                    name: 'Christian G. Wolff (born March 8, 1934) is an American composer of experimental classical music.',
                     color: '#ACC9E7',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/christianwolff.jpg',
                     day_of: new Date('1934-03-08  21:00:00 GMT'),
@@ -2518,7 +2518,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 160,
                     user_id: 1,
-                    name: 'Dominic Thurgood (composer), born 1983',
+                    name: 'Dominic Thurgood (born March 21, 1983) is an American composer noted for his works in the \'Totalist\' school of contemporary composition.',
                     color: '#A9A9A9',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/dominicthurgood.jpg',
                     day_of: new Date('1983-03-21  21:00:00 GMT'),
@@ -3086,7 +3086,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 198,
                     user_id: 1,
-                    name: 'Louise Otto-Peters (writer/feminist), born 1819',
+                    name: 'Louise Otto-Peters (26 March 1819 – 13 March 1895) was a German suffragist and women\'s rights movement activist who wrote novels, poetry, essays, and libretti. She wrote for Der Wandelstern [The Wandering Star] and Sächsische Vaterlandsblätter [Saxon Fatherland Pages], and founded Frauen-Zeitung and Neue Bahnen specifically for women. She is widely acknowledged as the founder of the Allgemeiner Deutscher Frauenverein.',
                     color: '#E7D9BE',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/feminist/louiseottopeters.jpg',
                     day_of: new Date('1819-03-26  21:00:00 GMT'),
@@ -3100,7 +3100,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 199,
                     user_id: 1,
-                    name: 'Paul Plimley (pianist), born 1953',
+                    name: 'Paul (Horace) Plimley (born 16 March 1953 in Vancouver, British Columbia) is a free jazz pianist and vibraphonist. He is one of the doyens of the Canadian jazz avant-garde, a co-founder of the New Orchestra Workshop Society and frequent collaborator with the bassist Lisle Ellis. He is well versed in classical music and in all styles of jazz; he was one of the first and most convincing interpreters of Ornette Coleman\'s music on the piano (an instrument usually seen as antithetical to Coleman\'s music).\n\n Plimley studied classical piano under Kum-Sing Lee at the University of British Columbia (1971–3). In 1978-9 he studied with Karl Berger and Cecil Taylor at the Creative Music Studio in Woodstock, NY. In 1977 he founded the New Orchestra Workshop (NOW), and he has been active in many of the ensembles associated with NOW, including the NOW Orchestra.\n\n His work with Lisle Ellis is extensive, and includes the duo CD Both Sides of the Same Mirror (Nine Winds, 1989); When Silence Pulls, with Andrew Cyrille (Music & Arts, 1990); Noir, with Bruce Freedman and Gregg Bendian (Victo, 1992); Density of the Lovestruck Demons with Donald Robinson (Music & Arts, 1994); and Safecrackers with Scott Amendola (Victo, 1999). He made two recordings for Hat Art: the collection of Ornette Coleman interpretations, Kaleidoscopes (1992), and (under Joe McPhee\'s leadership), a revisiting of Max Roach\'s Freedom Now Suite called Sweet Freedom, Now What? (1994). In May 2000 he recorded a live act at the 17th International Festival of New Music in Victoriaville, Quebec with John Oswald, Marilyn Crispell and Cecil Taylor. The album was released at Victo Records.\n\n The still Vancouver based musician is a regular at the annual Vancouver International Jazz Festival.',
                     color: '#191F2F',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/paulplimley.jpg',
                     day_of: new Date('1953-03-16  21:00:00 GMT'),
@@ -3119,7 +3119,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 200,
                     user_id: 1,
-                    name: 'Jim Rice (outfielder/designated hitter), born 1953',
+                    name: 'James Edward Rice (born March 8, 1953), nicknamed "Jim Ed", is a former Major League Baseball left fielder and designated hitter. He was inducted into the Baseball Hall of Fame on July 26, 2009, as the 103rd member voted in by the BBWAA. Rice played his entire 16-year baseball career for the Boston Red Sox.\n\n Rice was an eight-time American League (AL) All-Star and was named the AL\'s Most Valuable Player in 1978 after becoming the first major league player in 19 years to hit for 400 total bases. He went on to become the ninth player to lead the major leagues in total bases in consecutive seasons. He joined Ty Cobb as one of two players to lead the AL in total bases three years in a row. He batted .300 seven times, collected 100 runs batted in (RBI) eight times and 200 hits four times, and had 11 seasons with 20 home runs. He also led the league in home runs three times, RBIs and slugging percentage twice each.\n\n In the late 1970s he was part of one of the sport\'s great outfields along with Fred Lynn and Dwight Evans (who was his teammate for his entire career); Rice continued the tradition of his predecessors Ted Williams and Carl Yastrzemski as a power-hitting left fielder who played his entire career for the Red Sox. He ended his career with a .502 slugging percentage, and then ranked tenth in AL history with 382 home runs; his career marks in homers, hits (2,452), RBI (1,451) and total bases (4,129) remain Red Sox records for a right-handed hitter, with Evans eventually surpassing his Boston records for career runs scored, at bats and extra base hits by a right-handed hitter. When Rice retired, his 1,503 career games in left field ranked seventh in AL history.',
                     color: '#9A4C5A',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/baseball/jimrice.jpg',
                     day_of: new Date('1953-03-08  21:00:00 GMT'),
@@ -3769,7 +3769,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 240,
                     user_id: 1,
-                    name: 'Carlo Tresca (anarchist), born 1879',
+                    name: 'Carlo Tresca (March 9, 1879 – January 11, 1943) was an Italian-American newspaper editor, orator, and labor organizer who was a leader of the Industrial Workers of the World during the 1910s. He is remembered as a leading public opponent of fascism, Stalinism, and Mafia infiltration of the trade union movement.\n\n Born, raised, and educated in Italy, Tresca was editor of an Italian socialist newspaper and secretary of the Italian Federation of Railroad Workers before he emigrated to the United States in 1904. After a three-year spell as secretary of the Italian Socialist Federation of North America, he joined the Industrial Workers of the World in 1912, and was involved in strikes across the United States over the rest of the decade. He was jailed in 1925 after printing an advertisement for a birth control pamphlet in one of his newspapers.\n\n During the 1930s, Tresca was a staunch critic of both Benito Mussolini\'s fascist government in Italy and Stalinism in the Soviet Union. In 1937, he was a member of the Dewey Commission, which cleared Leon Trotsky of all charges made during the Moscow Trials. Tresca also used his newspapers to mount a public campaign criticising the Mafia. He was assassinated in New York in January 1943, probably by a Mafia gunman.',
                     color: '#CFCFCF',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/carlotresca.jpg',
                     day_of: new Date('1879-03-09  21:00:00 GMT'),
@@ -5138,7 +5138,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 326,
                     user_id: 1,
-                    name: 'GX Jupitter-Larsen (artist/noise musician), born 1959',
+                    name: 'GX Jupitter-Larsen (sometimes erroneously spelled Juppiter-Larsen, born March 2, 1959) is an artist, based in Hollywood, California, who has been active in a number of underground art scenes since the late 1970s. Jupitter-Larsen has been involved in punk rock, mail art, cassette culture, the noise music scene, and zine culture. During the 1990s he was the sound designer for the performances of Mark Pauline\'s Survival Research Laboratories. He is the founder and sole permanent member of the noise act The Haters, who have performed all over the world, and appeared on over 300 CD and record releases.',
                     color: '#C7C848',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/gxjupitterlarsen.jpg',
                     day_of: new Date('1959-03-02  21:00:00 GMT'),
@@ -5223,7 +5223,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 331,
                     user_id: 1,
-                    name: 'Astor Piazzola (composer), born 1921',
+                    name: 'Astor Pantaleón Piazzolla (March 11, 1921 – July 4, 1992) was an Argentine tango composer, bandoneon player, and arranger. His works revolutionized the traditional tango into a new style termed Nuevo tango, incorporating elements from jazz and classical music. A virtuoso bandoneonist, he regularly performed his own compositions with a variety of ensembles.\n\n In 1992, American music critic Stephen Holden described Piazzolla as "the world\'s foremost composer of Tango music".',
                     color: '#5E1F18',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/astorpiazzola.jpg',
                     day_of: new Date('1921-03-11  21:00:00 GMT'),
@@ -5947,7 +5947,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 377,
                     user_id: 1,
-                    name: 'Alcide Nunez (clarinet), born 1884',
+                    name: 'Alcide Patrick Nunez (March 17, 1884 – September 2, 1934), also known as Yellow Nunez and Al Nunez, was an American jazz clarinetist. He was one of the first musicians of New Orleans to make audio recordings.',
                     color: '#665053',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/alcidenunez.jpg',
                     day_of: new Date('1884-03-17  21:00:00 GMT'),
@@ -5989,7 +5989,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 380,
                     user_id: 1,
-                    name: 'Keith Rowe (guitar), born 1940',
+                    name: 'Keith Rowe (born 16 March 1940 in Plymouth, England) is an English free improvisation tabletop guitarist and painter. Rowe is a founding member of both AMM in the mid-1960s and M.I.M.E.O. Having trained as a visual artist, his paintings have appeared on most of his albums. He is seen as a godfather of EAI (electroacoustic improvisation), with many of his recordings having been released by Erstwhile.',
                     color: '#AE6C38',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/keithrowe.jpg',
                     day_of: new Date('1940-03-16  21:00:00 GMT'),
@@ -6050,7 +6050,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 384,
                     user_id: 1,
-                    name: 'Dazzy Vance (pitcher), born 1891',
+                    name: 'Charles Arthur "Dazzy" Vance (March 4, 1891 – February 16, 1961) was an American professional baseball player. He played as a pitcher for five different franchises in Major League Baseball (MLB) in a career that spanned twenty years. Known for his impressive fastball, Vance was the only pitcher to lead the National League in strikeouts seven consecutive seasons. Vance was inducted into the Baseball Hall of Fame in 1955.',
                     color: '#E0DFDD',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/baseball/dazzyvance.jpg',
                     day_of: new Date('1891-03-04  21:00:00 GMT'),
@@ -6172,7 +6172,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 392,
                     user_id: 1,
-                    name: 'Paul Motion (drummer), born 1931',
+                    name: 'Stephen Paul Motian (March 25, 1931 – November 22, 2011) was an American jazz drummer, percussionist, and composer. Motian played an important role in freeing jazz drummers from strict time-keeping duties.\n\n He first came to prominence in the late 1950s in the piano trio of Bill Evans, and later was a regular in pianist Keith Jarrett\'s band for about a decade (c. 1967–1976). Motian began his career as a bandleader in the early 1970s. Perhaps his two most notable groups were a longstanding trio of guitarist Bill Frisell and saxophonist Joe Lovano, and the Electric Bebop Band which featured the drummer working mostly with younger musicians doing interpretations of bebop standards.',
                     color: '#FDFEE2',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/paulmotion.jpg',
                     day_of: new Date('1931-03-25  21:00:00 GMT'),
@@ -7112,7 +7112,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 452,
                     user_id: 1,
-                    name: 'Abraham Ziv (mathematician), born 1940',
+                    name: 'Abraham Ziv (March 6, 1940–March 5, 2013) was an Israeli mathematician, known for his contributions to the Zero-sum problem as one of the discoverers of the Erdős–Ginzburg–Ziv theorem.',
                     color: '#727272',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/maths/abrahamziv.jpg',
                     day_of: new Date('1940-03-06  21:00:00 GMT'),
@@ -7807,7 +7807,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 497,
                     user_id: 1,
-                    name: 'Hank Roberts (cellist), born 1954',
+                    name: 'Hank Roberts (born March 24, 1954 in Terre Haute, Indiana) is an American jazz cellist and vocalist. He plays the electric cello, and his style is a mixture of rock, jazz, avant-garde, folk, and classical influences. He emerged with the downtown New York City jazz scene of the 1980s and is associated with its post-modern tendencies.',
                     color: '#DC1209',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/hankroberts.JPG',
                     day_of: new Date('1954-03-24  21:00:00 GMT'),
@@ -7915,7 +7915,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 504,
                     user_id: 1,
-                    name: 'Three Day Road by Joseph Boyden published in 2005',
+                    name: 'Three Day Road by Joseph Boyden published on this day in 2005',
                     color: '#4D4038',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/books/threedayroad.jpg',
                     day_of: new Date('2005-03-17  21:00:00 GMT'),
@@ -8065,7 +8065,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 514,
                     user_id: 1,
-                    name: 'Beatrice Wood (artist), born 1893',
+                    name: 'Beatrice Wood (March 3, 1893 – March 12, 1998) was an American artist and studio potter involved in the Avant Garde movement in the United States; she founded and edited The Blind Man magazine in New York City with French artist Marcel Duchamp and writer Henri-Pierre Roché in 1917. She had earlier studied art and theater in Paris, and was working in New York as an actress. She later worked at sculpture and pottery. Wood was characterized as the "Mama of Dada".\n\n She partially inspired the character of Rose DeWitt Bukater in James Cameron\'s 1997 film, Titanic after the director read Wood\'s autobiography while developing the film. Beatrice Wood died nine days after her 105th birthday in Ojai, California.',
                     color: '#8C3C73',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/artists/beatricewood.jpg',
                     day_of: new Date('1893-03-03  21:00:00 GMT'),
@@ -8243,7 +8243,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 526,
                     user_id: 1,
-                    name: 'Arky Vaughan (shortstop/third baseman), born 1912',
+                    name: 'Joseph Floyd "Arky" Vaughan (March 9, 1912 – August 30, 1952) was an American professional baseball player. He played 14 seasons in Major League Baseball between 1932 and 1948 for the Pittsburgh Pirates and Brooklyn Dodgers, primarily as a shortstop. He was elected to the National Baseball Hall of Fame in 1985.',
                     color: '#F7F7F7',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/baseball/arkyvaughan.jpg',
                     day_of: new Date('1912-03-09  21:00:00 GMT'),
@@ -8327,7 +8327,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 532,
                     user_id: 1,
-                    name: 'Cy Young (pitcher), born 1867',
+                    name: 'Denton True "Cy" Young (March 29, 1867 – November 4, 1955) was an American Major League Baseball (MLB) pitcher. Born in Gilmore, Ohio, he worked on his family\'s farm as a youth before starting his professional baseball career. Young entered the major leagues in 1890 with the National League\'s Cleveland Spiders and pitched for them until 1898. He was then transferred to the St. Louis Cardinals franchise. In 1901, Young jumped to the American League and played for the Boston Red Sox franchise until 1908, helping them win the 1903 World Series. He finished his career with the Cleveland Naps and Boston Rustlers, retiring in 1911.\n\n Young was one of the hardest-throwing pitchers in the game early in his career. After his speed diminished, he relied more on his control and remained effective into his forties. By the time Young retired, he had established numerous pitching records, some of which have stood for over a century. He holds MLB records for the most career wins, with 511, along with most career innings pitched, games started, and complete games. He led his league in wins during five seasons and pitched three no-hitters, including a perfect game.\n\n Young was elected to the National Baseball Hall of Fame in 1937. In 1956, one year after his death, the Cy Young Award was created to honor the best pitcher in each league for each season.',
                     color: '#0C0C0C',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/baseball/cyyoung.jpg',
                     day_of: new Date('1867-03-29  21:00:00 GMT'),
@@ -8482,7 +8482,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 542,
                     user_id: 1,
-                    name: 'Gerry Hemingway (drums), born 1955',
+                    name: 'Gerry Hemingway (born 1955) is an American jazz drummer and composer.\n\n Hemingway was a member of the Anthony Braxton quartet from 1983 to 1994. He has also performed with Ernst Reijseger, Anthony Davis, Earl Howard, Leo Smith, George Lewis, Ray Anderson, Mark Helias, Reggie Workman, Michael Moore, Oliver Lake, Marilyn Crispell, Christy Doran, John Wolf Brennan, Don Byron, Cecil Taylor, and Cuong Vu.\n\n Hemingway received a Guggenheim Fellowship for his work in music composition in 2000,[3] and was a student of Alan Dawson. He is a graduate of Foote School in New Haven. He has recorded on over one hundred albums for the labels Clean Feed, Enja, hatArt, Palmetto, Random Acoustics, and Tzadik. He owns his own label, Auricle.',
                     color: '#6F1F7E',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/gerryhemingway.jpg',
                     day_of: new Date('1955-03-23  21:00:00 GMT'),
@@ -8693,7 +8693,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 556,
                     user_id: 1,
-                    name: 'Carl Ruggles (composer) born in 1876',
+                    name: 'Charles Sprague "Carl" Ruggles (March 11, 1876 – October 24, 1971) was an American composer. His pieces employed "dissonant counterpoint", a term coined by Charles Seeger to describe Ruggles\' music. His method of atonal counterpoint was based on a non-serial technique of avoiding repeating a pitch class until a generally fixed number such as eight pitch classes intervened. He wrote painstakingly slowly so his output is quite small.\n\n Famous for his prickly personality, Ruggles was nonetheless friends with Henry Cowell, Edgard Varèse, Charles Ives, Thomas Hart Benton, Ruth Crawford Seeger, and Charles Seeger. Benton even painted Ruggles in his portrait "The Suntreader"[permanent dead link]. His students include James Tenney and Merton Brown. Conductor Michael Tilson Thomas has championed Ruggles\' music, recording the complete works with the Buffalo Philharmonic and occasionally performing Sun-Treader with the San Francisco Symphony. Especially later in life, Ruggles was also a prolific painter, selling hundreds of paintings during his lifetime.',
                     color: '#292621',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/carlruggles.jpg',
                     day_of: new Date('1876-03-11  21:00:00 GMT'),
@@ -8914,7 +8914,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 570,
                     user_id: 1,
-                    name: 'Tony Conrad (composer, video artist, filmmaker, writer) born in 1940',
+                    name: 'Anthony Schmalz "Tony" Conrad (March 7, 1940 – April 9, 2016) was an American video artist, experimental filmmaker, musician, composer, sound artist, teacher, and writer. Active in a variety of media since the early 1960s, he was a pioneer of both drone music and structural film. As a musician, he was an important figure in the New York minimalist scene of the early 1960s, during which time he performed as part of the Theatre of Eternal Music (along with John Cale, La Monte Young, Marian Zazeela, and others). He became recognized as a filmmaker for his 1966 film The Flicker. He performed and collaborated with a wide range of artists over the course of his career.',
                     color: '#A43C21',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/tonyconrad.jpg',
                     day_of: new Date('1940-03-07  21:00:00 GMT'),
@@ -8942,7 +8942,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 572,
                     user_id: 1,
-                    name: 'Louis Moholo-Moholo (drums) born in 1940',
+                    name: 'Louis Tebogo Moholo (born 10 March 1940), is a South African jazz drummer. He has been a member of several notable bands, including The Blue Notes, the Brotherhood of Breath and Assagai.',
                     color: '#55C4E8',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/luoismoholomoholo.jpg',
                     day_of: new Date('1940-03-10  21:00:00 GMT'),
@@ -9176,7 +9176,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 588,
                     user_id: 1,
-                    name: 'Rosa Luxemburg (feminist/philosopher/anti-war activist) born 1871',
+                    name: 'Rosa Luxemburg (German: [5 March 1871 – 15 January 1919) was a Polish Marxist, philosopher, economist, anti-war activist and revolutionary socialist who became a naturalized German citizen at the age of 28. Successively, she was a member of the Social Democracy of the Kingdom of Poland and Lithuania (SDKPiL), the Social Democratic Party of Germany (SPD), the Independent Social Democratic Party (USPD) and the Communist Party of Germany (KPD).\n\n After the SPD supported German involvement in World War I in 1915, Luxemburg and Karl Liebknecht co-founded the anti-war Spartacus League (Spartakusbund) which eventually became the KPD. During the November Revolution, she co-founded the newspaper Die Rote Fahne (The Red Flag), the central organ of the Spartacist movement. Luxemburg considered the Spartacist uprising of January 1919 a blunder, but supported the attempted overthrow of the government and rejected any attempt at a negotiated solution. Friedrich Ebert\'s majority SPD government crushed the revolt and the Spartakusbund by sending in the Freikorps, government-sponsored paramilitary groups consisting mostly of World War I veterans. Freikorps troops captured and summarily executed Luxemburg and Liebknecht during the rebellion.\n\n Due to her pointed criticism of both the Leninist and the more moderate social democratic schools of socialism, Luxemburg has had a somewhat ambivalent reception among scholars and theorists of the political left. Nonetheless, Luxemburg and Liebknecht were extensively idolized as communist martyrs by the East German communist regime. The German Federal Office for the Protection of the Constitution asserts that idolization of Luxemburg and Liebknecht is an important tradition of the German far-left.',
                     color: '#0D0B0E',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/rosaluxemburg.jpg',
                     day_of: new Date('1871-03-05  21:00:00 GMT'),
@@ -9712,7 +9712,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 622,
                     user_id: 1,
-                    name: 'Henry Cowell (composer) born 1897',
+                    name: 'Henry Dixon Cowell (March 11, 1897 – December 10, 1965) was an American composer, music theorist, pianist, teacher, publisher, impresario and the husband of Sidney Robertson Cowell.\n\n His contribution to the world of music was summed up by Virgil Thomson, writing in the early 1950s:\n\n Henry Cowell\'s music covers a wider range in both expression and technique than that of any other living composer. His experiments begun three decades ago in rhythm, in harmony, and in instrumental sonorities were considered then by many to be wild. Today they are the Bible of the young and still, to the conservatives, "advanced."... No other composer of our time has produced a body of works so radical and so normal, so penetrating and so comprehensive. Add to this massive production his long and influential career as a pedagogue, and Henry Cowell\'s achievement becomes impressive indeed. There is no other quite like it. To be both fecund and right is given to few.',
                     color: '#141414',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/cowell.jpg',
                     day_of: new Date('1897-03-11  21:00:00 GMT'),
@@ -10124,7 +10124,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 650,
                     user_id: 1,
-                    name: 'Dave Rempis (reedsman) born in 1975',
+                    name: 'Dave Rempis (born March 24, 1975) is an American free jazz saxophonist. He plays alto, tenor and baritone saxophone.',
                     color: '#FFFFEA',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/daverempis.jpeg',
                     day_of: new Date('1975-03-24  21:00:00 GMT'),
@@ -10218,7 +10218,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 656,
                     user_id: 1,
-                    name: 'César Estrada Chávez (labor leader/civil rights activist) born 1927',
+                    name: 'César Estrada Chávez (March 31, 1927 – April 23, 1993) was an American labor leader, community organizer, businessman, and Latino American civil rights activist. Along with Dolores Huerta, he co-founded the National Farm Workers Association (NFWA), which later merged with the Agricultural Workers Organizing Committee (AWOC) to become the United Farm Workers (UFW) labor union. Ideologically, his world-view combined leftist politics with Roman Catholic social teachings.\n\n Born in Yuma, Arizona, to a Mexican American family, Chavez began his working life as a manual laborer before spending two years in the United States Navy. Relocating to California, where he married, he got involved in the Community Service Organization (CSO), through which he helped laborers register to vote. In 1959, he became the CSO\'s national director, a position based in Los Angeles. In 1962, he left the CSO to co-found the NFWA, based in Delano, California, through which he launched an insurance scheme, credit union, and the El Malcriado newspaper for farmworkers. Later that decade he began organizing strikes among farmworkers, most notably the successful Delano grape strike of 1965–1970. Amid the grape strike his NFWA merged with the Agricultural Workers Organizing Committee to form the UFW in 1967. Influenced by the Indian independence leader Mahatma Gandhi, Chavez emphasized direct but nonviolent tactics, including pickets and boycotts, to pressure farm owners into granting strikers\' demands. He imbued his campaigns with Roman Catholic symbolism, including public processions, masses, and fasts. Receiving much support from labor and leftist groups, he was monitored by the Federal Bureau of Investigation (FBI).\n\n In the early 1970s, Chavez sought to expand the UFW\'s influence outside California by opening branches in other U.S. states. Viewing illegal immigrants as a major source of strike-breakers, he also pushed a campaign against illegal immigration into the U.S., which generated violence along the U.S.-Mexico border and caused schisms with many of the UFW\'s allies. Interested in co-operatives as a form of organization, he established a remote commune at Keene. His increased isolation and emphasis on unrelenting campaigning alienated many California farmworkers who had previously supported him and by 1973 the UFW had lost most of the contracts and membership it won during the late 1960s. His alliance with California Governor Jerry Brown helped ensure the passing of the California Agricultural Labor Relations Act of 1975, although the UFW\'s campaign to get its measures enshrined in California\'s constitution failed. Influenced by the Synanon religious organization, he re-emphasized communal living and purged perceived opponents. Membership of the UFW dwindled in the 1980s, with Chavez refocusing on anti-pesticide campaigns and moving into real-estate development, generating controversy for his use of non-unionised laborers.\n\n A controversial figure, UFW critics raised concerns about Chavez\'s autocratic control of the union, the purges of those he deemed disloyal, and the personality cult built around him, while farm-owners considered him a communist subversive. He became an icon for organized labor and leftist groups in the U.S. and posthumously became a "folk saint" among Mexican Americans. His birthday is a federal commemorative holiday in several U.S. states, while many places are named after him, and in 1994, he posthumously received the Presidential Medal of Freedom.',
                     color: '#790F0F',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/cesar-estrada-chavez.jpg',
                     day_of: new Date('1927-03-31  21:00:00 GMT'),
@@ -10288,7 +10288,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 661,
                     user_id: 1,
-                    name: 'Pier Paolo Pasolini (film director/poet/writer/intellectual) born 1922',
+                    name: 'Pier Paolo Pasolini (5 March 1922 – 2 November 1975) was an Italian film director, poet, writer, and intellectual, who also distinguished himself as an actor, journalist, novelist, playwright, and political figure. He remains a controversial personality in Italy due to his direct style and the focus of some of his works on taboo sexual matters. He was an established major figure in European literature and cinematic arts. His murder prompted an outcry in Italy and its circumstances continue to be a matter of heated debate.',
                     color: '#D8D8D8',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/Palomaxresdefault1-800x400.jpg',
                     day_of: new Date('1922-03-05  21:00:00 GMT'),
@@ -10710,7 +10710,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 689,
                     user_id: 1,
-                    name: 'Dwight Macdonald (writer/editor/film critic/social critic/philosopher/anarchist) born in 1906.',
+                    name: 'Dwight Macdonald (March 24, 1906 – December 19, 1982) was an American writer, editor, film critic, social critic, philosopher, and political radical. Macdonald was a member of the New York Intellectuals and editor of their leftist magazine Partisan Review for six years. He also contributed to other New York publications including Time, The New Yorker, The New York Review of Books, and politics, a journal which he founded in 1944.',
                     color: '#3C3C3C',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/Dwight-Macdonald-smoking--007.jpg',
                     day_of: new Date('1906-03-24  21:00:00 GMT'),
@@ -10752,7 +10752,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 692,
                     user_id: 1,
-                    name: 'Bix Beiderbecke (trumpet) born 1903.',
+                    name: 'Leon Bismark "Bix" Beiderbecke (March 10, 1903 – August 6, 1931) was an American jazz cornetist, pianist, and composer.\n\n Beiderbecke was one of the most influential jazz soloists of the 1920s, a cornet player noted for an inventive lyrical approach and purity of tone, with such clarity of sound that one contemporary famously described it like "shooting bullets at a bell". His solos on seminal recordings such as "Singin\' the Blues" and "I\'m Coming, Virginia" (both 1927) demonstrate a gift for extended improvisation that heralded the jazz ballad style, in which jazz solos are an integral part of the composition. Moreover, his use of extended chords and an ability to improvise freely along harmonic as well as melodic lines are echoed in post-WWII developments in jazz. "In a Mist" (1927) is the best known of Beiderbecke\'s published piano compositions, and the only one that he recorded. His piano style reflects both jazz and classical (mainly impressionist) influences. All five of his piano compositions were published by Robbins Music during his lifetime.\n\n A native of Davenport, Iowa, Beiderbecke taught himself to play the cornet largely by ear, leading him to adopt a non-standard fingering technique that informed his unique style. He first recorded with Midwestern jazz ensemble The Wolverines in 1924, after which he played briefly for the Detroit-based Jean Goldkette Orchestra before joining Frankie "Tram" Trumbauer for an extended engagement at the Arcadia Ballroom in St. Louis, also under the auspices of Goldkette\'s organisation. Beiderbecke and Trumbauer joined Goldkette\'s main band at the Graystone Ballroom in Detroit in 1926. The band toured widely and famously played a set opposite Fletcher Henderson at the Roseland Ballroom in New York City in October 1926. He made his greatest recordings in 1927. The Goldkette band folded in September 1927 and, after briefly joining bass saxophone player Adrian Rollini\'s band in New York, Trumbauer and Beiderbecke joined America\'s most popular dance band: Paul Whiteman and his Orchestra.\n\n Beiderbecke\'s most influential recordings date from his time with Goldkette and Whiteman, although he also recorded under his own name and that of Trumbauer\'s. The Whiteman period marked a precipitous decline in his health due to his increasing use of alcohol. Treatment for alcoholism in rehabilitation centers, with the support of Whiteman and the Beiderbecke family, failed to stop his decline. He left the Whiteman band in 1929 and in the summer of 1931 he died in his Sunnyside, Queens, New York apartment at the age of 28.\n\n His death, in turn, gave rise to one of the original legends of jazz. In magazine articles, musicians\' memoirs, novels, and Hollywood films, Beiderbecke has been envisaged as a Romantic hero, the "Young Man with a Horn" (a novel, later made into a movie starring Kirk Douglas, Lauren Bacall, Doris Day, and Hoagy Carmichael). His life has often been portrayed as that of a jazz musician who had to compromise his art for the sake of commercialism. Beiderbecke remains the subject of scholarly controversy regarding his full name, the cause of his death and the importance of his contributions to jazz.\n\n He composed or played on recordings that are jazz classics and standards such as "Davenport Blues", "In a Mist", "Copenhagen", "Riverboat Shuffle", "Singin\' the Blues", and "Georgia on My Mind".',
                     color: '#606060',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/Bix_Beiderbecke.jpg',
                     day_of: new Date('1903-03-10  21:00:00 GMT'),
@@ -10780,13 +10780,13 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 694,
                     user_id: 1,
-                    name: 'Theresa Wong (cellist/composer) born in 1976.',
+                    name: 'Theresa Wong (born March 31, 1976) is a cellist, vocalist, composer and improviser in the field of experimental music. In 2013 she lives in the San Francisco Bay Area.',
                     color: '#8F5065',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/TheresaWong_04_byHeikeLiss-eb5b16db.jpeg',
                     day_of: new Date('1976-03-30  21:00:00 GMT'),
                     is_annual: true,
-                    art_override: true,
-                    music_override: false,
+                    art_override: false,
+                    music_override: true,
                     override_content: {
                         "sources": ['bandcamp', 'bandcamp'],
                         "src_strings": ['https://bandcamp.com/EmbeddedPlayer/album=3037047171/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=906763159/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/'],
@@ -10799,7 +10799,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 695,
                     user_id: 1,
-                    name: 'Stephen Pearl Andrews (individualist anarchist/linguist/political philosopher/abolitionist/author) born in 1812.',
+                    name: 'Stephen Pearl Andrews (March 22, 1812 – May 21, 1886) was an American individualist anarchist, linguist, political philosopher, outspoken abolitionist and author of several books on the labor movement and individualist anarchism.',
                     color: '#C7C7C7',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/StephenPearlAndrews.jpg',
                     day_of: new Date('1812-03-22  21:00:00 GMT'),
@@ -10827,7 +10827,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 697,
                     user_id: 1,
-                    name: 'Elisée Reclus (French geographer/anarchist) born 1830',
+                    name: 'Jacques Élisée Reclus (15 March 1830 – 4 July 1905) was a renowned French geographer, writer and anarchist. He produced his 19-volume masterwork, La Nouvelle Géographie universelle, la terre et les hommes ("Universal Geography"), over a period of nearly 20 years (1875–1894). In 1892 he was awarded the Gold Medal of the Paris Geographical Society for this work, despite having been banished from France because of his political activism.',
                     color: '#7D8061',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/dissent/arton2847-4eb93.jpg',
                     day_of: new Date('1830-03-15  21:00:00 GMT'),
@@ -11222,7 +11222,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 722,
                     user_id: 1,
-                    name: 'Béla Bartók (composer) born 1881',
+                    name: 'Béla Viktor János Bartók (25 March 1881 – 26 September 1945) was a Hungarian composer, pianist, and ethnomusicologist. He is considered one of the most important composers of the 20th century; he and Franz Liszt are regarded as Hungary\'s greatest composers. Through his collection and analytical study of folk music, he was one of the founders of comparative musicology, which later became ethnomusicology.',
                     color: '#665744',
                     picture: 'https://s3.amazonaws.com/hours168-hurdaudio/img/musicians/Bela-Bartok-portrait-artist-Museum-of-Fine.jpg',
                     day_of: new Date('1881-03-25  21:00:00 GMT'),
@@ -11810,7 +11810,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 759,
                     user_id: 1,
-                    name: 'Rudolf Rocker (writer/activist/anarchist) born in 1873',
+                    name: 'Johann Rudolf Rocker (March 25, 1873 – September 19, 1958) was a German anarchist writer and activist. Though often described as an anarcho-syndicalist, he was a self-professed anarchist without adjectives, believing that anarchist schools of thought represented "only different methods of economy" and that the first objective for anarchists was "to secure the personal and social freedom of men".\n\n Rocker\'s father died in 1877. In October 1884, the Rocker household was joined by his mother\'s new husband Ludwig Baumgartner. This marriage presented Rudolf with a half brother, Ernest Ludwig Heinrich Baumgartner, with whom Rocker did not maintain close contact. Rocker was shocked once again as his mother died in February 1887. After his stepfather remarried soon thereafter, Rocker was put into an orphanage. Rudolf Rocker initially raised to be a priest however was repulsed by the unconditional obedience demanded by the Catholic orphanage and drawn by the prospect of adventure, Rocker ran away from the orphanage twice. The first time he just wandered around in the woods around Mainz with occasional visits to the city to forage for food and was retrieved after three nights. Under the influence of his uncle, he joined the SPD and became active in the typographers\' labor union in Mainz.\n\n He volunteered in the 1890 electoral campaign, which had to be organized in semi-clandestinity because of continuing government repression, helping the SPD candidate. Rocker became convinced that the source of political institutions is an irrational belief in a higher authority, as Bakunin claimed in God and the State. However, Rocker rejected the Russian\'s rejection of theoretical propaganda and his claim that only revolutions can bring about change. Nevertheless, he was very much attracted by Bakunin\'s style, marked by pathos, emotion, and enthusiasm, designed to give the reader an impression of the heat of revolutionary moments. He was both a radical leftist and anti-Marxist.\n\n Returning to Germany in May 1926, he became increasingly worried about the rise of nationalism and fascism, he would later be exiled from Nazi Germany. In the following years, Rocker became one of the most regular writers in the FAUD organ Der Syndikalist. In 1920, the FAUD hosted an international syndicalist conference, which ultimately led to the founding of the International Workers Association (IWA) in December 1922. Rocker published another well-known work. In Pioneers of American Freedom, a series of essays, he details the history of liberal and anarchist thought in the United States, seeking to debunk the idea that radical thought was foreign to American history and culture and had merely been imported by immigrants. On September 10, 1958, Rocker died in the Mohegan Colony.',
                     color: '#5b523f',
                     picture: 'https://hours168-hurdaudio.s3.amazonaws.com/img/dissent/28903.jpg',
                     day_of: new Date('1873-03-25  21:00:00 GMT'),
@@ -11974,7 +11974,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 770,
                     user_id: 1,
-                    name: 'Maurice Ravel (composer) born 1875',
+                    name: 'Joseph Maurice Ravel (7 March 1875 – 28 December 1937) was a French composer, pianist and conductor. He is often associated with impressionism along with his elder contemporary Claude Debussy, although both composers rejected the term. In the 1920s and 1930s Ravel was internationally regarded as France\'s greatest living composer.\n\n Born to a music-loving family, Ravel attended France\'s premier music college, the Paris Conservatoire; he was not well regarded by its conservative establishment, whose biased treatment of him caused a scandal. After leaving the conservatoire, Ravel found his own way as a composer, developing a style of great clarity and incorporating elements of modernism, baroque, neoclassicism and, in his later works, jazz. He liked to experiment with musical form, as in his best-known work, Boléro (1928), in which repetition takes the place of development. He made some orchestral arrangements of other composers\' music, of which his 1922 version of Mussorgsky\'s Pictures at an Exhibition is the best known.\n\n A slow and painstaking worker, Ravel composed fewer pieces than many of his contemporaries. Among his works to enter the repertoire are pieces for piano, chamber music, two piano concertos, ballet music, two operas and eight song cycles; he wrote no symphonies or church music. Many of his works exist in two versions: first, a piano score and later an orchestration. Some of his piano music, such as Gaspard de la nuit (1908), is exceptionally difficult to play, and his complex orchestral works such as Daphnis et Chloé (1912) require skilful balance in performance.\n\n Ravel was among the first composers to recognise the potential of recording to bring their music to a wider public. From the 1920s, despite limited technique as a pianist or conductor, he took part in recordings of several of his works; others were made under his supervision.',
                     color: '#a9a9a9',
                     picture: 'https://hours168-hurdaudio.s3.amazonaws.com/img/musicians/p01bqt98.jpg',
                     day_of: new Date('1875-03-07  21:00:00 GMT'),
@@ -12134,7 +12134,7 @@ exports.seed = function (knex, Promise) {
                 {
                     id: 780,
                     user_id: 1,
-                    name: 'Marian McPartland (piano) born 1918',
+                    name: 'Margaret Marian McPartland, (20 March 1918 – 20 August 2013), was an English-American jazz pianist, composer and writer. She was the host of Marian McPartland\'s Piano Jazz on National Public Radio from 1978 to 2011.\n\n After her marriage to trumpeter Jimmy McPartland in February 1945,[3] she resided in the United States when not travelling throughout the world to perform. In 1969 she founded Halcyon Records, a recording company that produced albums for 10 years. In 2000 she was named a National Endowment for the Arts Jazz Master. In 2004 she was given a Grammy Award for lifetime achievement. In 2007 she was inducted into the National Radio Hall of Fame. Although known mostly for jazz, she composed other types of music as well, performing her own symphonic work A Portrait of Rachel Carson with the University of South Carolina Symphony Orchestra in 2007. In 2010 she was named a member of the Order of the British Empire.',
                     color: '#101110',
                     picture: 'https://hours168-hurdaudio.s3.amazonaws.com/img/musicians/mcpartland.jpeg',
                     day_of: new Date('1918-03-20  21:00:00 GMT'),
